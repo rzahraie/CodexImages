@@ -117,5 +117,6 @@
 [APVA] bar=770 V2 child container created: id=10 parent=9 level=4 reason=opposite tape inside local parent
 [APVA] bar=770 join eligibility: newest=10 parent=9 level=4 candidates=10:Down:L4:Active@769-770:p9
 [APVA] bar=771 container frozen: id=1 level=1 Up bar fully outside RTL break side
-[APVA] bar=771 initial VE anchor: down container id=11 second bar low exceeded parallel LTL
-[APVA] bar=771 container created: id=11 Down L1 start=770 end=771 reason=created from LLLH
+[APVA] bar=771 broken parent descendants deactivated: parent=1 count=5
+[APVA] bar=771 RTL wick adjustment: id=10 close remained inside container
+[APVA] bar=771 child promoted after parent break: child=10 inheritedParent=0 level=1 brokenParent=1
