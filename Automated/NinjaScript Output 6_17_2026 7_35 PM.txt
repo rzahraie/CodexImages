@@ -42,312 +42,293 @@
 [APVA] bar=756 lateral compressed as synthetic one-bar context from 753
 [APVA] bar=756 container frozen: id=3 level=2 Up bar fully outside RTL break side
 [APVA] bar=756 V2 shadow decision: CreateChild id=4 parent=1 dir=Down level=2 start=755 end=756 reason=opposite tape inside local parent
-[APVA] bar=756 initial VE anchor: down container id=4 second bar low exceeded parallel LTL
-[APVA] bar=756 container created: id=4 Down L2 start=755 end=756 reason=V2 local child inside active container 1 from LLLH
-[APVA] bar=756 V2 child container created: id=4 parent=1 level=2 reason=opposite tape inside local parent
-[APVA] bar=756 join eligibility: newest=4 parent=1 level=2 candidates=4:Down:L2:Active@755-756:p1
-[APVA] bar=756 recent join rejected: 2,3,4 reason=right down container has not exceeded left down P2
+[APVA] bar=756 V2 child creation suppressed: response child just broke id=3 parent=1 dir=Down
 [APVA] bar=757 lateral compressed as synthetic one-bar context from 753
 [APVA] bar=757 skipped translational bar InsideBar; pending start remains 756
 [APVA] bar=758 lateral compressed as synthetic one-bar context from 753
 [APVA] bar=758 RTL wick adjustment: id=1 close remained inside container
-[APVA] bar=758 V2 shadow decision: CreateChild id=5 parent=4 dir=Up level=3 start=756 end=758 reason=opposite tape inside local parent
-[APVA] bar=758 container created: id=5 Up L3 start=756 end=758 reason=V2 local child inside active container 4 from HHHL
-[APVA] bar=758 V2 child container created: id=5 parent=4 level=3 reason=opposite tape inside local parent
-[APVA] bar=758 join eligibility: newest=5 parent=4 level=3 candidates=5:Up:L3:Active@756-758:p4
+[APVA] bar=758 same-direction suppression diagnostic: active id=1 dir=Up level=1 status=Adjusted start=740 end=758 reason=created from HHHL pendingStart=756 brokenIfReached=none
+[APVA] bar=758 same-direction suppression child diagnostic: parent=1 child=2 dir=Down level=2 status=Broken start=752 end=755 reason=V2 local child inside active container 1 from LLLH close=1643.88 rtl=1585.64 closeBreaks=False
+[APVA] bar=758 same-direction HHHL extended active Up container id=1; nested container suppressed
 [APVA] bar=759 lateral compressed as synthetic one-bar context from 753
 [APVA] bar=759 RTL wick adjustment: id=1 close remained inside container
-[APVA] bar=759 RTL wick adjustment: id=5 close remained inside container
-[APVA] bar=759 same-direction suppression diagnostic: active id=5 dir=Up level=3 status=Adjusted start=756 end=759 reason=V2 local child inside active container 4 from HHHL pendingStart=758 brokenIfReached=id=4 dir=Down level=2 status=Active start=755 end=759 reason=V2 local child inside active container 1 from LLLH parent=1
-[APVA] bar=759 join eligibility: newest=5 parent=1 level=2 candidates=5:Up:L2:Adjusted@756-759:p1
-[APVA] bar=759 recent join rejected: 3,4,5 reason=right up container has not exceeded left up P2
-[APVA] bar=759 recent join rejected: 2,4,5 reason=not an alternating triad
-[APVA] bar=759 recent join rejected: 2,3,5 reason=not an alternating triad
-[APVA] bar=759 same-direction breakout promoted active child: child=5 inheritedParent=1 level=2 brokenParent=4
-[APVA] bar=760 VE created: up container id=5 high pierced LTL/VE
+[APVA] bar=759 same-direction suppression diagnostic: active id=1 dir=Up level=1 status=Adjusted start=740 end=759 reason=created from HHHL pendingStart=758 brokenIfReached=none
+[APVA] bar=759 same-direction suppression child diagnostic: parent=1 child=2 dir=Down level=2 status=Broken start=752 end=755 reason=V2 local child inside active container 1 from LLLH close=1654.88 rtl=1571.25 closeBreaks=False
+[APVA] bar=759 same-direction HHHL extended active Up container id=1; nested container suppressed
 [APVA] bar=760 lateral resolved into container from origin 753
-[APVA] bar=760 same-direction suppression diagnostic: active id=5 dir=Up level=2 status=Adjusted start=756 end=760 reason=V2 local child inside active container 4 from HHHL pendingStart=759 brokenIfReached=none
-[APVA] bar=760 same-direction HHHL extended active Up container id=5; nested container suppressed
-[APVA] bar=760 join eligibility: newest=5 parent=1 level=2 candidates=5:Up:L2:Adjusted@756-760:p1
-[APVA] bar=756 demotion/style recalculation: id=3 level=3
-[APVA] bar=759 demotion/style recalculation: id=4 level=3
-[APVA] bar=760 demotion/style recalculation: id=5 level=3
-[APVA] bar=760 join accepted: parent=6 children=3,4,5
-[APVA] bar=760 join eligibility: newest=6 parent=1 level=2 candidates=6:Up:L2:Active@753-760:p1
-[APVA] bar=761 terminal joined child extended with parent: child=5 parent=6
-[APVA] bar=761 V2 shadow decision: CreateChild id=7 parent=6 dir=Down level=3 start=760 end=761 reason=opposite tape inside local parent
-[APVA] bar=761 initial VE anchor: down container id=7 second bar low exceeded parallel LTL
-[APVA] bar=761 container created: id=7 Down L3 start=760 end=761 reason=V2 local child inside active container 6 from LowReversal
-[APVA] bar=761 V2 child container created: id=7 parent=6 level=3 reason=opposite tape inside local parent
-[APVA] bar=761 join eligibility: newest=7 parent=6 level=3 candidates=7:Down:L3:Active@760-761:p6
+[APVA] bar=760 same-direction suppression diagnostic: active id=1 dir=Up level=1 status=Adjusted start=740 end=760 reason=created from HHHL pendingStart=759 brokenIfReached=none
+[APVA] bar=760 same-direction suppression child diagnostic: parent=1 child=2 dir=Down level=2 status=Broken start=752 end=755 reason=V2 local child inside active container 1 from LLLH close=1659.17 rtl=1556.86 closeBreaks=False
+[APVA] bar=760 same-direction HHHL extended active Up container id=1; nested container suppressed
+[APVA] bar=761 V2 shadow decision: CreateChild id=4 parent=1 dir=Down level=2 start=760 end=761 reason=opposite tape inside local parent
+[APVA] bar=761 initial VE anchor: down container id=4 second bar low exceeded parallel LTL
+[APVA] bar=761 container created: id=4 Down L2 start=760 end=761 reason=V2 local child inside active container 1 from LowReversal
+[APVA] bar=761 V2 child container created: id=4 parent=1 level=2 reason=opposite tape inside local parent
+[APVA] bar=761 join eligibility: newest=4 parent=1 level=2 candidates=4:Down:L2:Active@760-761:p1
+[APVA] bar=761 recent join rejected: 2,3,4 reason=right down container has not exceeded left down P2
 [APVA] bar=762 lateral invalidated: full bar range outside origin boundary 753
-[APVA] bar=762 VE created: up container id=6 high pierced LTL/VE
-[APVA] bar=762 terminal joined child extended with parent: child=5 parent=6
-[APVA] bar=762 container frozen: id=7 level=3 Down bar fully outside RTL break side
-[APVA] bar=762 container created: id=8 Up L3 start=761 end=762 reason=same-direction response after child break 7 from HHHL
-[APVA] bar=762 same-direction child response created: id=8 parent=6 level=3 after broken child=7
-[APVA] bar=762 join eligibility: newest=8 parent=6 level=3 candidates=8:Up:L3:Active@761-762:p6
+[APVA] bar=762 container frozen: id=4 level=2 Down bar fully outside RTL break side
+[APVA] bar=762 container created: id=5 Up L2 start=761 end=762 reason=same-direction response after child break 4 from HHHL
+[APVA] bar=762 same-direction child response created: id=5 parent=1 level=2 after broken child=4
+[APVA] bar=762 join eligibility: newest=5 parent=1 level=2 candidates=5:Up:L2:Active@761-762:p1
+[APVA] bar=756 demotion/style recalculation: id=3 level=3
+[APVA] bar=762 demotion/style recalculation: id=4 level=3
+[APVA] bar=762 demotion/style recalculation: id=5 level=3
+[APVA] bar=762 join accepted: parent=6 children=3,4,5
+[APVA] bar=762 join eligibility: newest=6 parent=1 level=2 candidates=6:Up:L2:Active@753-762:p1
 [APVA] bar=763 lateral building: bar remains inside origin boundary 762
-[APVA] bar=763 container frozen: id=8 level=3 Up bar fully outside RTL break side
+[APVA] bar=763 terminal joined child frozen: child=5 parent=6 bar fully outside RTL break side
 [APVA] bar=763 skipped translational bar InsideBar; pending start remains 762
-[APVA] bar=764 V2 shadow decision: CreateChild id=9 parent=6 dir=Down level=3 start=762 end=764 reason=opposite tape inside local parent
-[APVA] bar=764 initial VE anchor: down container id=9 second bar low exceeded parallel LTL
-[APVA] bar=764 container created: id=9 Down L3 start=762 end=764 reason=V2 local child inside active container 6 from LLLH
-[APVA] bar=764 V2 child container created: id=9 parent=6 level=3 reason=opposite tape inside local parent
-[APVA] bar=764 join eligibility: newest=9 parent=6 level=3 candidates=9:Down:L3:Active@762-764:p6
-[APVA] bar=764 recent join rejected: 7,8,9 reason=right down container has not exceeded left down P2
+[APVA] bar=764 V2 shadow decision: CreateChild id=7 parent=6 dir=Down level=3 start=762 end=764 reason=opposite tape inside local parent
+[APVA] bar=764 initial VE anchor: down container id=7 second bar low exceeded parallel LTL
+[APVA] bar=764 container created: id=7 Down L3 start=762 end=764 reason=V2 local child inside active container 6 from LLLH
+[APVA] bar=764 V2 child container created: id=7 parent=6 level=3 reason=opposite tape inside local parent
+[APVA] bar=764 join eligibility: newest=7 parent=6 level=3 candidates=7:Down:L3:Active@762-764:p6
 [APVA] bar=765 lateral building: bar remains inside origin boundary 764
 [APVA] bar=765 RTL wick adjustment: id=1 close remained inside container
+[APVA] bar=765 RTL wick adjustment: id=6 close remained inside container
 [APVA] bar=765 skipped translational bar InsideBar; pending start remains 764
-[APVA] bar=766 RTL wick adjustment: id=9 close remained inside container
-[APVA] bar=766 V2 shadow decision: CreateChild id=10 parent=9 dir=Up level=4 start=764 end=766 reason=opposite tape inside local parent
-[APVA] bar=766 container created: id=10 Up L4 start=764 end=766 reason=V2 local child inside active container 9 from HighReversal
-[APVA] bar=766 V2 child container created: id=10 parent=9 level=4 reason=opposite tape inside local parent
-[APVA] bar=766 join eligibility: newest=10 parent=9 level=4 candidates=10:Up:L4:Active@764-766:p9
+[APVA] bar=766 RTL wick adjustment: id=7 close remained inside container
+[APVA] bar=766 V2 shadow decision: CreateChild id=8 parent=7 dir=Up level=4 start=764 end=766 reason=opposite tape inside local parent
+[APVA] bar=766 container created: id=8 Up L4 start=764 end=766 reason=V2 local child inside active container 7 from HighReversal
+[APVA] bar=766 V2 child container created: id=8 parent=7 level=4 reason=opposite tape inside local parent
+[APVA] bar=766 join eligibility: newest=8 parent=7 level=4 candidates=8:Up:L4:Active@764-766:p7
 [APVA] bar=767 RTL wick adjustment: id=1 close remained inside container
-[APVA] bar=767 VE created: up container id=6 high pierced LTL/VE
-[APVA] bar=767 RTL wick adjustment: id=10 close remained inside container
-[APVA] bar=767 same-direction suppression diagnostic: active id=10 dir=Up level=4 status=Adjusted start=764 end=767 reason=V2 local child inside active container 9 from HighReversal pendingStart=766 brokenIfReached=id=9 dir=Down level=3 status=Adjusted start=762 end=767 reason=V2 local child inside active container 6 from LLLH parent=6
-[APVA] bar=767 join eligibility: newest=10 parent=6 level=3 candidates=10:Up:L3:Adjusted@764-767:p6
-[APVA] bar=763 demotion/style recalculation: id=8 level=4
-[APVA] bar=767 demotion/style recalculation: id=9 level=4
-[APVA] bar=767 demotion/style recalculation: id=10 level=4
-[APVA] bar=767 join accepted: parent=11 children=8,9,10
-[APVA] bar=767 join eligibility: newest=11 parent=6 level=3 candidates=11:Up:L3:Active@761-767:p6
-[APVA] bar=767 same-direction breakout promoted active child: child=10 inheritedParent=11 level=4 brokenParent=9
-[APVA] bar=768 VE created: up container id=6 high pierced LTL/VE
-[APVA] bar=768 VE created: up container id=11 high pierced LTL/VE
-[APVA] bar=768 VE created: up container id=10 high pierced LTL/VE
-[APVA] bar=768 terminal joined child extended with parent: child=10 parent=11
-[APVA] bar=768 same-direction suppression diagnostic: active id=11 dir=Up level=3 status=Active start=761 end=768 reason=joined triad 8,9,10 pendingStart=767 brokenIfReached=none
-[APVA] bar=768 same-direction suppression child diagnostic: parent=11 child=9 dir=Down level=4 status=Joined start=762 end=767 reason=V2 local child inside active container 6 from LLLH close=1683.33 rtl=1668.365 closeBreaks=False
-[APVA] bar=768 same-direction HHHL extended active Up container id=11; nested container suppressed
-[APVA] bar=768 join eligibility: newest=11 parent=6 level=3 candidates=11:Up:L3:Active@761-768:p6
-[APVA] bar=769 terminal joined child extended with parent: child=10 parent=11
-[APVA] bar=769 same-direction suppression diagnostic: active id=11 dir=Up level=3 status=Active start=761 end=769 reason=joined triad 8,9,10 pendingStart=768 brokenIfReached=none
-[APVA] bar=769 same-direction suppression child diagnostic: parent=11 child=9 dir=Down level=4 status=Joined start=762 end=767 reason=V2 local child inside active container 6 from LLLH close=1671.54 rtl=1668.1125 closeBreaks=False
-[APVA] bar=769 same-direction HighReversal extended active Up container id=11; nested container suppressed
-[APVA] bar=769 join eligibility: newest=11 parent=6 level=3 candidates=11:Up:L3:Active@761-769:p6
-[APVA] bar=770 terminal joined child extended with parent: child=10 parent=11
-[APVA] bar=770 V2 shadow decision: CreateChild id=12 parent=11 dir=Down level=4 start=769 end=770 reason=opposite tape inside local parent
-[APVA] bar=770 container created: id=12 Down L4 start=769 end=770 reason=V2 local child inside active container 11 from LLLH
-[APVA] bar=770 V2 child container created: id=12 parent=11 level=4 reason=opposite tape inside local parent
-[APVA] bar=770 join eligibility: newest=12 parent=11 level=4 candidates=12:Down:L4:Active@769-770:p11
+[APVA] bar=767 RTL wick adjustment: id=8 close remained inside container
+[APVA] bar=767 same-direction suppression diagnostic: active id=8 dir=Up level=4 status=Adjusted start=764 end=767 reason=V2 local child inside active container 7 from HighReversal pendingStart=766 brokenIfReached=id=7 dir=Down level=3 status=Adjusted start=762 end=767 reason=V2 local child inside active container 6 from LLLH parent=6
+[APVA] bar=767 join eligibility: newest=8 parent=6 level=3 candidates=8:Up:L3:Adjusted@764-767:p6
+[APVA] bar=763 demotion/style recalculation: id=5 level=4
+[APVA] bar=767 demotion/style recalculation: id=7 level=4
+[APVA] bar=767 demotion/style recalculation: id=8 level=4
+[APVA] bar=767 join accepted: parent=9 children=5,7,8
+[APVA] bar=767 join eligibility: newest=9 parent=6 level=3 candidates=9:Up:L3:Active@761-767:p6
+[APVA] bar=767 same-direction breakout promoted active child: child=8 inheritedParent=9 level=4 brokenParent=7
+[APVA] bar=768 VE created: up container id=9 high pierced LTL/VE
+[APVA] bar=768 VE created: up container id=8 high pierced LTL/VE
+[APVA] bar=768 terminal joined child extended with parent: child=8 parent=9
+[APVA] bar=768 same-direction suppression diagnostic: active id=9 dir=Up level=3 status=Active start=761 end=768 reason=joined triad 5,7,8 pendingStart=767 brokenIfReached=none
+[APVA] bar=768 same-direction suppression child diagnostic: parent=9 child=7 dir=Down level=4 status=Joined start=762 end=767 reason=V2 local child inside active container 6 from LLLH close=1683.33 rtl=1668.365 closeBreaks=False
+[APVA] bar=768 same-direction HHHL extended active Up container id=9; nested container suppressed
+[APVA] bar=768 join eligibility: newest=9 parent=6 level=3 candidates=9:Up:L3:Active@761-768:p6
+[APVA] bar=769 terminal joined child extended with parent: child=8 parent=9
+[APVA] bar=769 same-direction suppression diagnostic: active id=9 dir=Up level=3 status=Active start=761 end=769 reason=joined triad 5,7,8 pendingStart=768 brokenIfReached=none
+[APVA] bar=769 same-direction suppression child diagnostic: parent=9 child=7 dir=Down level=4 status=Joined start=762 end=767 reason=V2 local child inside active container 6 from LLLH close=1671.54 rtl=1668.1125 closeBreaks=False
+[APVA] bar=769 same-direction HighReversal extended active Up container id=9; nested container suppressed
+[APVA] bar=769 join eligibility: newest=9 parent=6 level=3 candidates=9:Up:L3:Active@761-769:p6
+[APVA] bar=770 terminal joined child extended with parent: child=8 parent=9
+[APVA] bar=770 V2 shadow decision: CreateChild id=10 parent=9 dir=Down level=4 start=769 end=770 reason=opposite tape inside local parent
+[APVA] bar=770 container created: id=10 Down L4 start=769 end=770 reason=V2 local child inside active container 9 from LLLH
+[APVA] bar=770 V2 child container created: id=10 parent=9 level=4 reason=opposite tape inside local parent
+[APVA] bar=770 join eligibility: newest=10 parent=9 level=4 candidates=10:Down:L4:Active@769-770:p9
 [APVA] bar=771 container frozen: id=1 level=1 Up bar fully outside RTL break side
-[APVA] bar=771 broken parent descendants deactivated: parent=1 count=8
-[APVA] bar=771 RTL wick adjustment: id=12 close remained inside container
-[APVA] bar=771 child promoted after parent break: child=12 inheritedParent=0 level=1 brokenParent=1
-[APVA] bar=772 same-direction suppression diagnostic: active id=12 dir=Down level=1 status=Adjusted start=769 end=772 reason=V2 local child inside active container 11 from LLLH pendingStart=771 brokenIfReached=none
-[APVA] bar=772 same-direction LowReversal extended active Down container id=12; nested container suppressed
+[APVA] bar=771 broken parent descendants deactivated: parent=1 count=7
+[APVA] bar=771 RTL wick adjustment: id=10 close remained inside container
+[APVA] bar=771 child promoted after parent break: child=10 inheritedParent=0 level=1 brokenParent=1
+[APVA] bar=772 same-direction suppression diagnostic: active id=10 dir=Down level=1 status=Adjusted start=769 end=772 reason=V2 local child inside active container 9 from LLLH pendingStart=771 brokenIfReached=none
+[APVA] bar=772 same-direction LowReversal extended active Down container id=10; nested container suppressed
 [APVA] bar=773 lateral building: bar remains inside origin boundary 772
-[APVA] bar=773 RTL wick adjustment: id=12 close remained inside container
+[APVA] bar=773 RTL wick adjustment: id=10 close remained inside container
 [APVA] bar=773 skipped translational bar InsideBar; pending start remains 772
-[APVA] bar=774 V2 shadow decision: CreateChild id=13 parent=12 dir=Up level=2 start=772 end=774 reason=opposite tape inside local parent
-[APVA] bar=774 container created: id=13 Up L2 start=772 end=774 reason=V2 local child inside active container 12 from HighReversal
-[APVA] bar=774 V2 child container created: id=13 parent=12 level=2 reason=opposite tape inside local parent
-[APVA] bar=774 join eligibility: newest=13 parent=12 level=2 candidates=13:Up:L2:Active@772-774:p12
-[APVA] bar=775 RTL wick adjustment: id=12 close remained inside container
-[APVA] bar=775 V2 shadow decision: CreateChild id=14 parent=13 dir=Down level=3 start=774 end=775 reason=opposite tape inside local parent
-[APVA] bar=775 initial VE anchor: down container id=14 second bar low exceeded parallel LTL
-[APVA] bar=775 container created: id=14 Down L3 start=774 end=775 reason=V2 local child inside active container 13 from LLLH
-[APVA] bar=775 V2 child container created: id=14 parent=13 level=3 reason=opposite tape inside local parent
-[APVA] bar=775 join eligibility: newest=14 parent=13 level=3 candidates=14:Down:L3:Active@774-775:p13
-[APVA] bar=776 container frozen: id=13 level=2 Up bar fully outside RTL break side
-[APVA] bar=776 VE created: down container id=14 low pierced LTL/VE
-[APVA] bar=776 join eligibility: newest=14 parent=12 level=2 candidates=14:Down:L2:Active@774-776:p12
-[APVA] bar=776 child promoted after parent break: child=14 inheritedParent=12 level=2 brokenParent=13
-[APVA] bar=777 V2 shadow decision: CreateChild id=15 parent=14 dir=Up level=3 start=776 end=777 reason=opposite tape inside local parent
-[APVA] bar=777 container created: id=15 Up L3 start=776 end=777 reason=V2 local child inside active container 14 from HHHL
-[APVA] bar=777 V2 child container created: id=15 parent=14 level=3 reason=opposite tape inside local parent
-[APVA] bar=777 join eligibility: newest=15 parent=14 level=3 candidates=15:Up:L3:Active@776-777:p14
-[APVA] bar=778 container frozen: id=12 level=1 Down bar fully outside RTL break side
-[APVA] bar=778 broken parent descendants deactivated: parent=12 count=1
-[APVA] bar=778 recent join rejected: 1,12,15 reason=right up container has not exceeded left up P2
-[APVA] bar=778 child promoted after parent break: child=15 inheritedParent=0 level=1 brokenParent=12
-[APVA] bar=779 RTL wick adjustment: id=15 close remained inside container
-[APVA] bar=779 same-direction suppression diagnostic: active id=15 dir=Up level=1 status=Adjusted start=776 end=779 reason=V2 local child inside active container 14 from HHHL pendingStart=778 brokenIfReached=none
-[APVA] bar=779 same-direction HHHL extended active Up container id=15; nested container suppressed
-[APVA] bar=779 recent join rejected: 1,12,15 reason=right up container has not exceeded left up P2
-[APVA] bar=780 container frozen: id=15 level=1 Up bar fully outside RTL break side
-[APVA] bar=780 initial VE anchor: down container id=16 second bar low exceeded parallel LTL
-[APVA] bar=780 container created: id=16 Down L1 start=779 end=780 reason=created from LLLH
-[APVA] bar=778 demotion/style recalculation: id=12 level=2
-[APVA] bar=776 demotion/style recalculation: id=13 level=3
-[APVA] bar=777 demotion/style recalculation: id=14 level=3
-[APVA] bar=780 demotion/style recalculation: id=15 level=2
-[APVA] bar=780 demotion/style recalculation: id=16 level=2
-[APVA] bar=780 join accepted: parent=17 children=12,15,16
-[APVA] bar=781 terminal joined child extended with parent: child=16 parent=17
-[APVA] bar=781 same-direction suppression diagnostic: active id=17 dir=Down level=1 status=Active start=769 end=781 reason=joined triad 12,15,16 pendingStart=780 brokenIfReached=none
-[APVA] bar=781 same-direction suppression child diagnostic: parent=17 child=15 dir=Up level=2 status=Joined start=776 end=780 reason=V2 local child inside active container 14 from HHHL close=1626.9 rtl=1648.64666667 closeBreaks=False
-[APVA] bar=781 same-direction LowReversal extended active Down container id=17; nested container suppressed
-[APVA] bar=782 terminal joined child frozen: child=16 parent=17 bar fully outside RTL break side
-[APVA] bar=782 V2 shadow decision: CreateChild id=18 parent=17 dir=Up level=2 start=781 end=782 reason=opposite tape inside local parent
-[APVA] bar=782 initial VE anchor: up container id=18 second bar high exceeded parallel LTL
-[APVA] bar=782 container created: id=18 Up L2 start=781 end=782 reason=V2 local child inside active container 17 from HHHL
-[APVA] bar=782 V2 child container created: id=18 parent=17 level=2 reason=opposite tape inside local parent
-[APVA] bar=782 join eligibility: newest=18 parent=17 level=2 candidates=18:Up:L2:Active@781-782:p17
-[APVA] bar=783 container frozen: id=17 level=1 Down bar fully outside RTL break side
-[APVA] bar=783 broken parent descendants deactivated: parent=17 count=2
-[APVA] bar=783 VE created: up container id=18 high pierced LTL/VE
+[APVA] bar=774 V2 shadow decision: CreateChild id=11 parent=10 dir=Up level=2 start=772 end=774 reason=opposite tape inside local parent
+[APVA] bar=774 container created: id=11 Up L2 start=772 end=774 reason=V2 local child inside active container 10 from HighReversal
+[APVA] bar=774 V2 child container created: id=11 parent=10 level=2 reason=opposite tape inside local parent
+[APVA] bar=774 join eligibility: newest=11 parent=10 level=2 candidates=11:Up:L2:Active@772-774:p10
+[APVA] bar=775 RTL wick adjustment: id=10 close remained inside container
+[APVA] bar=775 V2 shadow decision: CreateChild id=12 parent=11 dir=Down level=3 start=774 end=775 reason=opposite tape inside local parent
+[APVA] bar=775 initial VE anchor: down container id=12 second bar low exceeded parallel LTL
+[APVA] bar=775 container created: id=12 Down L3 start=774 end=775 reason=V2 local child inside active container 11 from LLLH
+[APVA] bar=775 V2 child container created: id=12 parent=11 level=3 reason=opposite tape inside local parent
+[APVA] bar=775 join eligibility: newest=12 parent=11 level=3 candidates=12:Down:L3:Active@774-775:p11
+[APVA] bar=776 container frozen: id=11 level=2 Up bar fully outside RTL break side
+[APVA] bar=776 VE created: down container id=12 low pierced LTL/VE
+[APVA] bar=776 join eligibility: newest=12 parent=10 level=2 candidates=12:Down:L2:Active@774-776:p10
+[APVA] bar=776 child promoted after parent break: child=12 inheritedParent=10 level=2 brokenParent=11
+[APVA] bar=777 V2 shadow decision: CreateChild id=13 parent=12 dir=Up level=3 start=776 end=777 reason=opposite tape inside local parent
+[APVA] bar=777 container created: id=13 Up L3 start=776 end=777 reason=V2 local child inside active container 12 from HHHL
+[APVA] bar=777 V2 child container created: id=13 parent=12 level=3 reason=opposite tape inside local parent
+[APVA] bar=777 join eligibility: newest=13 parent=12 level=3 candidates=13:Up:L3:Active@776-777:p12
+[APVA] bar=778 container frozen: id=10 level=1 Down bar fully outside RTL break side
+[APVA] bar=778 broken parent descendants deactivated: parent=10 count=1
+[APVA] bar=778 recent join rejected: 1,10,13 reason=right up container has not exceeded left up P2
+[APVA] bar=778 child promoted after parent break: child=13 inheritedParent=0 level=1 brokenParent=10
+[APVA] bar=779 RTL wick adjustment: id=13 close remained inside container
+[APVA] bar=779 same-direction suppression diagnostic: active id=13 dir=Up level=1 status=Adjusted start=776 end=779 reason=V2 local child inside active container 12 from HHHL pendingStart=778 brokenIfReached=none
+[APVA] bar=779 same-direction HHHL extended active Up container id=13; nested container suppressed
+[APVA] bar=779 recent join rejected: 1,10,13 reason=right up container has not exceeded left up P2
+[APVA] bar=780 container frozen: id=13 level=1 Up bar fully outside RTL break side
+[APVA] bar=780 initial VE anchor: down container id=14 second bar low exceeded parallel LTL
+[APVA] bar=780 container created: id=14 Down L1 start=779 end=780 reason=created from LLLH
+[APVA] bar=778 demotion/style recalculation: id=10 level=2
+[APVA] bar=776 demotion/style recalculation: id=11 level=3
+[APVA] bar=777 demotion/style recalculation: id=12 level=3
+[APVA] bar=780 demotion/style recalculation: id=13 level=2
+[APVA] bar=780 demotion/style recalculation: id=14 level=2
+[APVA] bar=780 join accepted: parent=15 children=10,13,14
+[APVA] bar=781 terminal joined child extended with parent: child=14 parent=15
+[APVA] bar=781 same-direction suppression diagnostic: active id=15 dir=Down level=1 status=Active start=769 end=781 reason=joined triad 10,13,14 pendingStart=780 brokenIfReached=none
+[APVA] bar=781 same-direction suppression child diagnostic: parent=15 child=13 dir=Up level=2 status=Joined start=776 end=780 reason=V2 local child inside active container 12 from HHHL close=1626.9 rtl=1648.64666667 closeBreaks=False
+[APVA] bar=781 same-direction LowReversal extended active Down container id=15; nested container suppressed
+[APVA] bar=782 terminal joined child frozen: child=14 parent=15 bar fully outside RTL break side
+[APVA] bar=782 V2 shadow decision: CreateChild id=16 parent=15 dir=Up level=2 start=781 end=782 reason=opposite tape inside local parent
+[APVA] bar=782 initial VE anchor: up container id=16 second bar high exceeded parallel LTL
+[APVA] bar=782 container created: id=16 Up L2 start=781 end=782 reason=V2 local child inside active container 15 from HHHL
+[APVA] bar=782 V2 child container created: id=16 parent=15 level=2 reason=opposite tape inside local parent
+[APVA] bar=782 join eligibility: newest=16 parent=15 level=2 candidates=16:Up:L2:Active@781-782:p15
+[APVA] bar=783 container frozen: id=15 level=1 Down bar fully outside RTL break side
+[APVA] bar=783 broken parent descendants deactivated: parent=15 count=2
+[APVA] bar=783 VE created: up container id=16 high pierced LTL/VE
 [APVA] bar=771 demotion/style recalculation: id=1 level=2
 [APVA] bar=755 demotion/style recalculation: id=2 level=3
 [APVA] bar=770 demotion/style recalculation: id=6 level=3
 [APVA] bar=756 demotion/style recalculation: id=3 level=4
-[APVA] bar=759 demotion/style recalculation: id=4 level=4
-[APVA] bar=762 demotion/style recalculation: id=5 level=4
-[APVA] bar=762 demotion/style recalculation: id=7 level=4
-[APVA] bar=770 demotion/style recalculation: id=11 level=4
-[APVA] bar=763 demotion/style recalculation: id=8 level=5
-[APVA] bar=767 demotion/style recalculation: id=9 level=5
-[APVA] bar=770 demotion/style recalculation: id=10 level=5
-[APVA] bar=783 demotion/style recalculation: id=17 level=2
-[APVA] bar=778 demotion/style recalculation: id=12 level=3
-[APVA] bar=776 demotion/style recalculation: id=13 level=4
-[APVA] bar=777 demotion/style recalculation: id=14 level=4
-[APVA] bar=780 demotion/style recalculation: id=15 level=3
-[APVA] bar=782 demotion/style recalculation: id=16 level=3
-[APVA] bar=783 demotion/style recalculation: id=18 level=2
-[APVA] bar=783 join accepted: parent=19 children=1,17,18
-[APVA] bar=783 child promoted after parent break: child=18 inheritedParent=19 level=2 brokenParent=17
-[APVA] bar=784 terminal joined child extended with parent: child=18 parent=19
-[APVA] bar=784 same-direction suppression diagnostic: active id=19 dir=Up level=1 status=Active start=740 end=784 reason=joined triad 1,17,18 pendingStart=783 brokenIfReached=none
-[APVA] bar=784 same-direction suppression child diagnostic: parent=19 child=17 dir=Down level=2 status=Joined start=769 end=783 reason=joined triad 12,15,16 close=1700.16 rtl=1634.16 closeBreaks=False
-[APVA] bar=784 same-direction HighReversal extended active Up container id=19; nested container suppressed
-[APVA] bar=785 terminal joined child extended with parent: child=18 parent=19
-[APVA] bar=785 V2 shadow decision: CreateChild id=20 parent=19 dir=Down level=2 start=784 end=785 reason=opposite tape inside local parent
-[APVA] bar=785 initial VE anchor: down container id=20 second bar low exceeded parallel LTL
-[APVA] bar=785 container created: id=20 Down L2 start=784 end=785 reason=V2 local child inside active container 19 from LLLH
-[APVA] bar=785 V2 child container created: id=20 parent=19 level=2 reason=opposite tape inside local parent
-[APVA] bar=785 join eligibility: newest=20 parent=19 level=2 candidates=20:Down:L2:Active@784-785:p19
-[APVA] bar=786 terminal joined child frozen: child=18 parent=19 bar fully outside RTL break side
-[APVA] bar=786 same-direction suppression diagnostic: active id=20 dir=Down level=2 status=Active start=784 end=786 reason=V2 local child inside active container 19 from LLLH pendingStart=785 brokenIfReached=none
-[APVA] bar=786 same-direction LowReversal extended active Down container id=20; nested container suppressed
-[APVA] bar=786 join eligibility: newest=20 parent=19 level=2 candidates=20:Down:L2:Active@784-786:p19
-[APVA] bar=787 V2 shadow decision: CreateChild id=21 parent=20 dir=Up level=3 start=786 end=787 reason=opposite tape inside local parent
-[APVA] bar=787 initial VE anchor: up container id=21 second bar high exceeded parallel LTL
-[APVA] bar=787 container created: id=21 Up L3 start=786 end=787 reason=V2 local child inside active container 20 from HHHL
-[APVA] bar=787 V2 child container created: id=21 parent=20 level=3 reason=opposite tape inside local parent
-[APVA] bar=787 join eligibility: newest=21 parent=20 level=3 candidates=21:Up:L3:Active@786-787:p20
+[APVA] bar=762 demotion/style recalculation: id=4 level=4
+[APVA] bar=770 demotion/style recalculation: id=9 level=4
+[APVA] bar=763 demotion/style recalculation: id=5 level=5
+[APVA] bar=767 demotion/style recalculation: id=7 level=5
+[APVA] bar=770 demotion/style recalculation: id=8 level=5
+[APVA] bar=783 demotion/style recalculation: id=15 level=2
+[APVA] bar=778 demotion/style recalculation: id=10 level=3
+[APVA] bar=776 demotion/style recalculation: id=11 level=4
+[APVA] bar=777 demotion/style recalculation: id=12 level=4
+[APVA] bar=780 demotion/style recalculation: id=13 level=3
+[APVA] bar=782 demotion/style recalculation: id=14 level=3
+[APVA] bar=783 demotion/style recalculation: id=16 level=2
+[APVA] bar=783 join accepted: parent=17 children=1,15,16
+[APVA] bar=783 child promoted after parent break: child=16 inheritedParent=17 level=2 brokenParent=15
+[APVA] bar=784 terminal joined child extended with parent: child=16 parent=17
+[APVA] bar=784 same-direction suppression diagnostic: active id=17 dir=Up level=1 status=Active start=740 end=784 reason=joined triad 1,15,16 pendingStart=783 brokenIfReached=none
+[APVA] bar=784 same-direction suppression child diagnostic: parent=17 child=15 dir=Down level=2 status=Joined start=769 end=783 reason=joined triad 10,13,14 close=1700.16 rtl=1634.16 closeBreaks=False
+[APVA] bar=784 same-direction HighReversal extended active Up container id=17; nested container suppressed
+[APVA] bar=785 terminal joined child extended with parent: child=16 parent=17
+[APVA] bar=785 V2 shadow decision: CreateChild id=18 parent=17 dir=Down level=2 start=784 end=785 reason=opposite tape inside local parent
+[APVA] bar=785 initial VE anchor: down container id=18 second bar low exceeded parallel LTL
+[APVA] bar=785 container created: id=18 Down L2 start=784 end=785 reason=V2 local child inside active container 17 from LLLH
+[APVA] bar=785 V2 child container created: id=18 parent=17 level=2 reason=opposite tape inside local parent
+[APVA] bar=785 join eligibility: newest=18 parent=17 level=2 candidates=18:Down:L2:Active@784-785:p17
+[APVA] bar=786 terminal joined child frozen: child=16 parent=17 bar fully outside RTL break side
+[APVA] bar=786 same-direction suppression diagnostic: active id=18 dir=Down level=2 status=Active start=784 end=786 reason=V2 local child inside active container 17 from LLLH pendingStart=785 brokenIfReached=none
+[APVA] bar=786 same-direction LowReversal extended active Down container id=18; nested container suppressed
+[APVA] bar=786 join eligibility: newest=18 parent=17 level=2 candidates=18:Down:L2:Active@784-786:p17
+[APVA] bar=787 V2 shadow decision: CreateChild id=19 parent=18 dir=Up level=3 start=786 end=787 reason=opposite tape inside local parent
+[APVA] bar=787 initial VE anchor: up container id=19 second bar high exceeded parallel LTL
+[APVA] bar=787 container created: id=19 Up L3 start=786 end=787 reason=V2 local child inside active container 18 from HHHL
+[APVA] bar=787 V2 child container created: id=19 parent=18 level=3 reason=opposite tape inside local parent
+[APVA] bar=787 join eligibility: newest=19 parent=18 level=3 candidates=19:Up:L3:Active@786-787:p18
+[APVA] bar=788 VE created: up container id=17 high pierced LTL/VE
+[APVA] bar=788 container frozen: id=18 level=2 Down bar fully outside RTL break side
 [APVA] bar=788 VE created: up container id=19 high pierced LTL/VE
-[APVA] bar=788 container frozen: id=20 level=2 Down bar fully outside RTL break side
-[APVA] bar=788 VE created: up container id=21 high pierced LTL/VE
-[APVA] bar=788 join eligibility: newest=21 parent=19 level=2 candidates=21:Up:L2:Active@786-788:p19
-[APVA] bar=786 demotion/style recalculation: id=18 level=3
-[APVA] bar=788 demotion/style recalculation: id=20 level=3
-[APVA] bar=788 demotion/style recalculation: id=21 level=3
-[APVA] bar=788 join accepted: parent=22 children=18,20,21
-[APVA] bar=788 join eligibility: newest=22 parent=19 level=2 candidates=22:Up:L2:Active@781-788:p19
-[APVA] bar=788 child promoted after parent break: child=21 inheritedParent=22 level=3 brokenParent=20
-[APVA] bar=789 terminal joined child extended with parent: child=21 parent=22
-[APVA] bar=789 V2 shadow decision: CreateChild id=23 parent=22 dir=Down level=3 start=788 end=789 reason=opposite tape inside local parent
-[APVA] bar=789 container created: id=23 Down L3 start=788 end=789 reason=V2 local child inside active container 22 from LowReversal
-[APVA] bar=789 V2 child container created: id=23 parent=22 level=3 reason=opposite tape inside local parent
-[APVA] bar=789 join eligibility: newest=23 parent=22 level=3 candidates=23:Down:L3:Active@788-789:p22
-[APVA] bar=790 VE created: up container id=19 high pierced LTL/VE
-[APVA] bar=790 RTL wick adjustment: id=22 close remained inside container
-[APVA] bar=790 terminal joined child extended with parent: child=21 parent=22
-[APVA] bar=790 V2 shadow decision: CreateChild id=24 parent=23 dir=Up level=4 start=789 end=790 reason=opposite tape inside local parent
-[APVA] bar=790 initial VE anchor: up container id=24 second bar high exceeded parallel LTL
-[APVA] bar=790 container created: id=24 Up L4 start=789 end=790 reason=V2 local child inside active container 23 from HHHL
-[APVA] bar=790 V2 child container created: id=24 parent=23 level=4 reason=opposite tape inside local parent
-[APVA] bar=790 join eligibility: newest=24 parent=23 level=4 candidates=24:Up:L4:Active@789-790:p23
-[APVA] bar=791 VE created: up container id=19 high pierced LTL/VE
-[APVA] bar=791 terminal joined child extended with parent: child=21 parent=22
-[APVA] bar=791 container frozen: id=23 level=3 Down bar fully outside RTL break side
-[APVA] bar=791 join eligibility: newest=24 parent=22 level=3 candidates=24:Up:L3:Active@789-791:p22
-[APVA] bar=791 child promoted after parent break: child=24 inheritedParent=22 level=3 brokenParent=23
-[APVA] bar=792 VE created: up container id=19 high pierced LTL/VE
+[APVA] bar=788 join eligibility: newest=19 parent=17 level=2 candidates=19:Up:L2:Active@786-788:p17
+[APVA] bar=786 demotion/style recalculation: id=16 level=3
+[APVA] bar=788 demotion/style recalculation: id=18 level=3
+[APVA] bar=788 demotion/style recalculation: id=19 level=3
+[APVA] bar=788 join accepted: parent=20 children=16,18,19
+[APVA] bar=788 join eligibility: newest=20 parent=17 level=2 candidates=20:Up:L2:Active@781-788:p17
+[APVA] bar=788 child promoted after parent break: child=19 inheritedParent=20 level=3 brokenParent=18
+[APVA] bar=789 terminal joined child extended with parent: child=19 parent=20
+[APVA] bar=789 V2 shadow decision: CreateChild id=21 parent=20 dir=Down level=3 start=788 end=789 reason=opposite tape inside local parent
+[APVA] bar=789 container created: id=21 Down L3 start=788 end=789 reason=V2 local child inside active container 20 from LowReversal
+[APVA] bar=789 V2 child container created: id=21 parent=20 level=3 reason=opposite tape inside local parent
+[APVA] bar=789 join eligibility: newest=21 parent=20 level=3 candidates=21:Down:L3:Active@788-789:p20
+[APVA] bar=790 VE created: up container id=17 high pierced LTL/VE
+[APVA] bar=790 RTL wick adjustment: id=20 close remained inside container
+[APVA] bar=790 terminal joined child extended with parent: child=19 parent=20
+[APVA] bar=790 V2 shadow decision: CreateChild id=22 parent=21 dir=Up level=4 start=789 end=790 reason=opposite tape inside local parent
+[APVA] bar=790 initial VE anchor: up container id=22 second bar high exceeded parallel LTL
+[APVA] bar=790 container created: id=22 Up L4 start=789 end=790 reason=V2 local child inside active container 21 from HHHL
+[APVA] bar=790 V2 child container created: id=22 parent=21 level=4 reason=opposite tape inside local parent
+[APVA] bar=790 join eligibility: newest=22 parent=21 level=4 candidates=22:Up:L4:Active@789-790:p21
+[APVA] bar=791 VE created: up container id=17 high pierced LTL/VE
+[APVA] bar=791 terminal joined child extended with parent: child=19 parent=20
+[APVA] bar=791 container frozen: id=21 level=3 Down bar fully outside RTL break side
+[APVA] bar=791 join eligibility: newest=22 parent=20 level=3 candidates=22:Up:L3:Active@789-791:p20
+[APVA] bar=791 child promoted after parent break: child=22 inheritedParent=20 level=3 brokenParent=21
+[APVA] bar=792 VE created: up container id=17 high pierced LTL/VE
+[APVA] bar=792 RTL wick adjustment: id=20 close remained inside container
 [APVA] bar=792 RTL wick adjustment: id=22 close remained inside container
-[APVA] bar=792 RTL wick adjustment: id=24 close remained inside container
-[APVA] bar=792 same-direction suppression diagnostic: active id=24 dir=Up level=3 status=Adjusted start=789 end=792 reason=V2 local child inside active container 23 from HHHL pendingStart=791 brokenIfReached=none
-[APVA] bar=792 same-direction OutsideBullish extended active Up container id=24; nested container suppressed
-[APVA] bar=792 join eligibility: newest=24 parent=22 level=3 candidates=24:Up:L3:Adjusted@789-792:p22
-[APVA] bar=793 VE created: up container id=19 high pierced LTL/VE
-[APVA] bar=793 same-direction suppression diagnostic: active id=24 dir=Up level=3 status=Adjusted start=789 end=793 reason=V2 local child inside active container 23 from HHHL pendingStart=792 brokenIfReached=none
-[APVA] bar=793 same-direction HighReversal extended active Up container id=24; nested container suppressed
-[APVA] bar=793 join eligibility: newest=24 parent=22 level=3 candidates=24:Up:L3:Adjusted@789-793:p22
-[APVA] bar=794 container frozen: id=22 level=2 Up bar fully outside RTL break side
-[APVA] bar=794 V2 shadow decision: PromoteChild id=20 parent=19 dir=Down level=2 start=784 end=794 reason=promoted active opposite child after parent break
-[APVA] bar=794 container created: id=25 Down L2 start=793 end=794 reason=opposite child inside active container 19 from LLLH
-[APVA] bar=794 opposite child container created: id=25 parent=19 level=2
-[APVA] bar=794 join eligibility: newest=25 parent=19 level=2 candidates=25:Down:L2:Active@793-794:p19
-[APVA] bar=795 RTL wick adjustment: id=25 close remained inside container
-[APVA] bar=795 same-direction suppression diagnostic: active id=25 dir=Down level=2 status=Adjusted start=793 end=795 reason=opposite child inside active container 19 from LLLH pendingStart=794 brokenIfReached=none
-[APVA] bar=795 same-direction LLLH extended active Down container id=25; nested container suppressed
-[APVA] bar=795 join eligibility: newest=25 parent=19 level=2 candidates=25:Down:L2:Adjusted@793-795:p19
-[APVA] bar=796 V2 shadow decision: CreateChild id=26 parent=25 dir=Up level=3 start=795 end=796 reason=opposite tape inside local parent
-[APVA] bar=796 container created: id=26 Up L3 start=795 end=796 reason=V2 local child inside active container 25 from HHHL
-[APVA] bar=796 V2 child container created: id=26 parent=25 level=3 reason=opposite tape inside local parent
-[APVA] bar=796 join eligibility: newest=26 parent=25 level=3 candidates=26:Up:L3:Active@795-796:p25
-[APVA] bar=797 RTL wick adjustment: id=25 close remained inside container
-[APVA] bar=797 V2 shadow decision: CreateChild id=27 parent=26 dir=Down level=4 start=796 end=797 reason=opposite tape inside local parent
-[APVA] bar=797 initial VE anchor: down container id=27 second bar low exceeded parallel LTL
-[APVA] bar=797 container created: id=27 Down L4 start=796 end=797 reason=V2 local child inside active container 26 from LLLH
-[APVA] bar=797 V2 child container created: id=27 parent=26 level=4 reason=opposite tape inside local parent
-[APVA] bar=797 join eligibility: newest=27 parent=26 level=4 candidates=27:Down:L4:Active@796-797:p26
+[APVA] bar=792 same-direction suppression diagnostic: active id=22 dir=Up level=3 status=Adjusted start=789 end=792 reason=V2 local child inside active container 21 from HHHL pendingStart=791 brokenIfReached=none
+[APVA] bar=792 same-direction OutsideBullish extended active Up container id=22; nested container suppressed
+[APVA] bar=792 join eligibility: newest=22 parent=20 level=3 candidates=22:Up:L3:Adjusted@789-792:p20
+[APVA] bar=793 VE created: up container id=17 high pierced LTL/VE
+[APVA] bar=793 same-direction suppression diagnostic: active id=22 dir=Up level=3 status=Adjusted start=789 end=793 reason=V2 local child inside active container 21 from HHHL pendingStart=792 brokenIfReached=none
+[APVA] bar=793 same-direction HighReversal extended active Up container id=22; nested container suppressed
+[APVA] bar=793 join eligibility: newest=22 parent=20 level=3 candidates=22:Up:L3:Adjusted@789-793:p20
+[APVA] bar=794 container frozen: id=20 level=2 Up bar fully outside RTL break side
+[APVA] bar=794 V2 shadow decision: PromoteChild id=18 parent=17 dir=Down level=2 start=784 end=794 reason=promoted active opposite child after parent break
+[APVA] bar=794 container created: id=23 Down L2 start=793 end=794 reason=opposite child inside active container 17 from LLLH
+[APVA] bar=794 opposite child container created: id=23 parent=17 level=2
+[APVA] bar=794 join eligibility: newest=23 parent=17 level=2 candidates=23:Down:L2:Active@793-794:p17
+[APVA] bar=795 RTL wick adjustment: id=23 close remained inside container
+[APVA] bar=795 same-direction suppression diagnostic: active id=23 dir=Down level=2 status=Adjusted start=793 end=795 reason=opposite child inside active container 17 from LLLH pendingStart=794 brokenIfReached=none
+[APVA] bar=795 same-direction LLLH extended active Down container id=23; nested container suppressed
+[APVA] bar=795 join eligibility: newest=23 parent=17 level=2 candidates=23:Down:L2:Adjusted@793-795:p17
+[APVA] bar=796 V2 shadow decision: CreateChild id=24 parent=23 dir=Up level=3 start=795 end=796 reason=opposite tape inside local parent
+[APVA] bar=796 container created: id=24 Up L3 start=795 end=796 reason=V2 local child inside active container 23 from HHHL
+[APVA] bar=796 V2 child container created: id=24 parent=23 level=3 reason=opposite tape inside local parent
+[APVA] bar=796 join eligibility: newest=24 parent=23 level=3 candidates=24:Up:L3:Active@795-796:p23
+[APVA] bar=797 RTL wick adjustment: id=23 close remained inside container
+[APVA] bar=797 V2 shadow decision: CreateChild id=25 parent=24 dir=Down level=4 start=796 end=797 reason=opposite tape inside local parent
+[APVA] bar=797 initial VE anchor: down container id=25 second bar low exceeded parallel LTL
+[APVA] bar=797 container created: id=25 Down L4 start=796 end=797 reason=V2 local child inside active container 24 from LLLH
+[APVA] bar=797 V2 child container created: id=25 parent=24 level=4 reason=opposite tape inside local parent
+[APVA] bar=797 join eligibility: newest=25 parent=24 level=4 candidates=25:Down:L4:Active@796-797:p24
 [APVA] bar=798 lateral building: bar remains inside origin boundary 797
-[APVA] bar=798 container frozen: id=26 level=3 Up bar fully outside RTL break side
-[APVA] bar=798 join eligibility: newest=27 parent=25 level=3 candidates=27:Down:L3:Active@796-798:p25
-[APVA] bar=798 child promoted after parent break: child=27 inheritedParent=25 level=3 brokenParent=26
-[APVA] bar=799 same-direction suppression diagnostic: active id=27 dir=Down level=3 status=Active start=796 end=799 reason=V2 local child inside active container 26 from LLLH pendingStart=798 brokenIfReached=none
-[APVA] bar=799 same-direction LLLH extended active Down container id=27; nested container suppressed
-[APVA] bar=799 join eligibility: newest=27 parent=25 level=3 candidates=27:Down:L3:Active@796-799:p25
-[APVA] bar=800 same-direction suppression diagnostic: active id=27 dir=Down level=3 status=Active start=796 end=800 reason=V2 local child inside active container 26 from LLLH pendingStart=799 brokenIfReached=none
-[APVA] bar=800 same-direction LLLH extended active Down container id=27; nested container suppressed
-[APVA] bar=800 join eligibility: newest=27 parent=25 level=3 candidates=27:Down:L3:Active@796-800:p25
-[APVA] bar=801 VE created: down container id=25 low pierced LTL/VE
-[APVA] bar=801 same-direction suppression diagnostic: active id=27 dir=Down level=3 status=Active start=796 end=801 reason=V2 local child inside active container 26 from LLLH pendingStart=800 brokenIfReached=none
-[APVA] bar=801 same-direction LLLH extended active Down container id=27; nested container suppressed
-[APVA] bar=801 join eligibility: newest=27 parent=25 level=3 candidates=27:Down:L3:Active@796-801:p25
-[APVA] bar=802 RTL wick adjustment: id=27 close remained inside container
-[APVA] bar=802 V2 shadow decision: CreateChild id=28 parent=27 dir=Up level=4 start=801 end=802 reason=opposite tape inside local parent
-[APVA] bar=802 container created: id=28 Up L4 start=801 end=802 reason=V2 local child inside active container 27 from HHHL
-[APVA] bar=802 V2 child container created: id=28 parent=27 level=4 reason=opposite tape inside local parent
-[APVA] bar=802 join eligibility: newest=28 parent=27 level=4 candidates=28:Up:L4:Active@801-802:p27
+[APVA] bar=798 container frozen: id=24 level=3 Up bar fully outside RTL break side
+[APVA] bar=798 join eligibility: newest=25 parent=23 level=3 candidates=25:Down:L3:Active@796-798:p23
+[APVA] bar=798 child promoted after parent break: child=25 inheritedParent=23 level=3 brokenParent=24
+[APVA] bar=799 same-direction suppression diagnostic: active id=25 dir=Down level=3 status=Active start=796 end=799 reason=V2 local child inside active container 24 from LLLH pendingStart=798 brokenIfReached=none
+[APVA] bar=799 same-direction LLLH extended active Down container id=25; nested container suppressed
+[APVA] bar=799 join eligibility: newest=25 parent=23 level=3 candidates=25:Down:L3:Active@796-799:p23
+[APVA] bar=800 same-direction suppression diagnostic: active id=25 dir=Down level=3 status=Active start=796 end=800 reason=V2 local child inside active container 24 from LLLH pendingStart=799 brokenIfReached=none
+[APVA] bar=800 same-direction LLLH extended active Down container id=25; nested container suppressed
+[APVA] bar=800 join eligibility: newest=25 parent=23 level=3 candidates=25:Down:L3:Active@796-800:p23
+[APVA] bar=801 VE created: down container id=23 low pierced LTL/VE
+[APVA] bar=801 same-direction suppression diagnostic: active id=25 dir=Down level=3 status=Active start=796 end=801 reason=V2 local child inside active container 24 from LLLH pendingStart=800 brokenIfReached=none
+[APVA] bar=801 same-direction LLLH extended active Down container id=25; nested container suppressed
+[APVA] bar=801 join eligibility: newest=25 parent=23 level=3 candidates=25:Down:L3:Active@796-801:p23
+[APVA] bar=802 RTL wick adjustment: id=25 close remained inside container
+[APVA] bar=802 V2 shadow decision: CreateChild id=26 parent=25 dir=Up level=4 start=801 end=802 reason=opposite tape inside local parent
+[APVA] bar=802 container created: id=26 Up L4 start=801 end=802 reason=V2 local child inside active container 25 from HHHL
+[APVA] bar=802 V2 child container created: id=26 parent=25 level=4 reason=opposite tape inside local parent
+[APVA] bar=802 join eligibility: newest=26 parent=25 level=4 candidates=26:Up:L4:Active@801-802:p25
+[APVA] bar=803 RTL wick adjustment: id=23 close remained inside container
 [APVA] bar=803 RTL wick adjustment: id=25 close remained inside container
-[APVA] bar=803 RTL wick adjustment: id=27 close remained inside container
-[APVA] bar=803 V2 shadow decision: CreateChild id=29 parent=28 dir=Down level=5 start=802 end=803 reason=opposite tape inside local parent
+[APVA] bar=803 V2 shadow decision: CreateChild id=27 parent=26 dir=Down level=5 start=802 end=803 reason=opposite tape inside local parent
 [APVA] bar=803 container construction suppressed: second bar is outside relation OutsideBearish start=802 end=803
-[APVA] bar=803 same-direction suppression diagnostic: active id=27 dir=Down level=3 status=Adjusted start=796 end=803 reason=V2 local child inside active container 26 from LLLH pendingStart=802 brokenIfReached=id=28 dir=Up level=4 status=Active start=801 end=803 reason=V2 local child inside active container 27 from HHHL parent=27
-[APVA] bar=803 same-direction suppression child diagnostic: parent=27 child=28 dir=Up level=4 status=Active start=801 end=803 reason=V2 local child inside active container 27 from HHHL close=1666.67 rtl=1675.6 closeBreaks=True
-[APVA] bar=803 same-direction OutsideBearish extended active Down container id=27; nested container suppressed
-[APVA] bar=803 join eligibility: newest=27 parent=25 level=3 candidates=27:Down:L3:Adjusted@796-803:p25
-[APVA] bar=804 container frozen: id=28 level=4 Up bar fully outside RTL break side
-[APVA] bar=804 container created: id=29 Down L4 start=803 end=804 reason=same-direction response after child break 28 from LLLH
-[APVA] bar=804 same-direction child response created: id=29 parent=27 level=4 after broken child=28
-[APVA] bar=804 join eligibility: newest=29 parent=27 level=4 candidates=29:Down:L4:Active@803-804:p27
-[APVA] bar=805 RTL wick adjustment: id=29 close remained inside container
-[APVA] bar=805 same-direction suppression diagnostic: active id=29 dir=Down level=4 status=Adjusted start=803 end=805 reason=same-direction response after child break 28 from LLLH pendingStart=804 brokenIfReached=none
-[APVA] bar=805 same-direction LLLH extended active Down container id=29; nested container suppressed
-[APVA] bar=805 join eligibility: newest=29 parent=27 level=4 candidates=29:Down:L4:Adjusted@803-805:p27
-[APVA] bar=806 container frozen: id=29 level=4 Down bar fully outside RTL break side
-[APVA] bar=806 V2 shadow decision: CreateChild id=30 parent=27 dir=Up level=4 start=805 end=806 reason=opposite tape inside local parent
-[APVA] bar=806 initial VE anchor: up container id=30 second bar high exceeded parallel LTL
-[APVA] bar=806 container created: id=30 Up L4 start=805 end=806 reason=V2 local child inside active container 27 from HHHL
-[APVA] bar=806 V2 child container created: id=30 parent=27 level=4 reason=opposite tape inside local parent
-[APVA] bar=806 join eligibility: newest=30 parent=27 level=4 candidates=30:Up:L4:Active@805-806:p27
-[APVA] bar=806 recent join rejected: 28,29,30 reason=right up container has not exceeded left up P2
+[APVA] bar=803 same-direction suppression diagnostic: active id=25 dir=Down level=3 status=Adjusted start=796 end=803 reason=V2 local child inside active container 24 from LLLH pendingStart=802 brokenIfReached=id=26 dir=Up level=4 status=Active start=801 end=803 reason=V2 local child inside active container 25 from HHHL parent=25
+[APVA] bar=803 same-direction suppression child diagnostic: parent=25 child=26 dir=Up level=4 status=Active start=801 end=803 reason=V2 local child inside active container 25 from HHHL close=1666.67 rtl=1675.6 closeBreaks=True
+[APVA] bar=803 same-direction OutsideBearish extended active Down container id=25; nested container suppressed
+[APVA] bar=803 join eligibility: newest=25 parent=23 level=3 candidates=25:Down:L3:Adjusted@796-803:p23
+[APVA] bar=804 container frozen: id=26 level=4 Up bar fully outside RTL break side
+[APVA] bar=804 container created: id=27 Down L4 start=803 end=804 reason=same-direction response after child break 26 from LLLH
+[APVA] bar=804 same-direction child response created: id=27 parent=25 level=4 after broken child=26
+[APVA] bar=804 join eligibility: newest=27 parent=25 level=4 candidates=27:Down:L4:Active@803-804:p25
+[APVA] bar=805 RTL wick adjustment: id=27 close remained inside container
+[APVA] bar=805 same-direction suppression diagnostic: active id=27 dir=Down level=4 status=Adjusted start=803 end=805 reason=same-direction response after child break 26 from LLLH pendingStart=804 brokenIfReached=none
+[APVA] bar=805 same-direction LLLH extended active Down container id=27; nested container suppressed
+[APVA] bar=805 join eligibility: newest=27 parent=25 level=4 candidates=27:Down:L4:Adjusted@803-805:p25
+[APVA] bar=806 container frozen: id=27 level=4 Down bar fully outside RTL break side
+[APVA] bar=806 V2 shadow decision: CreateChild id=28 parent=25 dir=Up level=4 start=805 end=806 reason=opposite tape inside local parent
+[APVA] bar=806 V2 child creation suppressed: response child just broke id=27 parent=25 dir=Up
+[APVA] bar=807 RTL wick adjustment: id=23 close remained inside container
 [APVA] bar=807 RTL wick adjustment: id=25 close remained inside container
-[APVA] bar=807 RTL wick adjustment: id=27 close remained inside container
-[APVA] bar=807 V2 shadow decision: CreateChild id=31 parent=30 dir=Down level=5 start=806 end=807 reason=opposite tape inside local parent
-[APVA] bar=807 initial VE anchor: down container id=31 second bar low exceeded parallel LTL
-[APVA] bar=807 container created: id=31 Down L5 start=806 end=807 reason=V2 local child inside active container 30 from LLLH
-[APVA] bar=807 V2 child container created: id=31 parent=30 level=5 reason=opposite tape inside local parent
-[APVA] bar=807 join eligibility: newest=31 parent=30 level=5 candidates=31:Down:L5:Active@806-807:p30
-[APVA] bar=808 RTL wick adjustment: id=30 close remained inside container
-[APVA] bar=808 RTL wick adjustment: id=31 close remained inside container
-[APVA] bar=808 V2 shadow decision: CreateChild id=32 parent=31 dir=Up level=6 start=807 end=808 reason=opposite tape inside local parent
+[APVA] bar=807 same-direction suppression diagnostic: active id=25 dir=Down level=3 status=Adjusted start=796 end=807 reason=V2 local child inside active container 24 from LLLH pendingStart=806 brokenIfReached=none
+[APVA] bar=807 same-direction suppression child diagnostic: parent=25 child=26 dir=Up level=4 status=Broken start=801 end=804 reason=V2 local child inside active container 25 from HHHL close=1647.34 rtl=1715.16 closeBreaks=False
+[APVA] bar=807 same-direction LLLH extended active Down container id=25; nested container suppressed
+[APVA] bar=807 join eligibility: newest=25 parent=23 level=3 candidates=25:Down:L3:Adjusted@796-807:p23
+[APVA] bar=808 V2 shadow decision: CreateChild id=28 parent=25 dir=Up level=4 start=807 end=808 reason=opposite tape inside local parent
 [APVA] bar=808 container construction suppressed: second bar is outside relation OutsideBullish start=807 end=808
-[APVA] bar=808 same-direction suppression diagnostic: active id=30 dir=Up level=4 status=Adjusted start=805 end=808 reason=V2 local child inside active container 27 from HHHL pendingStart=807 brokenIfReached=id=27 dir=Down level=3 status=Adjusted start=796 end=808 reason=V2 local child inside active container 26 from LLLH parent=25
-[APVA] bar=808 same-direction suppression child diagnostic: parent=30 child=31 dir=Down level=5 status=Adjusted start=806 end=808 reason=V2 local child inside active container 30 from LLLH close=1665.33 rtl=1670.8 closeBreaks=False
-[APVA] bar=808 demotion/style recalculation: id=31 level=4
-[APVA] bar=808 join eligibility: newest=30 parent=25 level=3 candidates=30:Up:L3:Adjusted@805-808:p25
-[APVA] bar=808 recent join rejected: 26,27,30 reason=right up container has not exceeded left up P2
-[APVA] bar=808 same-direction breakout promoted active child: child=30 inheritedParent=25 level=3 brokenParent=27
-[APVA] bar=809 container frozen: id=25 level=2 Down bar fully outside RTL break side
-[APVA] bar=808 demotion/style recalculation: id=31 level=3
-[APVA] bar=809 VE created: up container id=30 high pierced LTL/VE
-[APVA] bar=809 join eligibility: newest=30 parent=19 level=2 candidates=30:Up:L2:Adjusted@805-809:p19
-[APVA] bar=809 recent join rejected: 22,25,30 reason=right up container has not exceeded left up P2
-[APVA] bar=809 child promoted after parent break: child=30 inheritedParent=19 level=2 brokenParent=25
+[APVA] bar=808 same-direction suppression diagnostic: active id=17 dir=Up level=1 status=Active start=740 end=808 reason=joined triad 1,15,16 pendingStart=807 brokenIfReached=id=25 dir=Down level=3 status=Adjusted start=796 end=808 reason=V2 local child inside active container 24 from LLLH parent=23
+[APVA] bar=808 same-direction suppression child diagnostic: parent=17 child=15 dir=Down level=2 status=Joined start=769 end=783 reason=joined triad 10,13,14 close=1665.33 rtl=1553.328 closeBreaks=False
+[APVA] bar=808 same-direction suppression child diagnostic: parent=17 child=23 dir=Down level=2 status=Adjusted start=793 end=808 reason=opposite child inside active container 17 from LLLH close=1665.33 rtl=1662.08214286 closeBreaks=True
+[APVA] bar=808 same-direction OutsideBullish extended active Up container id=17; nested container suppressed
+[APVA] bar=809 container frozen: id=23 level=2 Down bar fully outside RTL break side
+[APVA] bar=809 container created: id=28 Up L2 start=808 end=809 reason=same-direction response after child break 23 from HHHL
+[APVA] bar=809 same-direction child response created: id=28 parent=17 level=2 after broken child=23
+[APVA] bar=809 join eligibility: newest=28 parent=17 level=2 candidates=28:Up:L2:Active@808-809:p17
+[APVA] bar=809 recent join rejected: 20,23,28 reason=right up container has not exceeded left up P2
+[APVA] bar=810 same-direction suppression diagnostic: active id=28 dir=Up level=2 status=Active start=808 end=810 reason=same-direction response after child break 23 from HHHL pendingStart=809 brokenIfReached=none
+[APVA] bar=810 same-direction HighReversal extended active Up container id=28; nested container suppressed
+[APVA] bar=810 join eligibility: newest=28 parent=17 level=2 candidates=28:Up:L2:Active@808-810:p17
+[APVA] bar=810 recent join rejected: 20,23,28 reason=right up container has not exceeded left up P2
+[APVA] bar=811 container frozen: id=28 level=2 Up bar fully outside RTL break side
+[APVA] bar=811 V2 shadow decision: CreateChild id=29 parent=17 dir=Down level=2 start=810 end=811 reason=opposite tape inside local parent
+[APVA] bar=811 V2 child creation suppressed: response child just broke id=28 parent=17 dir=Down
