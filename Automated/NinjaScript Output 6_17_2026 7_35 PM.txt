@@ -650,7 +650,7 @@
 [APVA] bar=819 lineage triad geometry: triad=30,34,38 pattern=Down-Up-Down originFtt=20@793 leftP2=1631 middleP2=1686.7 rightP2=1642.64 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=818@1673.45 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
 [APVA] bar=819 recent join rejected: 26,34,38 reason=not an alternating triad
 [APVA] bar=819 recent join rejected: 26,30,38 reason=not an alternating triad
-[APVA] bar=819 structural promotion context: promoted=37 role=descendant structuralJoin=4 lineage=25 triad=29,31,38 brokenParent=36 inheritedParent=38 level=3 originFtt=20@793 span=796-819 p1=796@1739.97 p2=804@1653.13 p3=818@1673.45 activeContext=False action=observed
+[APVA] bar=819 structural promotion context: promoted=37 brokenParent=36 structuralJoin=none action=observed
 [APVA] bar=819 child promoted after parent break: child=37 inheritedParent=38 level=3 brokenParent=36
 [APVA] bar=820 terminal joined child extended with parent: child=37 parent=38
 [APVA] bar=820 V2 shadow decision: CreateChild id=39 parent=38 dir=Up level=3 start=819 end=820 reason=opposite tape inside local parent
@@ -702,7 +702,7 @@
 [APVA] bar=824 lineage triad geometry: triad=30,34,41 pattern=Down-Up-Down originFtt=20@793 leftP2=1631 middleP2=1686.7 rightP2=1639.06 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=823@1657.99 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
 [APVA] bar=824 recent join rejected: 26,34,41 reason=not an alternating triad
 [APVA] bar=824 recent join rejected: 26,30,41 reason=not an alternating triad
-[APVA] bar=824 structural promotion context: promoted=40 role=structuralDescendant structuralJoin=4 lineage=25 triad=29,31,38 brokenParent=39 inheritedParent=41 level=3 originFtt=20@793 span=796-819 p1=796@1739.97 p2=804@1653.13 p3=818@1673.45 activeContext=False action=observed
+[APVA] bar=824 structural promotion context: promoted=40 brokenParent=39 structuralJoin=none action=observed
 [APVA] bar=824 same-direction breakout promoted active child: child=40 inheritedParent=41 level=3 brokenParent=39
 [APVA] bar=825 FTT confirmed: id=20 lineage=13 fttBar=793 price=1764.65 reason=RTL break side freeze
 [APVA] bar=825 container frozen: id=20 level=1 Up bar fully outside RTL break side
