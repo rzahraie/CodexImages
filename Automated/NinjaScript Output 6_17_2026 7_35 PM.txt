@@ -164,6 +164,7 @@
 [APVA] bar=767 lineage triad geometry: triad=5,7,12 pattern=Up-Down-Up originFtt=1@752 leftP2=1669.88 middleP2=1645.6 rightP2=1669.88 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=767@1658.34 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=fail activeReject=member not joinable id=5 status=Joined
 [APVA] bar=767 structural lineage join updated: id=1 lineage=3 previousRight=11 triad=5,7,12 statuses=Joined,Joined,Active p3=767@1658.34 visualMutation=False
 [APVA] bar=767 structural promotion context: promoted=11 role=supersededRight structuralJoin=1 lineage=3 triad=5,7,12 brokenParent=10 inheritedParent=12 level=4 originFtt=1@752 span=756-767 p1=756@1616.43 p2=762@1669.88 p3=767@1658.34 activeContext=True action=activated
+[APVA] bar=767 structural context inherited: container=11 structuralJoin=1 role=supersededRight source=11 lineage=3 triad=5,7,12 reason=child promoted after parent break action=assigned
 [APVA] bar=767 active structural context: action=promote child after parent break container=11 role=supersededRight structuralJoin=1 lineage=3 triad=5,7,12 contextContainer=11 activatedBar=767 span=756-767
 [APVA] bar=767 same-direction breakout promoted active child: child=11 inheritedParent=12 level=4 brokenParent=10
 [APVA] bar=768 FTT candidate updated: id=1 lineage=1 candidateBar=768 price=1684
@@ -196,6 +197,7 @@
 [APVA] bar=770 V2 shadow decision: CreateChild id=13 parent=12 dir=Down level=4 start=769 end=770 reason=opposite tape inside local parent
 [APVA] bar=770 container created: id=13 Down L4 start=769 end=770 lineage=11 reason=V2 local child inside active container 12 from LLLH
 [APVA] bar=770 lineage assigned: id=13 lineage=3 structuralParent=12 originFttContainer=1 originFttBar=752 role=Component reason=V2 local child
+[APVA] bar=770 structural context inherited: container=13 structuralJoin=1 role=descendant source=11 lineage=3 triad=5,7,12 reason=V2 local child action=assigned
 [APVA] bar=770 active structural context: action=create V2 child container=13 role=descendant structuralJoin=1 lineage=3 triad=5,7,12 contextContainer=11 activatedBar=767 span=756-767
 [APVA] bar=770 V2 child container created: id=13 parent=12 level=4 reason=opposite tape inside local parent
 [APVA] bar=770 join eligibility: newest=13 parent=12 level=4 candidates=13:Down:L4:Active@769-770:p12
@@ -208,6 +210,7 @@
 [APVA] bar=771 RTL wick adjustment: id=13 close remained inside container
 [APVA] bar=771 active structural context: action=join scan container=13 role=structuralDescendant structuralJoin=1 lineage=3 triad=5,7,12 contextContainer=11 activatedBar=767 span=756-767
 [APVA] bar=771 structural promotion context: promoted=13 role=structuralDescendant structuralJoin=1 lineage=3 triad=5,7,12 brokenParent=1 inheritedParent=0 level=1 originFtt=1@752 span=756-767 p1=756@1616.43 p2=762@1669.88 p3=767@1658.34 activeContext=True action=activated
+[APVA] bar=771 structural context inherited: container=13 structuralJoin=1 role=structuralDescendant source=13 lineage=3 triad=5,7,12 reason=child promoted after parent break action=assigned
 [APVA] bar=771 active structural context: action=promote child after parent break container=13 role=structuralDescendant structuralJoin=1 lineage=3 triad=5,7,12 contextContainer=13 activatedBar=771 span=756-767
 [APVA] bar=771 child promoted after parent break: child=13 inheritedParent=0 level=1 brokenParent=1
 [APVA] bar=772 FTT candidate updated: id=13 lineage=3 candidateBar=772 price=1627
@@ -350,6 +353,7 @@
 [APVA] bar=788 lineage triad geometry: triad=23,21,22 pattern=Up-Down-Up originFtt=20@784 leftP2=1721.23 middleP2=1661.34 rightP2=1729 currentResume=pass currentReject=none p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=787@1672.2 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=fail activeReject=member not joinable id=21 status=Joined
 [APVA] bar=788 structural lineage join recorded: id=2 lineage=20 triad=23,21,22 statuses=Active,Joined,Joined levels=2,3,3 parents=20,23,23 originFtt=20@784 p1=781@1590.01 p2=784@1721.23 p3=787@1672.2 visualMutation=False
 [APVA] bar=788 structural promotion context: promoted=22 role=right structuralJoin=2 lineage=20 triad=23,21,22 brokenParent=21 inheritedParent=23 level=3 originFtt=20@784 span=781-788 p1=781@1590.01 p2=784@1721.23 p3=787@1672.2 activeContext=True action=activated
+[APVA] bar=788 structural context inherited: container=22 structuralJoin=2 role=right source=22 lineage=20 triad=23,21,22 reason=child promoted after parent break action=assigned
 [APVA] bar=788 active structural context: action=promote child after parent break container=22 role=right structuralJoin=2 lineage=20 triad=23,21,22 contextContainer=22 activatedBar=788 span=781-788
 [APVA] bar=788 child promoted after parent break: child=22 inheritedParent=23 level=3 brokenParent=21
 [APVA] bar=789 FTT candidate updated: id=23 lineage=20 candidateBar=789 price=1723.04
