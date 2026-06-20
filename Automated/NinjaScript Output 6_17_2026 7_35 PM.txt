@@ -196,19 +196,24 @@
 [APVA] bar=770 V2 shadow decision: CreateChild id=13 parent=12 dir=Down level=4 start=769 end=770 reason=opposite tape inside local parent
 [APVA] bar=770 container created: id=13 Down L4 start=769 end=770 lineage=11 reason=V2 local child inside active container 12 from LLLH
 [APVA] bar=770 lineage assigned: id=13 lineage=3 structuralParent=12 originFttContainer=1 originFttBar=752 role=Component reason=V2 local child
+[APVA] bar=770 active structural context: action=create V2 child container=13 role=descendant structuralJoin=1 lineage=3 triad=5,7,12 contextContainer=11 activatedBar=767 span=756-767
 [APVA] bar=770 V2 child container created: id=13 parent=12 level=4 reason=opposite tape inside local parent
 [APVA] bar=770 join eligibility: newest=13 parent=12 level=4 candidates=13:Down:L4:Active@769-770:p12
+[APVA] bar=770 active structural context: action=join scan container=13 role=descendant structuralJoin=1 lineage=3 triad=5,7,12 contextContainer=11 activatedBar=767 span=756-767
 [APVA] bar=771 FTT confirmed: id=1 lineage=1 fttBar=769 price=1684.68 reason=RTL break side freeze
 [APVA] bar=771 container frozen: id=1 level=1 Up bar fully outside RTL break side
 [APVA] bar=771 broken parent descendants deactivated: parent=1 count=10
 [APVA] bar=771 FTT candidate updated: id=13 lineage=3 candidateBar=771 price=1630
 [APVA] bar=771 lineage assigned: id=13 lineage=3 structuralParent=12 originFttContainer=1 originFttBar=752 role=Component reason=child promoted after parent break
 [APVA] bar=771 RTL wick adjustment: id=13 close remained inside container
+[APVA] bar=771 active structural context: action=join scan container=13 role=structuralDescendant structuralJoin=1 lineage=3 triad=5,7,12 contextContainer=11 activatedBar=767 span=756-767
 [APVA] bar=771 structural promotion context: promoted=13 brokenParent=1 structuralJoin=none action=observed
+[APVA] bar=771 active structural context: action=promote child after parent break container=13 role=structuralDescendant structuralJoin=1 lineage=3 triad=5,7,12 contextContainer=11 activatedBar=767 span=756-767
 [APVA] bar=771 child promoted after parent break: child=13 inheritedParent=0 level=1 brokenParent=1
 [APVA] bar=772 FTT candidate updated: id=13 lineage=3 candidateBar=772 price=1627
 [APVA] bar=772 same-direction suppression diagnostic: active id=13 dir=Down level=1 status=Adjusted start=769 end=772 reason=V2 local child inside active container 12 from LLLH pendingStart=771 brokenIfReached=none
 [APVA] bar=772 same-direction LowReversal extended active Down container id=13; nested container suppressed
+[APVA] bar=772 active structural context: action=join scan container=13 role=structuralDescendant structuralJoin=1 lineage=3 triad=5,7,12 contextContainer=11 activatedBar=767 span=756-767
 [APVA] bar=773 lateral building: bar remains inside origin boundary 772
 [APVA] bar=773 RTL wick adjustment: id=13 close remained inside container
 [APVA] bar=773 skipped translational bar InsideBar; pending start remains 772
