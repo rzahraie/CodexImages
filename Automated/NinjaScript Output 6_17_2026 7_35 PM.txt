@@ -245,6 +245,7 @@
 [APVA] bar=777 V2 child container created: id=16 parent=15 level=3 reason=opposite tape inside local parent
 [APVA] bar=777 join eligibility: newest=16 parent=15 level=3 candidates=16:Up:L3:Active@776-777:p15
 [APVA] bar=778 FTT confirmed: id=13 lineage=3 fttBar=776 price=1610.78 reason=RTL break side freeze
+[APVA] bar=778 structural context closed: structuralJoin=1 lineage=3 contextContainer=13 reason=RTL break side freeze
 [APVA] bar=778 container frozen: id=13 level=1 Down bar fully outside RTL break side
 [APVA] bar=778 broken parent descendants deactivated: parent=13 count=1
 [APVA] bar=778 FTT candidate updated: id=16 lineage=13 candidateBar=778 price=1644.94
