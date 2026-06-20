@@ -362,9 +362,9 @@
 [APVA] bar=786 demotion/style recalculation: id=19 level=3
 [APVA] bar=788 demotion/style recalculation: id=21 level=3
 [APVA] bar=788 demotion/style recalculation: id=22 level=3
-[APVA] bar=788 inherited parent context propagated to joined parent: parent=23 parentStructuralJoin=1 sourceChild=19 sourceParent=18 sourceRole=joinedParent lineage=20
+[APVA] bar=788 inherited parent context propagated to joined parent: parent=23 parentStructuralJoin=1 sourceChild=21 sourceParent=20 sourceRole=joinedParent lineage=20
 [APVA] bar=788 join accepted: parent=23 children=19,21,22 lineage=20
-[APVA] bar=788 join eligibility: newest=23:psj1:joinedParent:psrc18 parent=20 level=2 candidates=23:Up:L2:Active@781-788:p20:psj1:joinedParent:psrc18
+[APVA] bar=788 join eligibility: newest=23:psj1:joinedParent:psrc20 parent=20 level=2 candidates=23:Up:L2:Active@781-788:p20:psj1:joinedParent:psrc20
 [APVA] bar=788 lineage join candidate: lineage=20 triad=23,21,22 levels=2,3,3 parents=20,23,23 originFtt=18@781
 [APVA] bar=788 lineage triad geometry: triad=23,21,22 pattern=Up-Down-Up originFtt=20@784 leftP2=1721.23 middleP2=1661.34 rightP2=1729 currentResume=pass currentReject=none p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=787@1672.2 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=fail activeReject=member not joinable id=21 status=Joined
 [APVA] bar=788 structural lineage join recorded: id=2 lineage=20 triad=23,21,22 statuses=Active,Joined,Joined levels=2,3,3 parents=20,23,23 originFtt=20@784 p1=781@1590.01 p2=784@1721.23 p3=787@1672.2 visualMutation=False
@@ -404,10 +404,10 @@
 [APVA] bar=790 demotion/style recalculation: id=24 level=3
 [APVA] bar=790 demotion/style recalculation: id=25 level=4
 [APVA] bar=790 demotion/style recalculation: id=25 level=3
-[APVA] bar=790 inherited parent context propagated to joined parent: parent=26 parentStructuralJoin=1 sourceChild=23 sourceParent=18 sourceRole=joinedParent lineage=20
+[APVA] bar=790 inherited parent context propagated to joined parent: parent=26 parentStructuralJoin=1 sourceChild=23 sourceParent=20 sourceRole=joinedParent lineage=20
 [APVA] bar=790 join accepted: parent=26 children=23,24,25 lineage=20
 [APVA] bar=790 lineage join accepted: parent=26 children=23,24,25 lineage=20 originFtt=18@781
-[APVA] bar=790 join eligibility: newest=26:psj1:joinedParent:psrc18 parent=20 level=2 candidates=26:Up:L2:Active@781-790:p20:psj1:joinedParent:psrc18
+[APVA] bar=790 join eligibility: newest=26:psj1:joinedParent:psrc20 parent=20 level=2 candidates=26:Up:L2:Active@781-790:p20:psj1:joinedParent:psrc20
 [APVA] bar=791 FTT candidate updated: id=20 lineage=13 candidateBar=791 price=1753.53
 [APVA] bar=791 VE created: up container id=20 high pierced LTL/VE
 [APVA] bar=791 FTT candidate updated: id=26 lineage=20 candidateBar=791 price=1753.53
@@ -416,7 +416,7 @@
 [APVA] bar=791 same-direction suppression diagnostic: active id=26 dir=Up level=2 status=Active start=781 end=791 reason=joined triad 23,24,25 pendingStart=790 brokenIfReached=none
 [APVA] bar=791 same-direction suppression child diagnostic: parent=26 child=24 dir=Down level=3 status=Joined start=788 end=790 reason=V2 local child inside active container 23 from LowReversal close=1751.86 rtl=1711.12 closeBreaks=False
 [APVA] bar=791 same-direction HHHL extended active Up container id=26; nested container suppressed
-[APVA] bar=791 join eligibility: newest=26:psj1:joinedParent:psrc18 parent=20 level=2 candidates=26:Up:L2:Active@781-791:p20:psj1:joinedParent:psrc18
+[APVA] bar=791 join eligibility: newest=26:psj1:joinedParent:psrc20 parent=20 level=2 candidates=26:Up:L2:Active@781-791:p20:psj1:joinedParent:psrc20
 [APVA] bar=792 FTT candidate updated: id=20 lineage=13 candidateBar=792 price=1758.86
 [APVA] bar=792 VE created: up container id=20 high pierced LTL/VE
 [APVA] bar=792 FTT candidate updated: id=26 lineage=20 candidateBar=792 price=1758.86
