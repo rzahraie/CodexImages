@@ -270,6 +270,7 @@
 [APVA] bar=777 demotion/style recalculation: id=15 level=3
 [APVA] bar=780 demotion/style recalculation: id=16 level=2
 [APVA] bar=780 demotion/style recalculation: id=17 level=2
+[APVA] bar=780 structural context propagated to joined parent: parent=18 structuralJoin=1 sourceChild=13 sourceRole=structuralDescendant lineage=13
 [APVA] bar=780 join accepted: parent=18 children=13,16,17 lineage=13
 [APVA] bar=781 FTT candidate updated: id=18 lineage=13 candidateBar=781 price=1590.01
 [APVA] bar=781 FTT candidate updated: id=17 lineage=16 candidateBar=781 price=1590.01
@@ -309,6 +310,7 @@
 [APVA] bar=780 demotion/style recalculation: id=16 level=3
 [APVA] bar=782 demotion/style recalculation: id=17 level=3
 [APVA] bar=783 demotion/style recalculation: id=19 level=2
+[APVA] bar=783 structural context propagated to joined parent: parent=20 structuralJoin=1 sourceChild=18 sourceRole=joinedParent lineage=13
 [APVA] bar=783 join accepted: parent=20 children=1,18,19 lineage=13
 [APVA] bar=783 structural promotion context: promoted=19 brokenParent=18 structuralJoin=none action=observed
 [APVA] bar=783 child promoted after parent break: child=19 inheritedParent=20 level=2 brokenParent=18
