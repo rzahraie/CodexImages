@@ -62,7 +62,7 @@
 [APVA] bar=756 V2 child container created: id=4 parent=1 level=2 reason=opposite tape inside local parent
 [APVA] bar=756 join eligibility: newest=4 parent=1 level=2 candidates=4:Down:L2:Active@755-756:p1
 [APVA] bar=756 recent join rejected: 2,3,4 reason=right down container has not exceeded left down P2
-[APVA] bar=756 lineage triad geometry: triad=2,3,4 pattern=Down-Up-Down originFtt=1@752 leftP2=1613.61 middleP2=1656.97 rightP2=1616.43 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=756@1642 joinedP1P3=pass oldStyleWouldAccept=False
+[APVA] bar=756 lineage triad geometry: triad=2,3,4 pattern=Down-Up-Down originFtt=1@752 leftP2=1613.61 middleP2=1656.97 rightP2=1616.43 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=756@1642 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
 [APVA] bar=757 lateral compressed as synthetic one-bar context from 753
 [APVA] bar=757 skipped translational bar InsideBar; pending start remains 756
 [APVA] bar=758 lateral compressed as synthetic one-bar context from 753
@@ -80,7 +80,7 @@
 [APVA] bar=759 lineage assigned: id=5 lineage=3 structuralParent=4 originFttContainer=1 originFttBar=752 role=Component reason=child promoted after parent break
 [APVA] bar=759 join eligibility: newest=5 parent=1 level=2 candidates=5:Up:L2:Adjusted@756-759:p1
 [APVA] bar=759 recent join rejected: 3,4,5 reason=right up container has not exceeded left up P2
-[APVA] bar=759 lineage triad geometry: triad=3,4,5 pattern=Up-Down-Up originFtt=1@752 leftP2=1656.97 middleP2=1616.43 rightP2=1654.88 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=756@1616.43 joinedP1P3=pass oldStyleWouldAccept=False
+[APVA] bar=759 lineage triad geometry: triad=3,4,5 pattern=Up-Down-Up originFtt=1@752 leftP2=1656.97 middleP2=1616.43 rightP2=1654.88 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=756@1616.43 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
 [APVA] bar=759 recent join rejected: 2,4,5 reason=not an alternating triad
 [APVA] bar=759 recent join rejected: 2,3,5 reason=not an alternating triad
 [APVA] bar=759 same-direction breakout promoted active child: child=5 inheritedParent=1 level=2 brokenParent=4
@@ -153,14 +153,14 @@
 [APVA] bar=767 lineage assigned: id=11 lineage=3 structuralParent=10 originFttContainer=1 originFttBar=752 role=Component reason=child promoted after parent break
 [APVA] bar=767 join eligibility: newest=11 parent=9 level=3 candidates=11:Up:L3:Adjusted@764-767:p9
 [APVA] bar=767 lineage join candidate: lineage=3 triad=5,7,11 levels=4,3,3 parents=6,9,9 originFtt=1@752
-[APVA] bar=767 lineage triad geometry: triad=5,7,11 pattern=Up-Down-Up originFtt=1@752 leftP2=1669.88 middleP2=1645.6 rightP2=1677.64 currentResume=pass currentReject=none p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=767@1658.34 joinedP1P3=pass oldStyleWouldAccept=True
+[APVA] bar=767 lineage triad geometry: triad=5,7,11 pattern=Up-Down-Up originFtt=1@752 leftP2=1669.88 middleP2=1645.6 rightP2=1677.64 currentResume=pass currentReject=none p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=767@1658.34 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=fail activeReject=member not joinable id=5 status=Joined
 [APVA] bar=763 demotion/style recalculation: id=8 level=4
 [APVA] bar=767 demotion/style recalculation: id=10 level=4
 [APVA] bar=767 demotion/style recalculation: id=11 level=4
 [APVA] bar=767 join accepted: parent=12 children=8,10,11 lineage=3
 [APVA] bar=767 join eligibility: newest=12 parent=9 level=3 candidates=12:Up:L3:Active@761-767:p9
 [APVA] bar=767 lineage join candidate: lineage=3 triad=5,7,12 levels=4,3,3 parents=6,9,9 originFtt=1@752
-[APVA] bar=767 lineage triad geometry: triad=5,7,12 pattern=Up-Down-Up originFtt=1@752 leftP2=1669.88 middleP2=1645.6 rightP2=1669.88 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=767@1658.34 joinedP1P3=pass oldStyleWouldAccept=True
+[APVA] bar=767 lineage triad geometry: triad=5,7,12 pattern=Up-Down-Up originFtt=1@752 leftP2=1669.88 middleP2=1645.6 rightP2=1669.88 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=767@1658.34 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=fail activeReject=member not joinable id=5 status=Joined
 [APVA] bar=767 same-direction breakout promoted active child: child=11 inheritedParent=12 level=4 brokenParent=10
 [APVA] bar=768 FTT candidate updated: id=1 lineage=1 candidateBar=768 price=1684
 [APVA] bar=768 FTT candidate updated: id=9 lineage=3 candidateBar=768 price=1684
@@ -174,7 +174,7 @@
 [APVA] bar=768 same-direction HHHL extended active Up container id=12; nested container suppressed
 [APVA] bar=768 join eligibility: newest=12 parent=9 level=3 candidates=12:Up:L3:Active@761-768:p9
 [APVA] bar=768 lineage join candidate: lineage=3 triad=5,7,12 levels=4,3,3 parents=6,9,9 originFtt=1@752
-[APVA] bar=768 lineage triad geometry: triad=5,7,12 pattern=Up-Down-Up originFtt=1@752 leftP2=1669.88 middleP2=1645.6 rightP2=1684 currentResume=pass currentReject=none p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=767@1658.34 joinedP1P3=pass oldStyleWouldAccept=True
+[APVA] bar=768 lineage triad geometry: triad=5,7,12 pattern=Up-Down-Up originFtt=1@752 leftP2=1669.88 middleP2=1645.6 rightP2=1684 currentResume=pass currentReject=none p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=767@1658.34 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=fail activeReject=member not joinable id=5 status=Joined
 [APVA] bar=769 FTT candidate updated: id=1 lineage=1 candidateBar=769 price=1684.68
 [APVA] bar=769 FTT candidate updated: id=9 lineage=3 candidateBar=769 price=1684.68
 [APVA] bar=769 FTT candidate updated: id=12 lineage=3 candidateBar=769 price=1684.68
@@ -185,7 +185,7 @@
 [APVA] bar=769 same-direction HighReversal extended active Up container id=12; nested container suppressed
 [APVA] bar=769 join eligibility: newest=12 parent=9 level=3 candidates=12:Up:L3:Active@761-769:p9
 [APVA] bar=769 lineage join candidate: lineage=3 triad=5,7,12 levels=4,3,3 parents=6,9,9 originFtt=1@752
-[APVA] bar=769 lineage triad geometry: triad=5,7,12 pattern=Up-Down-Up originFtt=1@752 leftP2=1669.88 middleP2=1645.6 rightP2=1684.68 currentResume=pass currentReject=none p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=767@1658.34 joinedP1P3=pass oldStyleWouldAccept=True
+[APVA] bar=769 lineage triad geometry: triad=5,7,12 pattern=Up-Down-Up originFtt=1@752 leftP2=1669.88 middleP2=1645.6 rightP2=1684.68 currentResume=pass currentReject=none p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=767@1658.34 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=fail activeReject=member not joinable id=5 status=Joined
 [APVA] bar=770 terminal joined child extended with parent: child=11 parent=12
 [APVA] bar=770 V2 shadow decision: CreateChild id=13 parent=12 dir=Down level=4 start=769 end=770 reason=opposite tape inside local parent
 [APVA] bar=770 container created: id=13 Down L4 start=769 end=770 lineage=11 reason=V2 local child inside active container 12 from LLLH
@@ -331,7 +331,7 @@
 [APVA] bar=788 join accepted: parent=23 children=19,21,22 lineage=20
 [APVA] bar=788 join eligibility: newest=23 parent=20 level=2 candidates=23:Up:L2:Active@781-788:p20
 [APVA] bar=788 lineage join candidate: lineage=20 triad=23,21,22 levels=2,3,3 parents=20,23,23 originFtt=18@781
-[APVA] bar=788 lineage triad geometry: triad=23,21,22 pattern=Up-Down-Up originFtt=20@784 leftP2=1721.23 middleP2=1661.34 rightP2=1729 currentResume=pass currentReject=none p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=787@1672.2 joinedP1P3=pass oldStyleWouldAccept=True
+[APVA] bar=788 lineage triad geometry: triad=23,21,22 pattern=Up-Down-Up originFtt=20@784 leftP2=1721.23 middleP2=1661.34 rightP2=1729 currentResume=pass currentReject=none p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=787@1672.2 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=fail activeReject=member not joinable id=21 status=Joined
 [APVA] bar=788 child promoted after parent break: child=22 inheritedParent=23 level=3 brokenParent=21
 [APVA] bar=789 FTT candidate updated: id=23 lineage=20 candidateBar=789 price=1723.04
 [APVA] bar=789 terminal joined child extended with parent: child=22 parent=23
@@ -353,7 +353,7 @@
 [APVA] bar=790 V2 child container created: id=25 parent=24 level=4 reason=opposite tape inside local parent
 [APVA] bar=790 join eligibility: newest=25 parent=24 level=4 candidates=25:Up:L4:Active@789-790:p24
 [APVA] bar=790 lineage join candidate: lineage=20 triad=22,24,25 levels=3,3,4 parents=23,23,24 originFtt=18@781
-[APVA] bar=790 lineage triad geometry: triad=22,24,25 pattern=Up-Down-Up originFtt=18@781 leftP2=1747.66 middleP2=1702.5 rightP2=1747.66 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=790@1713 joinedP1P3=pass oldStyleWouldAccept=True
+[APVA] bar=790 lineage triad geometry: triad=22,24,25 pattern=Up-Down-Up originFtt=18@781 leftP2=1747.66 middleP2=1702.5 rightP2=1747.66 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=790@1713 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=fail activeReject=member not joinable id=22 status=Joined
 [APVA] bar=790 demotion/style recalculation: id=23 level=3
 [APVA] bar=786 demotion/style recalculation: id=19 level=4
 [APVA] bar=788 demotion/style recalculation: id=21 level=4
@@ -386,7 +386,7 @@
 [APVA] bar=792 same-direction OutsideBullish extended active Up container id=25; nested container suppressed
 [APVA] bar=792 join eligibility: newest=25 parent=26 level=3 candidates=25:Up:L3:Adjusted@789-792:p26
 [APVA] bar=792 lineage join candidate: lineage=20 triad=22,24,25 levels=4,3,3 parents=23,26,26 originFtt=18@781
-[APVA] bar=792 lineage triad geometry: triad=22,24,25 pattern=Up-Down-Up originFtt=18@781 leftP2=1747.66 middleP2=1702.5 rightP2=1758.86 currentResume=pass currentReject=none p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=792@1722.99 joinedP1P3=pass oldStyleWouldAccept=True
+[APVA] bar=792 lineage triad geometry: triad=22,24,25 pattern=Up-Down-Up originFtt=18@781 leftP2=1747.66 middleP2=1702.5 rightP2=1758.86 currentResume=pass currentReject=none p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=792@1722.99 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=fail activeReject=member not joinable id=22 status=Joined
 [APVA] bar=793 FTT candidate updated: id=20 lineage=13 candidateBar=793 price=1764.65
 [APVA] bar=793 VE created: up container id=20 high pierced LTL/VE
 [APVA] bar=793 FTT candidate updated: id=25 lineage=20 candidateBar=793 price=1764.65
@@ -395,7 +395,7 @@
 [APVA] bar=793 same-direction HighReversal extended active Up container id=25; nested container suppressed
 [APVA] bar=793 join eligibility: newest=25 parent=26 level=3 candidates=25:Up:L3:Adjusted@789-793:p26
 [APVA] bar=793 lineage join candidate: lineage=20 triad=22,24,25 levels=4,3,3 parents=23,26,26 originFtt=18@781
-[APVA] bar=793 lineage triad geometry: triad=22,24,25 pattern=Up-Down-Up originFtt=18@781 leftP2=1747.66 middleP2=1702.5 rightP2=1764.65 currentResume=pass currentReject=none p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=792@1722.99 joinedP1P3=pass oldStyleWouldAccept=True
+[APVA] bar=793 lineage triad geometry: triad=22,24,25 pattern=Up-Down-Up originFtt=18@781 leftP2=1747.66 middleP2=1702.5 rightP2=1764.65 currentResume=pass currentReject=none p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=792@1722.99 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=fail activeReject=member not joinable id=22 status=Joined
 [APVA] bar=794 FTT confirmed: id=26 lineage=20 fttBar=793 price=1764.65 reason=RTL break side freeze
 [APVA] bar=794 container frozen: id=26 level=2 Up bar fully outside RTL break side
 [APVA] bar=794 V2 shadow decision: PromoteChild id=24 parent=20 dir=Down level=2 start=788 end=794 reason=promoted active opposite child after parent break
@@ -422,7 +422,7 @@
 [APVA] bar=797 V2 child container created: id=29 parent=28 level=4 reason=opposite tape inside local parent
 [APVA] bar=797 join eligibility: newest=29 parent=28 level=4 candidates=29:Down:L4:Active@796-797:p28
 [APVA] bar=797 lineage join candidate: lineage=25 triad=27,28,29 levels=2,3,4 parents=20,27,28 originFtt=20@793
-[APVA] bar=797 lineage triad geometry: triad=27,28,29 pattern=Down-Up-Down originFtt=20@793 leftP2=1690.07 middleP2=1739.97 rightP2=1690.07 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=796@1739.97 joinedP1P3=pass oldStyleWouldAccept=True
+[APVA] bar=797 lineage triad geometry: triad=27,28,29 pattern=Down-Up-Down originFtt=20@793 leftP2=1690.07 middleP2=1739.97 rightP2=1690.07 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=796@1739.97 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=pass activeReject=none
 [APVA] bar=797 demotion/style recalculation: id=27 level=3
 [APVA] bar=797 demotion/style recalculation: id=28 level=4
 [APVA] bar=797 demotion/style recalculation: id=29 level=5
@@ -465,7 +465,7 @@
 [APVA] bar=802 V2 child container created: id=31 parent=29 level=4 reason=opposite tape inside local parent
 [APVA] bar=802 join eligibility: newest=31 parent=29 level=4 candidates=31:Up:L4:Active@801-802:p29
 [APVA] bar=802 lineage join candidate: lineage=25 triad=28,29,31 levels=3,3,4 parents=30,30,29 originFtt=20@793
-[APVA] bar=802 lineage triad geometry: triad=28,29,31 pattern=Up-Down-Up originFtt=20@793 leftP2=1739.97 middleP2=1655.82 rightP2=1683.25 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=801@1655.82 joinedP1P3=fail oldStyleWouldAccept=False
+[APVA] bar=802 lineage triad geometry: triad=28,29,31 pattern=Up-Down-Up originFtt=20@793 leftP2=1739.97 middleP2=1655.82 rightP2=1683.25 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=801@1655.82 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=middle FTT failed
 [APVA] bar=803 RTL wick adjustment: id=29 close remained inside container
 [APVA] bar=803 RTL wick adjustment: id=30 close remained inside container
 [APVA] bar=803 FTT candidate updated: id=31 lineage=25 candidateBar=803 price=1687.75
@@ -476,7 +476,7 @@
 [APVA] bar=803 same-direction OutsideBearish extended active Down container id=29; nested container suppressed
 [APVA] bar=803 join eligibility: newest=29 parent=30 level=3 candidates=29:Down:L3:Adjusted@796-803:p30
 [APVA] bar=803 lineage join candidate: lineage=25 triad=28,29,31 levels=3,3,4 parents=30,30,29 originFtt=20@793
-[APVA] bar=803 lineage triad geometry: triad=28,29,31 pattern=Up-Down-Up originFtt=20@793 leftP2=1739.97 middleP2=1655.82 rightP2=1687.75 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=801@1655.82 joinedP1P3=fail oldStyleWouldAccept=False
+[APVA] bar=803 lineage triad geometry: triad=28,29,31 pattern=Up-Down-Up originFtt=20@793 leftP2=1739.97 middleP2=1655.82 rightP2=1687.75 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=801@1655.82 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=middle FTT failed
 [APVA] bar=804 FTT candidate updated: id=29 lineage=25 candidateBar=804 price=1653.13
 [APVA] bar=804 FTT candidate updated: id=30 lineage=25 candidateBar=804 price=1653.13
 [APVA] bar=804 FTT confirmed: id=31 lineage=25 fttBar=803 price=1687.75 reason=RTL break side freeze
@@ -543,9 +543,9 @@
 [APVA] bar=811 V2 child container created: id=35 parent=20 level=2 reason=opposite tape inside local parent
 [APVA] bar=811 join eligibility: newest=35 parent=20 level=2 candidates=35:Down:L2:Active@810-811:p20
 [APVA] bar=811 lineage join candidate: lineage=25 triad=29,31,35 levels=4,4,2 parents=33,33,20 originFtt=20@793
-[APVA] bar=811 lineage triad geometry: triad=29,31,35 pattern=Down-Up-Down originFtt=20@793 leftP2=1653.13 middleP2=1687.75 rightP2=1663.14 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=811@1683.93 joinedP1P3=pass oldStyleWouldAccept=False
+[APVA] bar=811 lineage triad geometry: triad=29,31,35 pattern=Down-Up-Down originFtt=20@793 leftP2=1653.13 middleP2=1687.75 rightP2=1663.14 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=811@1683.93 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=old-style same-direction extreme failed
 [APVA] bar=811 recent join rejected: 30,34,35 reason=right down container has not exceeded left down P2
-[APVA] bar=811 lineage triad geometry: triad=30,34,35 pattern=Down-Up-Down originFtt=20@793 leftP2=1631 middleP2=1686.7 rightP2=1663.14 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=811@1683.93 joinedP1P3=pass oldStyleWouldAccept=False
+[APVA] bar=811 lineage triad geometry: triad=30,34,35 pattern=Down-Up-Down originFtt=20@793 leftP2=1631 middleP2=1686.7 rightP2=1663.14 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=811@1683.93 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
 [APVA] bar=811 recent join rejected: 26,34,35 reason=not an alternating triad
 [APVA] bar=811 recent join rejected: 26,30,35 reason=not an alternating triad
 [APVA] bar=812 FTT candidate updated: id=35 lineage=25 candidateBar=812 price=1652.62
@@ -554,9 +554,9 @@
 [APVA] bar=812 same-direction LLLH extended active Down container id=35; nested container suppressed
 [APVA] bar=812 join eligibility: newest=35 parent=20 level=2 candidates=35:Down:L2:Active@810-812:p20
 [APVA] bar=812 lineage join candidate: lineage=25 triad=29,31,35 levels=4,4,2 parents=33,33,20 originFtt=20@793
-[APVA] bar=812 lineage triad geometry: triad=29,31,35 pattern=Down-Up-Down originFtt=20@793 leftP2=1653.13 middleP2=1687.75 rightP2=1652.62 currentResume=pass currentReject=none p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=811@1683.93 joinedP1P3=pass oldStyleWouldAccept=True
+[APVA] bar=812 lineage triad geometry: triad=29,31,35 pattern=Down-Up-Down originFtt=20@793 leftP2=1653.13 middleP2=1687.75 rightP2=1652.62 currentResume=pass currentReject=none p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=811@1683.93 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=fail activeReject=member not joinable id=29 status=Joined
 [APVA] bar=812 recent join rejected: 30,34,35 reason=right down container has not exceeded left down P2
-[APVA] bar=812 lineage triad geometry: triad=30,34,35 pattern=Down-Up-Down originFtt=20@793 leftP2=1631 middleP2=1686.7 rightP2=1652.62 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=811@1683.93 joinedP1P3=pass oldStyleWouldAccept=False
+[APVA] bar=812 lineage triad geometry: triad=30,34,35 pattern=Down-Up-Down originFtt=20@793 leftP2=1631 middleP2=1686.7 rightP2=1652.62 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=811@1683.93 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
 [APVA] bar=812 recent join rejected: 26,34,35 reason=not an alternating triad
 [APVA] bar=812 recent join rejected: 26,30,35 reason=not an alternating triad
 [APVA] bar=813 lateral building: bar remains inside origin boundary 812
@@ -566,9 +566,9 @@
 [APVA] bar=814 same-direction LLLH extended active Down container id=35; nested container suppressed
 [APVA] bar=814 join eligibility: newest=35 parent=20 level=2 candidates=35:Down:L2:Active@810-814:p20
 [APVA] bar=814 lineage join candidate: lineage=25 triad=29,31,35 levels=4,4,2 parents=33,33,20 originFtt=20@793
-[APVA] bar=814 lineage triad geometry: triad=29,31,35 pattern=Down-Up-Down originFtt=20@793 leftP2=1653.13 middleP2=1687.75 rightP2=1650.8 currentResume=pass currentReject=none p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=811@1683.93 joinedP1P3=pass oldStyleWouldAccept=True
+[APVA] bar=814 lineage triad geometry: triad=29,31,35 pattern=Down-Up-Down originFtt=20@793 leftP2=1653.13 middleP2=1687.75 rightP2=1650.8 currentResume=pass currentReject=none p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=811@1683.93 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=fail activeReject=member not joinable id=29 status=Joined
 [APVA] bar=814 recent join rejected: 30,34,35 reason=right down container has not exceeded left down P2
-[APVA] bar=814 lineage triad geometry: triad=30,34,35 pattern=Down-Up-Down originFtt=20@793 leftP2=1631 middleP2=1686.7 rightP2=1650.8 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=811@1683.93 joinedP1P3=pass oldStyleWouldAccept=False
+[APVA] bar=814 lineage triad geometry: triad=30,34,35 pattern=Down-Up-Down originFtt=20@793 leftP2=1631 middleP2=1686.7 rightP2=1650.8 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=811@1683.93 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
 [APVA] bar=814 recent join rejected: 26,34,35 reason=not an alternating triad
 [APVA] bar=814 recent join rejected: 26,30,35 reason=not an alternating triad
 [APVA] bar=815 lateral building: bar remains inside origin boundary 814
@@ -587,7 +587,7 @@
 [APVA] bar=817 V2 child container created: id=36 parent=35 level=3 reason=opposite tape inside local parent
 [APVA] bar=817 join eligibility: newest=36 parent=35 level=3 candidates=36:Up:L3:Active@816-817:p35
 [APVA] bar=817 lineage join candidate: lineage=25 triad=31,35,36 levels=4,2,3 parents=33,20,35 originFtt=20@793
-[APVA] bar=817 lineage triad geometry: triad=31,35,36 pattern=Up-Down-Up originFtt=20@793 leftP2=1687.75 middleP2=1650 rightP2=1674 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=816@1650 joinedP1P3=fail oldStyleWouldAccept=False
+[APVA] bar=817 lineage triad geometry: triad=31,35,36 pattern=Up-Down-Up originFtt=20@793 leftP2=1687.75 middleP2=1650 rightP2=1674 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=816@1650 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=middle FTT failed
 [APVA] bar=818 RTL wick adjustment: id=35 close remained inside container
 [APVA] bar=818 V2 shadow decision: CreateChild id=37 parent=36 dir=Down level=4 start=817 end=818 reason=opposite tape inside local parent
 [APVA] bar=818 initial VE anchor: down container id=37 second bar low exceeded parallel LTL
@@ -596,7 +596,7 @@
 [APVA] bar=818 V2 child container created: id=37 parent=36 level=4 reason=opposite tape inside local parent
 [APVA] bar=818 join eligibility: newest=37 parent=36 level=4 candidates=37:Down:L4:Active@817-818:p36
 [APVA] bar=818 lineage join candidate: lineage=25 triad=35,36,37 levels=2,3,4 parents=20,35,36 originFtt=20@793
-[APVA] bar=818 lineage triad geometry: triad=35,36,37 pattern=Down-Up-Down originFtt=20@793 leftP2=1650 middleP2=1674 rightP2=1653.01 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=818@1673.45 joinedP1P3=pass oldStyleWouldAccept=False
+[APVA] bar=818 lineage triad geometry: triad=35,36,37 pattern=Down-Up-Down originFtt=20@793 leftP2=1650 middleP2=1674 rightP2=1653.01 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=818@1673.45 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=old-style same-direction extreme failed
 [APVA] bar=819 FTT candidate updated: id=35 lineage=25 candidateBar=819 price=1642.64
 [APVA] bar=819 FTT confirmed: id=36 lineage=25 fttBar=817 price=1674 reason=RTL break side freeze
 [APVA] bar=819 container frozen: id=36 level=3 Up bar fully outside RTL break side
@@ -613,9 +613,9 @@
 [APVA] bar=819 lineage join accepted: parent=38 children=35,36,37 lineage=25 originFtt=20@793
 [APVA] bar=819 join eligibility: newest=38 parent=20 level=2 candidates=38:Down:L2:Active@810-819:p20
 [APVA] bar=819 lineage join candidate: lineage=25 triad=29,31,38 levels=4,4,2 parents=33,33,20 originFtt=20@793
-[APVA] bar=819 lineage triad geometry: triad=29,31,38 pattern=Down-Up-Down originFtt=20@793 leftP2=1653.13 middleP2=1687.75 rightP2=1642.64 currentResume=pass currentReject=none p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=818@1673.45 joinedP1P3=pass oldStyleWouldAccept=True
+[APVA] bar=819 lineage triad geometry: triad=29,31,38 pattern=Down-Up-Down originFtt=20@793 leftP2=1653.13 middleP2=1687.75 rightP2=1642.64 currentResume=pass currentReject=none p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=818@1673.45 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=fail activeReject=member not joinable id=29 status=Joined
 [APVA] bar=819 recent join rejected: 30,34,38 reason=right down container has not exceeded left down P2
-[APVA] bar=819 lineage triad geometry: triad=30,34,38 pattern=Down-Up-Down originFtt=20@793 leftP2=1631 middleP2=1686.7 rightP2=1642.64 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=818@1673.45 joinedP1P3=pass oldStyleWouldAccept=False
+[APVA] bar=819 lineage triad geometry: triad=30,34,38 pattern=Down-Up-Down originFtt=20@793 leftP2=1631 middleP2=1686.7 rightP2=1642.64 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=818@1673.45 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
 [APVA] bar=819 recent join rejected: 26,34,38 reason=not an alternating triad
 [APVA] bar=819 recent join rejected: 26,30,38 reason=not an alternating triad
 [APVA] bar=819 child promoted after parent break: child=37 inheritedParent=38 level=3 brokenParent=36
@@ -643,7 +643,7 @@
 [APVA] bar=823 V2 child container created: id=40 parent=39 level=4 reason=opposite tape inside local parent
 [APVA] bar=823 join eligibility: newest=40 parent=39 level=4 candidates=40:Down:L4:Active@822-823:p39
 [APVA] bar=823 lineage join candidate: lineage=25 triad=37,39,40 levels=3,3,4 parents=38,38,39 originFtt=20@793
-[APVA] bar=823 lineage triad geometry: triad=37,39,40 pattern=Down-Up-Down originFtt=20@793 leftP2=1642.64 middleP2=1658.5 rightP2=1644.02 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=823@1657.99 joinedP1P3=pass oldStyleWouldAccept=False
+[APVA] bar=823 lineage triad geometry: triad=37,39,40 pattern=Down-Up-Down originFtt=20@793 leftP2=1642.64 middleP2=1658.5 rightP2=1644.02 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=823@1657.99 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=old-style same-direction extreme failed
 [APVA] bar=824 FTT candidate updated: id=38 lineage=25 candidateBar=824 price=1639.06
 [APVA] bar=824 FTT candidate updated: id=37 lineage=25 candidateBar=824 price=1639.06
 [APVA] bar=824 VE created: down container id=37 low pierced LTL/VE
@@ -665,7 +665,7 @@
 [APVA] bar=824 lineage join accepted: parent=41 children=38,39,40 lineage=25 originFtt=20@793
 [APVA] bar=824 join eligibility: newest=41 parent=20 level=2 candidates=41:Down:L2:Active@810-824:p20
 [APVA] bar=824 recent join rejected: 30,34,41 reason=right down container has not exceeded left down P2
-[APVA] bar=824 lineage triad geometry: triad=30,34,41 pattern=Down-Up-Down originFtt=20@793 leftP2=1631 middleP2=1686.7 rightP2=1639.06 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=823@1657.99 joinedP1P3=pass oldStyleWouldAccept=False
+[APVA] bar=824 lineage triad geometry: triad=30,34,41 pattern=Down-Up-Down originFtt=20@793 leftP2=1631 middleP2=1686.7 rightP2=1639.06 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=823@1657.99 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
 [APVA] bar=824 recent join rejected: 26,34,41 reason=not an alternating triad
 [APVA] bar=824 recent join rejected: 26,30,41 reason=not an alternating triad
 [APVA] bar=824 same-direction breakout promoted active child: child=40 inheritedParent=41 level=3 brokenParent=39
@@ -727,7 +727,7 @@
 [APVA] bar=831 V2 child container created: id=44 parent=43 level=3 reason=opposite tape inside local parent
 [APVA] bar=831 join eligibility: newest=44 parent=43 level=3 candidates=44:Up:L3:Active@830-831:p43
 [APVA] bar=831 lineage join candidate: lineage=37 triad=42,43,44 levels=1,2,3 parents=0,42,43 originFtt=41@825
-[APVA] bar=831 lineage triad geometry: triad=42,43,44 pattern=Up-Down-Up originFtt=41@825 leftP2=1669.01 middleP2=1638.19 rightP2=1669.01 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=828@1638.19 joinedP1P3=pass oldStyleWouldAccept=True
+[APVA] bar=831 lineage triad geometry: triad=42,43,44 pattern=Up-Down-Up originFtt=41@825 leftP2=1669.01 middleP2=1638.19 rightP2=1669.01 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=828@1638.19 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=pass activeReject=none
 [APVA] bar=831 demotion/style recalculation: id=42 level=2
 [APVA] bar=831 demotion/style recalculation: id=43 level=3
 [APVA] bar=831 demotion/style recalculation: id=44 level=4
@@ -838,7 +838,7 @@
 [APVA] bar=848 V2 child container created: id=48 parent=47 level=4 reason=opposite tape inside local parent
 [APVA] bar=848 join eligibility: newest=48 parent=47 level=4 candidates=48:Down:L4:Active@847-848:p47
 [APVA] bar=848 lineage join candidate: lineage=41 triad=46,47,48 levels=2,3,4 parents=45,46,47 originFtt=45@836
-[APVA] bar=848 lineage triad geometry: triad=46,47,48 pattern=Down-Up-Down originFtt=45@836 leftP2=1640.37 middleP2=1660.92 rightP2=1642.92 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=847@1660.92 joinedP1P3=pass oldStyleWouldAccept=False
+[APVA] bar=848 lineage triad geometry: triad=46,47,48 pattern=Down-Up-Down originFtt=45@836 leftP2=1640.37 middleP2=1660.92 rightP2=1642.92 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=847@1660.92 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=old-style same-direction extreme failed
 [APVA] bar=849 FTT candidate updated: id=46 lineage=41 candidateBar=849 price=1633
 [APVA] bar=849 VE created: down container id=46 low pierced LTL/VE
 [APVA] bar=849 FTT candidate updated: id=48 lineage=41 candidateBar=849 price=1633
