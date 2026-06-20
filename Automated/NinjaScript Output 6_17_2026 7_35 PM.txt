@@ -49,11 +49,11 @@
 [APVA] bar=755 FTT confirmed: id=2 lineage=3 fttBar=753 price=1613.61 reason=RTL break side freeze
 [APVA] bar=755 container frozen: id=2 level=2 Down bar fully outside RTL break side
 [APVA] bar=755 container created: id=3 Up L2 start=753 end=755 lineage=4 reason=same-direction response after child break 2 from HHHL
-[APVA] bar=755 lineage assigned: id=3 lineage=1 structuralParent=1 originFttContainer=0 originFttBar=0 role=Component reason=same-direction response after child break
+[APVA] bar=755 lineage assigned: id=3 lineage=3 structuralParent=1 originFttContainer=1 originFttBar=752 role=Component reason=same-direction response after child break
 [APVA] bar=755 same-direction child response created: id=3 parent=1 level=2 after broken child=2
 [APVA] bar=755 join eligibility: newest=3 parent=1 level=2 candidates=3:Up:L2:Active@753-755:p1
 [APVA] bar=756 lateral compressed as synthetic one-bar context from 753
-[APVA] bar=756 FTT confirmed: id=3 lineage=1 fttBar=753 price=1656.97 reason=RTL break side freeze
+[APVA] bar=756 FTT confirmed: id=3 lineage=3 fttBar=753 price=1656.97 reason=RTL break side freeze
 [APVA] bar=756 container frozen: id=3 level=2 Up bar fully outside RTL break side
 [APVA] bar=756 V2 shadow decision: CreateChild id=4 parent=1 dir=Down level=2 start=755 end=756 reason=opposite tape inside local parent
 [APVA] bar=756 initial VE anchor: down container id=4 second bar low exceeded parallel LTL
@@ -93,7 +93,6 @@
 [APVA] bar=760 demotion/style recalculation: id=5 level=3
 [APVA] bar=760 join accepted: parent=6 children=3,4,5 lineage=3
 [APVA] bar=760 join eligibility: newest=6 parent=1 level=2 candidates=6:Up:L2:Active@753-760:p1
-[APVA] bar=760 lineage join candidate: lineage=3 triad=6,4,5 levels=2,3,3 parents=1,6,6 originFtt=1@752
 [APVA] bar=761 FTT candidate updated: id=6 lineage=3 candidateBar=761 price=1661.35
 [APVA] bar=761 terminal joined child extended with parent: child=5 parent=6
 [APVA] bar=761 V2 shadow decision: CreateChild id=7 parent=6 dir=Down level=3 start=760 end=761 reason=opposite tape inside local parent
@@ -463,18 +462,16 @@
 [APVA] bar=809 FTT confirmed: id=25 lineage=25 fttBar=808 price=1631 reason=RTL break side freeze
 [APVA] bar=809 container frozen: id=25 level=2 Down bar fully outside RTL break side
 [APVA] bar=809 container created: id=30 Up L2 start=808 end=809 lineage=30 reason=same-direction response after child break 25 from HHHL
-[APVA] bar=809 lineage assigned: id=30 lineage=13 structuralParent=19 originFttContainer=1 originFttBar=752 role=Component reason=same-direction response after child break
+[APVA] bar=809 lineage assigned: id=30 lineage=25 structuralParent=19 originFttContainer=19 originFttBar=793 role=Component reason=same-direction response after child break
 [APVA] bar=809 same-direction child response created: id=30 parent=19 level=2 after broken child=25
 [APVA] bar=809 join eligibility: newest=30 parent=19 level=2 candidates=30:Up:L2:Active@808-809:p19
-[APVA] bar=809 lineage join candidate: lineage=13 triad=19,17,30 levels=1,2,2 parents=0,19,19 originFtt=1@752
 [APVA] bar=809 recent join rejected: 22,25,30 reason=right up container has not exceeded left up P2
-[APVA] bar=810 FTT candidate updated: id=30 lineage=13 candidateBar=810 price=1686.7
+[APVA] bar=810 FTT candidate updated: id=30 lineage=25 candidateBar=810 price=1686.7
 [APVA] bar=810 same-direction suppression diagnostic: active id=30 dir=Up level=2 status=Active start=808 end=810 reason=same-direction response after child break 25 from HHHL pendingStart=809 brokenIfReached=none
 [APVA] bar=810 same-direction HighReversal extended active Up container id=30; nested container suppressed
 [APVA] bar=810 join eligibility: newest=30 parent=19 level=2 candidates=30:Up:L2:Active@808-810:p19
-[APVA] bar=810 lineage join candidate: lineage=13 triad=19,17,30 levels=1,2,2 parents=0,19,19 originFtt=1@752
 [APVA] bar=810 recent join rejected: 22,25,30 reason=right up container has not exceeded left up P2
-[APVA] bar=811 FTT confirmed: id=30 lineage=13 fttBar=810 price=1686.7 reason=RTL break side freeze
+[APVA] bar=811 FTT confirmed: id=30 lineage=25 fttBar=810 price=1686.7 reason=RTL break side freeze
 [APVA] bar=811 container frozen: id=30 level=2 Up bar fully outside RTL break side
 [APVA] bar=811 V2 shadow decision: CreateChild id=31 parent=19 dir=Down level=2 start=810 end=811 reason=opposite tape inside local parent
 [APVA] bar=811 initial VE anchor: down container id=31 second bar low exceeded parallel LTL
