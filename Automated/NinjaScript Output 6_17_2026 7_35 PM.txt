@@ -574,13 +574,14 @@
 [APVA] bar=809 V2 shadow decision: PromoteChild id=28 parent=20 dir=Up level=2 start=795 end=809 reason=promoted active opposite child after parent break
 [APVA] bar=809 container created: id=34 Up L2 start=808 end=809 lineage=30 reason=same-direction response after child break 30 from HHHL
 [APVA] bar=809 lineage assigned: id=34 lineage=25 structuralParent=20 originFttContainer=20 originFttBar=793 role=Component reason=same-direction response after child break
+[APVA] bar=809 structural inherited parent context: action=create same-direction child-break response child=34 parent=20:sj1:joinedParent:src18:psj1:joinedParent:psrc18 childLineage=25 parentLineage=13 inheritanceAction=assigned
 [APVA] bar=809 same-direction child response created: id=34 parent=20 level=2 after broken child=30
-[APVA] bar=809 join eligibility: newest=34 parent=20 level=2 candidates=34:Up:L2:Active@808-809:p20
+[APVA] bar=809 join eligibility: newest=34:psj1:joinedParent:psrc20 parent=20 level=2 candidates=34:Up:L2:Active@808-809:p20:psj1:joinedParent:psrc20
 [APVA] bar=809 recent join rejected: 26,30,34 reason=right up container has not exceeded left up P2
 [APVA] bar=810 FTT candidate updated: id=34 lineage=25 candidateBar=810 price=1686.7
 [APVA] bar=810 same-direction suppression diagnostic: active id=34 dir=Up level=2 status=Active start=808 end=810 reason=same-direction response after child break 30 from HHHL pendingStart=809 brokenIfReached=none
 [APVA] bar=810 same-direction HighReversal extended active Up container id=34; nested container suppressed
-[APVA] bar=810 join eligibility: newest=34 parent=20 level=2 candidates=34:Up:L2:Active@808-810:p20
+[APVA] bar=810 join eligibility: newest=34:psj1:joinedParent:psrc20 parent=20 level=2 candidates=34:Up:L2:Active@808-810:p20:psj1:joinedParent:psrc20
 [APVA] bar=810 recent join rejected: 26,30,34 reason=right up container has not exceeded left up P2
 [APVA] bar=811 FTT confirmed: id=34 lineage=25 fttBar=810 price=1686.7 reason=RTL break side freeze
 [APVA] bar=811 container frozen: id=34 level=2 Up bar fully outside RTL break side
