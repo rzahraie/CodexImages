@@ -1209,6 +1209,39 @@
 [APVA] bar=864 same-direction suppression child diagnostic: parent=56 child=54 dir=Down level=3 status=Joined start=859 end=861 reason=V2 local child inside active container 53 from LowReversal close=1780.09 rtl=1594.66 closeBreaks=False
 [APVA] bar=864 same-direction HHHL extended active Up container id=56; nested container suppressed
 [APVA] bar=864 join eligibility: newest=56:psj1:joinedParent:psrc20 parent=51 level=2 candidates=56:Up:L2:Active@855-864:p51:psj1:joinedParent:psrc20
+[APVA] bar=825 demotion/style recalculation: id=20 level=2
+[APVA] bar=771 demotion/style recalculation: id=1 level=3
+[APVA] bar=755 demotion/style recalculation: id=2 level=4
+[APVA] bar=770 demotion/style recalculation: id=9 level=4
+[APVA] bar=762 demotion/style recalculation: id=6 level=5
+[APVA] bar=756 demotion/style recalculation: id=3 level=6
+[APVA] bar=759 demotion/style recalculation: id=4 level=6
+[APVA] bar=762 demotion/style recalculation: id=5 level=6
+[APVA] bar=762 demotion/style recalculation: id=7 level=5
+[APVA] bar=770 demotion/style recalculation: id=12 level=5
+[APVA] bar=763 demotion/style recalculation: id=8 level=6
+[APVA] bar=767 demotion/style recalculation: id=10 level=6
+[APVA] bar=770 demotion/style recalculation: id=11 level=6
+[APVA] bar=783 demotion/style recalculation: id=18 level=3
+[APVA] bar=778 demotion/style recalculation: id=13 level=4
+[APVA] bar=776 demotion/style recalculation: id=14 level=5
+[APVA] bar=777 demotion/style recalculation: id=15 level=5
+[APVA] bar=780 demotion/style recalculation: id=16 level=4
+[APVA] bar=782 demotion/style recalculation: id=17 level=4
+[APVA] bar=794 demotion/style recalculation: id=26 level=3
+[APVA] bar=790 demotion/style recalculation: id=23 level=4
+[APVA] bar=786 demotion/style recalculation: id=19 level=5
+[APVA] bar=788 demotion/style recalculation: id=21 level=5
+[APVA] bar=790 demotion/style recalculation: id=22 level=5
+[APVA] bar=790 demotion/style recalculation: id=24 level=4
+[APVA] bar=794 demotion/style recalculation: id=25 level=4
+[APVA] bar=794 demotion/style recalculation: id=26 level=2
+[APVA] bar=790 demotion/style recalculation: id=23 level=3
+[APVA] bar=786 demotion/style recalculation: id=19 level=4
+[APVA] bar=788 demotion/style recalculation: id=21 level=4
+[APVA] bar=790 demotion/style recalculation: id=22 level=4
+[APVA] bar=790 demotion/style recalculation: id=24 level=3
+[APVA] bar=794 demotion/style recalculation: id=25 level=3
 [APVA] bar=853 demotion/style recalculation: id=50 level=2
 [APVA] bar=809 demotion/style recalculation: id=30 level=3
 [APVA] bar=797 demotion/style recalculation: id=27 level=4
@@ -1239,10 +1272,10 @@
 [APVA] bar=861 demotion/style recalculation: id=53 level=4
 [APVA] bar=861 demotion/style recalculation: id=54 level=4
 [APVA] bar=864 demotion/style recalculation: id=55 level=4
-[APVA] bar=864 inherited parent context propagated to joined parent: parent=57 parentStructuralJoin=1 sourceChild=26 sourceParent=20 sourceRole=joinedParent lineage=25
+[APVA] bar=864 structural context propagated to joined parent: parent=57 structuralJoin=1 sourceChild=20 sourceRole=joinedParent lineage=25
 [APVA] bar=864 join accepted: parent=57 children=26,50,51 lineage=25
-[APVA] bar=864 structural context join accepted: parent=57 children=26,50,51 absorbed=none trigger=56 context=1@20 lineage=25 level=1 parent=0
-[APVA] bar=864 join eligibility: newest=57:psj1:joinedParent:psrc20 parent=0 level=1 candidates=57:Up:L1:Active@781-864:p0:psj1:joinedParent:psrc20
+[APVA] bar=864 structural context join accepted: parent=57 children=26,50,51 absorbed=20 trigger=56 context=1@20 lineage=25 level=1 parent=0
+[APVA] bar=864 join eligibility: newest=57:sj1:joinedParent:src20 parent=0 level=1 candidates=57:Up:L1:Active@781-864:p0:sj1:joinedParent:src20
 [APVA] bar=865 lateral building: bar remains inside origin boundary 864
 [APVA] bar=865 terminal joined child extended with parent: child=55 parent=56
 [APVA] bar=865 FTT candidate updated: id=57 lineage=25 candidateBar=865 price=1783.79
