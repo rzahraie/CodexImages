@@ -1001,3 +1001,86 @@
 [APVA] bar=851 structural inherited parent context: action=create V2 child child=51 parent=50:psj1:joinedParent:psrc20 childLineage=45 parentLineage=37 inheritanceAction=assigned
 [APVA] bar=851 V2 child container created: id=51 parent=50 level=2 reason=opposite tape inside local parent
 [APVA] bar=851 join eligibility: newest=51:psj1:joinedParent:psrc20 parent=50 level=2 candidates=51:Up:L2:Active@850-851:p50:psj1:joinedParent:psrc20
+[APVA] bar=852 terminal joined child extended with parent: child=49 parent=50
+[APVA] bar=852 FTT candidate updated: id=51 lineage=45 candidateBar=852 price=1649.85
+[APVA] bar=852 VE created: up container id=51 high pierced LTL/VE
+[APVA] bar=852 same-direction suppression diagnostic: active id=51 dir=Up level=2 status=Active start=850 end=852 reason=V2 local child inside active container 50 from HHHL pendingStart=851 brokenIfReached=none
+[APVA] bar=852 same-direction HHHL extended active Up container id=51; nested container suppressed
+[APVA] bar=852 join eligibility: newest=51:psj1:joinedParent:psrc20 parent=50 level=2 candidates=51:Up:L2:Active@850-852:p50:psj1:joinedParent:psrc20
+[APVA] bar=853 terminal joined child extended with parent: child=49 parent=50
+[APVA] bar=853 FTT candidate updated: id=51 lineage=45 candidateBar=853 price=1656.88
+[APVA] bar=853 VE created: up container id=51 high pierced LTL/VE
+[APVA] bar=853 same-direction suppression diagnostic: active id=51 dir=Up level=2 status=Active start=850 end=853 reason=V2 local child inside active container 50 from HHHL pendingStart=852 brokenIfReached=none
+[APVA] bar=853 same-direction HHHL extended active Up container id=51; nested container suppressed
+[APVA] bar=853 join eligibility: newest=51:psj1:joinedParent:psrc20 parent=50 level=2 candidates=51:Up:L2:Active@850-853:p50:psj1:joinedParent:psrc20
+[APVA] bar=854 RTL wick adjustment: id=49 close remained inside container
+[APVA] bar=854 terminal joined child extended with parent: child=49 parent=50
+[APVA] bar=854 FTT candidate updated: id=51 lineage=45 candidateBar=854 price=1657.9
+[APVA] bar=854 same-direction suppression diagnostic: active id=51 dir=Up level=2 status=Active start=850 end=854 reason=V2 local child inside active container 50 from HHHL pendingStart=853 brokenIfReached=none
+[APVA] bar=854 same-direction HighReversal extended active Up container id=51; nested container suppressed
+[APVA] bar=854 join eligibility: newest=51:psj1:joinedParent:psrc20 parent=50 level=2 candidates=49:Down:L2:Adjusted@836-854:p50:psj1:joinedParent:psrc20;51:Up:L2:Active@850-854:p50:psj1:joinedParent:psrc20
+[APVA] bar=855 FTT candidate updated: id=48 lineage=41 candidateBar=855 price=1631.79
+[APVA] bar=855 terminal joined child frozen: child=48 parent=49 bar fully outside RTL break side
+[APVA] bar=855 RTL wick adjustment deferred: id=51 opposite child creation takes precedence
+[APVA] bar=855 V2 shadow decision: CreateChild id=52 parent=51 dir=Down level=3 start=854 end=855 reason=opposite tape inside local parent
+[APVA] bar=855 container created: id=52 Down L3 start=854 end=855 lineage=46 reason=V2 local child inside active container 51 from LLLH
+[APVA] bar=855 lineage assigned: id=52 lineage=45 structuralParent=51 originFttContainer=50 originFttBar=851 role=Component reason=V2 local child
+[APVA] bar=855 structural inherited parent context: action=create V2 child child=52 parent=51:psj1:joinedParent:psrc20 childLineage=45 parentLineage=45 inheritanceAction=assigned
+[APVA] bar=855 V2 child container created: id=52 parent=51 level=3 reason=opposite tape inside local parent
+[APVA] bar=855 join eligibility: newest=52:psj1:joinedParent:psrc20 parent=51 level=3 candidates=52:Down:L3:Active@854-855:p51:psj1:joinedParent:psrc20
+[APVA] bar=856 RTL wick adjustment: id=51 close remained inside container
+[APVA] bar=856 FTT confirmed: id=52 lineage=45 fttBar=855 price=1631.79 reason=RTL break side freeze
+[APVA] bar=856 container frozen: id=52 level=3 Down bar fully outside RTL break side
+[APVA] bar=856 initial VE anchor: up container id=53 second bar high exceeded parallel LTL
+[APVA] bar=856 container created: id=53 Up L3 start=855 end=856 lineage=47 reason=same-direction response after child break 52 from HHHL
+[APVA] bar=856 lineage assigned: id=53 lineage=45 structuralParent=51 originFttContainer=50 originFttBar=851 role=Component reason=same-direction response after child break
+[APVA] bar=856 structural inherited parent context: action=create same-direction child-break response child=53 parent=51:psj1:joinedParent:psrc20 childLineage=45 parentLineage=45 inheritanceAction=assigned
+[APVA] bar=856 same-direction child response created: id=53 parent=51 level=3 after broken child=52
+[APVA] bar=856 join eligibility: newest=53:psj1:joinedParent:psrc20 parent=51 level=3 candidates=53:Up:L3:Active@855-856:p51:psj1:joinedParent:psrc20
+[APVA] bar=857 FTT candidate updated: id=53 lineage=45 candidateBar=857 price=1649.52
+[APVA] bar=857 same-direction suppression diagnostic: active id=53 dir=Up level=3 status=Active start=855 end=857 reason=same-direction response after child break 52 from HHHL pendingStart=856 brokenIfReached=none
+[APVA] bar=857 same-direction HighReversal extended active Up container id=53; nested container suppressed
+[APVA] bar=857 join eligibility: newest=53:psj1:joinedParent:psrc20 parent=51 level=3 candidates=53:Up:L3:Active@855-857:p51:psj1:joinedParent:psrc20
+[APVA] bar=858 FTT confirmed: id=49 lineage=41 fttBar=850 price=1625.37 reason=RTL break side freeze
+[APVA] bar=858 container frozen: id=49 level=2 Down bar fully outside RTL break side
+[APVA] bar=858 FTT candidate updated: id=51 lineage=45 candidateBar=858 price=1723.93
+[APVA] bar=858 VE created: up container id=51 high pierced LTL/VE
+[APVA] bar=858 FTT candidate updated: id=53 lineage=45 candidateBar=858 price=1723.93
+[APVA] bar=858 VE created: up container id=53 high pierced LTL/VE
+[APVA] bar=858 V2 shadow decision: PromoteChild id=47 parent=50 dir=Up level=2 start=845 end=858 reason=promoted active opposite child after parent break
+[APVA] bar=858 same-direction suppression diagnostic: active id=53 dir=Up level=3 status=Active start=855 end=858 reason=same-direction response after child break 52 from HHHL pendingStart=857 brokenIfReached=id=50 dir=Down level=1 status=Active start=810 end=858 reason=joined triad 41,45,49 parent=0
+[APVA] bar=858 broken parent descendants deactivated: parent=50 count=5
+[APVA] bar=858 lineage assigned: id=53 lineage=45 structuralParent=51 originFttContainer=50 originFttBar=851 role=Component reason=child promoted after parent break
+[APVA] bar=858 join eligibility: newest=53:psj1:joinedParent:psrc20 parent=0 level=1 candidates=53:Up:L1:Active@855-858:p0:psj1:joinedParent:psrc20
+[APVA] bar=858 structural context triad: context=1@20 triad=20,50,53 pattern=Up-Down-Up lineages=13,37,45 levels=1,1,1 parents=0,0,0 statuses=Broken,Broken,Active psrc=0,20,20 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=850@1625.37 joinedP1P3=pass contextReady=fail
+[APVA] bar=858 recent join rejected: 20,50,53 reason=right up container has not exceeded left up P2
+[APVA] bar=858 structural promotion context: promoted=53 brokenParent=50 structuralJoin=none action=observed
+[APVA] bar=858 same-direction breakout promoted active child: child=53 inheritedParent=0 level=1 brokenParent=50
+[APVA] bar=859 FTT candidate updated: id=53 lineage=45 candidateBar=859 price=1726.21
+[APVA] bar=859 VE created: up container id=53 high pierced LTL/VE
+[APVA] bar=859 same-direction suppression diagnostic: active id=53 dir=Up level=1 status=Active start=855 end=859 reason=same-direction response after child break 52 from HHHL pendingStart=858 brokenIfReached=none
+[APVA] bar=859 same-direction HighReversal extended active Up container id=53; nested container suppressed
+[APVA] bar=859 join eligibility: newest=53:psj1:joinedParent:psrc20 parent=0 level=1 candidates=53:Up:L1:Active@855-859:p0:psj1:joinedParent:psrc20
+[APVA] bar=859 structural context triad: context=1@20 triad=20,50,53 pattern=Up-Down-Up lineages=13,37,45 levels=1,1,1 parents=0,0,0 statuses=Broken,Broken,Active psrc=0,20,20 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=850@1625.37 joinedP1P3=pass contextReady=fail
+[APVA] bar=859 recent join rejected: 20,50,53 reason=right up container has not exceeded left up P2
+[APVA] bar=860 V2 shadow decision: CreateChild id=54 parent=53 dir=Down level=2 start=859 end=860 reason=opposite tape inside local parent
+[APVA] bar=860 container created: id=54 Down L2 start=859 end=860 lineage=48 reason=V2 local child inside active container 53 from LowReversal
+[APVA] bar=860 lineage assigned: id=54 lineage=49 structuralParent=53 originFttContainer=53 originFttBar=859 role=Component reason=V2 local child
+[APVA] bar=860 structural inherited parent context: action=create V2 child child=54 parent=53:psj1:joinedParent:psrc20 childLineage=49 parentLineage=45 inheritanceAction=assigned
+[APVA] bar=860 V2 child container created: id=54 parent=53 level=2 reason=opposite tape inside local parent
+[APVA] bar=860 join eligibility: newest=54:psj1:joinedParent:psrc20 parent=53 level=2 candidates=54:Down:L2:Active@859-860:p53:psj1:joinedParent:psrc20
+[APVA] bar=861 FTT candidate updated: id=53 lineage=45 candidateBar=861 price=1735.06
+[APVA] bar=861 VE created: up container id=53 high pierced LTL/VE
+[APVA] bar=861 FTT confirmed: id=54 lineage=49 fttBar=860 price=1681.24 reason=RTL break side freeze
+[APVA] bar=861 container frozen: id=54 level=2 Down bar fully outside RTL break side
+[APVA] bar=861 initial VE anchor: up container id=55 second bar high exceeded parallel LTL
+[APVA] bar=861 container created: id=55 Up L2 start=860 end=861 lineage=50 reason=same-direction response after child break 54 from HHHL
+[APVA] bar=861 lineage assigned: id=55 lineage=49 structuralParent=53 originFttContainer=53 originFttBar=859 role=Component reason=same-direction response after child break
+[APVA] bar=861 structural inherited parent context: action=create same-direction child-break response child=55 parent=53:psj1:joinedParent:psrc20 childLineage=49 parentLineage=45 inheritanceAction=assigned
+[APVA] bar=861 same-direction child response created: id=55 parent=53 level=2 after broken child=54
+[APVA] bar=861 join eligibility: newest=55:psj1:joinedParent:psrc20 parent=53 level=2 candidates=55:Up:L2:Active@860-861:p53:psj1:joinedParent:psrc20
+[APVA] bar=862 FTT candidate updated: id=53 lineage=45 candidateBar=862 price=1735.9
+[APVA] bar=862 FTT candidate updated: id=55 lineage=49 candidateBar=862 price=1735.9
+[APVA] bar=862 same-direction suppression diagnostic: active id=55 dir=Up level=2 status=Active start=860 end=862 reason=same-direction response after child break 54 from HHHL pendingStart=861 brokenIfReached=none
+[APVA] bar=862 same-direction HHHL extended active Up container id=55; nested container suppressed
+[APVA] bar=862 join eligibility: newest=55:psj1:joinedParent:psrc20 parent=53 level=2 candidates=55:Up:L2:Active@860-862:p53:psj1:joinedParent:psrc20
