@@ -1,0 +1,468 @@
+Implement JSON export for the new automated NT8 container construction indicator.
+
+Goal:
+Create a machine-readable container ledger so the container engine can be analyzed externally and later used for Gaussian construction.
+
+Do not change container construction logic in this task unless required to expose/export existing state.
+
+Add JSON export only.
+
+---
+
+## Output file
+
+Export one JSON file per chart/session.
+
+Recommended filename:
+
+APVA_Containers_<Instrument>*<BarsPeriod>*<StartBar>*<EndBar>*<Timestamp>.json
+
+Recommended folder:
+
+C:\Users\rz0\Documents\ApvaAnalysis\ContainerJSON\
+
+Expose as user-configurable parameter:
+
+ExportJson = true / false
+JsonExportFolder
+JsonFileName optional
+
+---
+
+## Top-level JSON structure
+
+{
+"metadata": { },
+"bars": [ ],
+"containers": [ ],
+"barMembership": [ ],
+"containerEvents": [ ],
+"validationWarnings": [ ]
+}
+
+Use Newtonsoft.Json if already available in NinjaTrader.
+
+Pretty-print JSON.
+
+---
+
+1. metadata
+
+---
+
+Include:
+
+instrument
+barsPeriod
+tradingHoursName / sessionTemplate if available
+timezone
+startBar
+endBar
+firstProcessedTime
+lastProcessedTime
+generatedAt
+indicatorName
+indicatorVersion
+chartBarsCount
+processedBarCount
+
+Example:
+
+{
+"instrument": "NQ 09-26",
+"barsPeriod": "Minute 5",
+"sessionTemplate": "CME US Index Futures ETH",
+"timezone": "America/Phoenix",
+"startBar": 0,
+"endBar": 447,
+"firstProcessedTime": "2026-06-03T06:45:00",
+"lastProcessedTime": "2026-06-03T14:00:00",
+"generatedAt": "2026-06-22T12:34:56",
+"indicatorName": "xAutoContainerEngine",
+"indicatorVersion": "0.1",
+"chartBarsCount": 447,
+"processedBarCount": 447
+}
+
+---
+
+2. bars
+
+---
+
+Export one record per processed bar.
+
+Fields:
+
+barIndex
+time
+open
+high
+low
+close
+volume
+
+priceType
+volumeColor
+eventText
+
+isLateralSynthetic
+lateralId
+rawBarIndexes
+
+If lateral compression is not implemented yet, set:
+
+isLateralSynthetic = false
+lateralId = null
+rawBarIndexes = [barIndex]
+
+Example:
+
+{
+"barIndex": 249,
+"time": "2026-06-03T10:15:00",
+"open": 21800.25,
+"high": 21818.50,
+"low": 21792.75,
+"close": 21810.00,
+"volume": 12345,
+"priceType": "HHHL",
+"volumeColor": "R+",
+"eventText": "HHHL-R+ PV",
+"isLateralSynthetic": false,
+"lateralId": null,
+"rawBarIndexes": [249]
+}
+
+If priceType / volumeColor / eventText are not already available, export "Unknown" rather than guessing.
+
+---
+
+3. containers
+
+---
+
+Export one record per container.
+
+Required fields:
+
+containerId
+level
+direction
+status
+
+startBar
+endBar
+
+p1Bar
+p2Bar
+p3Bar
+fttBar
+
+rtlStartBar
+rtlStartPrice
+rtlEndBar
+rtlEndPrice
+
+ltlStartBar
+ltlStartPrice
+ltlEndBar
+ltlEndPrice
+
+veBar
+vePrice
+breakBar
+breakType
+
+parentContainerId
+childContainerIds
+
+creationReason
+completionReason
+joinReason
+adjustmentReason
+
+confidence
+warnings
+
+lineStyle
+lineColor
+lineWidth
+dashStyle
+
+Example:
+
+{
+"containerId": 37,
+"level": 1,
+"direction": "Up",
+"status": "Complete",
+
+"startBar": 249,
+"endBar": 256,
+
+"p1Bar": 249,
+"p2Bar": 252,
+"p3Bar": 254,
+"fttBar": 256,
+
+"rtlStartBar": 249,
+"rtlStartPrice": 21790.25,
+"rtlEndBar": 254,
+"rtlEndPrice": 21805.75,
+
+"ltlStartBar": 252,
+"ltlStartPrice": 21822.50,
+"ltlEndBar": 256,
+"ltlEndPrice": 21808.25,
+
+"veBar": null,
+"vePrice": null,
+"breakBar": null,
+"breakType": null,
+
+"parentContainerId": 12,
+"childContainerIds": [38, 39],
+
+"creationReason": "HHHL/LLLH two-bar tape",
+"completionReason": "FTT reached",
+"joinReason": null,
+"adjustmentReason": null,
+
+"confidence": "High",
+"warnings": [],
+
+"lineStyle": "Level1",
+"lineColor": "Blue",
+"lineWidth": 2,
+"dashStyle": "Solid"
+}
+
+Use null for unknown anchors rather than 0.
+
+---
+
+4. barMembership
+
+---
+
+This is critical.
+
+Every processed bar should have a membership record showing all containers that include that bar.
+
+Fields:
+
+barIndex
+containerIds
+primaryContainerId
+roles
+
+roles should be an array:
+
+{
+"containerId": 37,
+"role": "P3"
+}
+
+Possible roles:
+
+Member
+P1
+P2
+P3
+FTT
+RTLTouch
+LTLTouch
+VE
+Break
+Start
+End
+Ambiguous
+
+Example:
+
+{
+"barIndex": 254,
+"containerIds": [37, 12, 3],
+"primaryContainerId": 37,
+"roles": [
+{ "containerId": 37, "role": "P3" },
+{ "containerId": 12, "role": "Member" },
+{ "containerId": 3, "role": "Member" }
+]
+}
+
+A bar may have multiple roles in multiple containers.
+
+---
+
+5. containerEvents
+
+---
+
+Export construction history.
+
+Every significant decision should produce an event record if possible.
+
+Fields:
+
+eventId
+barIndex
+eventType
+containerId
+relatedContainerIds
+level
+reason
+details
+
+Event types:
+
+ContainerCreated
+ContainerExtended
+ContainerCompleted
+ContainerAdjusted
+ContainerJoined
+ContainerJoinRejected
+ContainerDemoted
+ContainerStyleChanged
+RtlWickViolationAdjusted
+BreakConfirmed
+LateralCompressed
+SkippedBar
+ValidationWarning
+LineStoppedExtending
+
+Example:
+
+{
+"eventId": 1234,
+"barIndex": 256,
+"eventType": "ContainerCompleted",
+"containerId": 37,
+"relatedContainerIds": [],
+"level": 1,
+"reason": "FTT detected",
+"details": {
+"p1": 249,
+"p2": 252,
+"p3": 254,
+"ftt": 256
+}
+}
+
+If historical events were not stored before this export feature, start recording them from now forward.
+
+---
+
+6. validationWarnings
+
+---
+
+Export validation warnings as separate records.
+
+Fields:
+
+warningId
+barIndex
+containerId
+warningType
+severity
+message
+
+Warning types:
+
+MissingP1
+MissingP2
+MissingP3
+MissingFTT
+ChildOutsideParent
+ContainerOverlapAmbiguity
+BrokenParentChildReference
+LineStoppedExtending
+UnexpectedLevelJump
+JoinRejected
+JoinAcceptedLowConfidence
+InvalidAnchorOrdering
+InvalidRange
+MissingMembership
+StyleMismatch
+
+Example:
+
+{
+"warningId": 17,
+"barIndex": 230,
+"containerId": 18,
+"warningType": "ChildOutsideParent",
+"severity": "Medium",
+"message": "Child container extends beyond parent end bar."
+}
+
+---
+
+## Validation before export
+
+Before writing JSON, run conservative validation:
+
+* container startBar <= endBar
+* p1/p2/p3/ftt ordering if anchors exist
+* parent-child references reciprocal
+* no parent-child cycles
+* child level greater than parent level
+* child range should be inside parent range unless explicitly marked as structurally justified
+* every container should appear in membership for its start/end bars
+* line style should match level
+
+Do not crash NinjaTrader on validation failure.
+
+Add warning records instead.
+
+---
+
+## Export timing
+
+Export when:
+
+* historical processing completes, or
+* user clicks reload / indicator refresh completes
+
+Avoid writing the file on every bar unless explicitly enabled.
+
+Add parameter:
+
+ExportOnEveryBar = false
+
+Default false.
+
+---
+
+## Debugging requirements
+
+Include Print messages only when DebugExport = true.
+
+Print:
+
+* export path
+* number of bars exported
+* number of containers exported
+* number of membership records
+* number of events
+* number of validation warnings
+
+---
+
+## Important
+
+Do not only export final drawn lines.
+
+Export:
+
+* final container state
+* bar membership
+* construction events
+* validation warnings
+
+This export will be used to evaluate whether the three-level container hierarchy is good enough for Gaussian construction.
+
+Deliverable:
+Return updated indicator source file(s) and a short summary of changes.
