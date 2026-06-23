@@ -1068,7 +1068,7 @@
 [APVA] bar=849 demotion/style recalculation: id=48 level=3
 [APVA] bar=850 inherited parent context propagated to joined parent: parent=50 parentStructuralJoin=1 sourceChild=30 sourceParent=20 sourceRole=joinedParent lineage=25
 [APVA] bar=850 join accepted: parent=50 children=30,34,49 lineage=25
-[APVA] bar=850 structural context join accepted: parent=50 children=30,34,49 absorbed=41,45 trigger=49 context=1@20 lineage=25 level=1 parent=0
+[APVA] bar=850 structural context join accepted: parent=50 children=30,34,49 absorbed=41,45 trigger=49 context=1@20 originOverride=none lineage=25 level=1 parent=0
 [APVA] bar=850 join eligibility: newest=50:psj1:joinedParent:psrc20 parent=0 level=1 candidates=50:Down:L1:Active@793-850:p0:psj1:joinedParent:psrc20
 [APVA] bar=850 structural context join rejected: newest=50 frontier=50 reason=not alternating
 [APVA] bar=850 structural promotion context: promoted=49 brokenParent=45 structuralJoin=none action=observed
@@ -1241,8 +1241,8 @@
 [APVA] bar=864 demotion/style recalculation: id=55 level=4
 [APVA] bar=864 inherited parent context propagated to joined parent: parent=57 parentStructuralJoin=1 sourceChild=26 sourceParent=20 sourceRole=joinedParent lineage=25
 [APVA] bar=864 join accepted: parent=57 children=26,50,51 lineage=25
-[APVA] bar=864 structural context join accepted: parent=57 children=26,50,51 absorbed=none trigger=56 context=1@20 lineage=25 level=1 parent=0
-[APVA] bar=864 join eligibility: newest=57:psj1:joinedParent:psrc20 parent=0 level=1 candidates=57:Up:L1:Active@781-864:p0:psj1:joinedParent:psrc20
+[APVA] bar=864 structural context join accepted: parent=57 children=26,50,51 absorbed=none trigger=56 context=1@20 originOverride=20@740 lineage=25 level=1 parent=0
+[APVA] bar=864 join eligibility: newest=57:psj1:joinedParent:psrc20 parent=0 level=1 candidates=57:Up:L1:Active@740-864:p0:psj1:joinedParent:psrc20
 [APVA] bar=865 lateral building: bar remains inside origin boundary 864
 [APVA] bar=865 terminal joined child extended with parent: child=55 parent=56
 [APVA] bar=865 FTT candidate updated: id=57 lineage=25 candidateBar=865 price=1783.79
@@ -1702,7 +1702,6 @@
 [APVA] bar=905 join eligibility: newest=73:psj1:joinedParent:psrc20 parent=51 level=3 candidates=73:Up:L3:Active@855-905:p51:psj1:joinedParent:psrc20
 [APVA] bar=906 lateral invalidated: full bar range outside origin boundary 864
 [APVA] bar=906 FTT candidate updated: id=57 lineage=25 candidateBar=906 price=1831.09
-[APVA] bar=906 VE created: up container id=57 high pierced LTL/VE
 [APVA] bar=906 FTT candidate updated: id=51 lineage=45 candidateBar=906 price=1831.09
 [APVA] bar=906 terminal joined child extended with parent: child=51 parent=57
 [APVA] bar=906 FTT confirmed: id=69 lineage=47 fttBar=903 price=1757.83 reason=RTL break side freeze
