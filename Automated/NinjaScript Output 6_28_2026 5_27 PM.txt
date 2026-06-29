@@ -77,4 +77,4 @@
 [APVA] bar=26 V2 shadow decision: PromoteChild id=2 parent=0 dir=Up level=1 start=17 end=26 reason=promoted active opposite child after parent break
 [APVA] bar=26 initial VE anchor: up container id=5 second bar high exceeded parallel LTL
 [APVA] bar=26 container created: id=5 Up L1 start=25 end=26 lineage=4 reason=created from HHHL
-[APVA] bar=26 frozen-parent terminal join not applied: new=5 reason=no terminal joined pair
+[APVA] bar=26 frozen-parent terminal join not applied: new=5 reason=old-style same-direction extreme failed
