@@ -219,18 +219,18 @@
 [APVA] bar=46 same-direction HHHL extended active Up container id=9; nested container suppressed
 [APVA] bar=47 lateral building: bar remains inside origin boundary 46
 [APVA] bar=47 skipped translational bar InsideBar; pending start remains 46
-[APVA] bar=43 VE rebuilt: down container id=12 price pierced recalculated LTL/VE
-[APVA] bar=48 RTL wick adjustment: id=12 close remained inside container
-[APVA] bar=48 same-direction suppression diagnostic: active id=12 dir=Down level=2 status=Adjusted start=41 end=48 reason=V2 local child inside active container 9 from LLLH pendingStart=46 brokenIfReached=none
+[APVA] bar=48 RTL wick adjustment rejected: id=12 would violate Down P1/P3 geometry p1=30604.25 candidateP3=30605.5
+[APVA] bar=48 same-direction suppression diagnostic: active id=12 dir=Down level=2 status=Active start=41 end=48 reason=V2 local child inside active container 9 from LLLH pendingStart=46 brokenIfReached=none
 [APVA] bar=48 same-direction LLLH extended active Down container id=12; nested container suppressed
-[APVA] bar=48 join eligibility: newest=12 parent=9 level=2 candidates=12:Down:L2:Adjusted@41-48:p9
+[APVA] bar=48 join eligibility: newest=12 parent=9 level=2 candidates=12:Down:L2:Active@41-48:p9
 [APVA] bar=48 recent join rejected: 10,11,12 reason=right down container has not exceeded left down P2
 [APVA] bar=48 lineage triad geometry: triad=10,11,12 pattern=Down-Up-Down originFtt=9@34 leftP2=30522 middleP2=30604.25 rightP2=30532 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=46@30613.75 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
-[APVA] bar=49 same-direction suppression diagnostic: active id=12 dir=Down level=2 status=Adjusted start=41 end=49 reason=V2 local child inside active container 9 from LLLH pendingStart=48 brokenIfReached=none
+[APVA] bar=49 same-direction suppression diagnostic: active id=12 dir=Down level=2 status=Active start=41 end=49 reason=V2 local child inside active container 9 from LLLH pendingStart=48 brokenIfReached=none
 [APVA] bar=49 same-direction LowReversal extended active Down container id=12; nested container suppressed
-[APVA] bar=49 join eligibility: newest=12 parent=9 level=2 candidates=12:Down:L2:Adjusted@41-49:p9
+[APVA] bar=49 join eligibility: newest=12 parent=9 level=2 candidates=12:Down:L2:Active@41-49:p9
 [APVA] bar=49 recent join rejected: 10,11,12 reason=right down container has not exceeded left down P2
 [APVA] bar=49 lineage triad geometry: triad=10,11,12 pattern=Down-Up-Down originFtt=9@34 leftP2=30522 middleP2=30604.25 rightP2=30532 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=46@30613.75 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
+[APVA] bar=50 RTL wick adjustment deferred: id=12 opposite child creation takes precedence
 [APVA] bar=50 V2 shadow decision: CreateChild id=13 parent=12 dir=Up level=3 start=49 end=50 reason=opposite tape inside local parent
 [APVA] bar=50 container created: id=13 Up L3 start=49 end=50 lineage=12 reason=V2 local child inside active container 12 from HighReversal
 [APVA] bar=50 lineage assigned: id=13 lineage=9 structuralParent=12 originFttContainer=9 originFttBar=34 role=Component reason=V2 local child
@@ -240,7 +240,7 @@
 [APVA] bar=51 FTT candidate updated: id=13 lineage=9 candidateBar=51 price=30616.25
 [APVA] bar=51 VE rebuilt: up container id=13 price pierced recalculated LTL/VE
 [APVA] bar=51 RTL wick adjustment: id=13 close remained inside container
-[APVA] bar=51 same-direction suppression diagnostic: active id=13 dir=Up level=3 status=Adjusted start=49 end=51 reason=V2 local child inside active container 12 from HighReversal pendingStart=50 brokenIfReached=id=12 dir=Down level=2 status=Adjusted start=41 end=51 reason=V2 local child inside active container 9 from LLLH parent=9
+[APVA] bar=51 same-direction suppression diagnostic: active id=13 dir=Up level=3 status=Adjusted start=49 end=51 reason=V2 local child inside active container 12 from HighReversal pendingStart=50 brokenIfReached=id=12 dir=Down level=2 status=Active start=41 end=51 reason=V2 local child inside active container 9 from LLLH parent=9
 [APVA] bar=51 lineage assigned: id=13 lineage=9 structuralParent=12 originFttContainer=9 originFttBar=34 role=Component reason=child promoted after parent break
 [APVA] bar=51 join eligibility: newest=13 parent=9 level=2 candidates=13:Up:L2:Adjusted@49-51:p9
 [APVA] bar=51 join rejected: same-direction joined child would be created under parent=9 direction=Up children=11,12,13
@@ -280,8 +280,7 @@
 [APVA] bar=56 join rejected: same-direction joined child would be created under parent=9 direction=Up children=11,14,15
 [APVA] bar=57 FTT candidate updated: id=9 lineage=7 candidateBar=57 price=30650.75
 [APVA] bar=57 FTT candidate updated: id=13 lineage=9 candidateBar=57 price=30650.75
-[APVA] bar=54 VE rebuilt: down container id=14 price pierced recalculated LTL/VE
-[APVA] bar=57 RTL wick adjustment: id=14 close remained inside container
+[APVA] bar=57 RTL wick adjustment rejected: id=14 would violate Down P1/P3 geometry p1=30650 candidateP3=30650.75
 [APVA] bar=57 FTT candidate updated: id=15 lineage=9 candidateBar=57 price=30650.75
 [APVA] bar=57 RTL wick adjustment: id=15 close remained inside container
 [APVA] bar=57 same-direction suppression diagnostic: active id=15 dir=Up level=4 status=Adjusted start=54 end=57 reason=V2 local child inside active container 14 from HHHL pendingStart=56 brokenIfReached=none
@@ -293,448 +292,479 @@
 [APVA] bar=57 join rejected: same-direction joined child would be created under parent=9 direction=Up children=13,14,15
 [APVA] bar=58 FTT candidate updated: id=9 lineage=7 candidateBar=58 price=30665
 [APVA] bar=58 FTT candidate updated: id=13 lineage=9 candidateBar=58 price=30665
-[APVA] bar=54 VE rebuilt: down container id=14 price pierced recalculated LTL/VE
-[APVA] bar=58 RTL wick adjustment: id=14 close remained inside container
 [APVA] bar=58 FTT candidate updated: id=15 lineage=9 candidateBar=58 price=30665
 [APVA] bar=58 VE created: up container id=15 high pierced LTL/VE
-[APVA] bar=58 same-direction suppression diagnostic: active id=15 dir=Up level=4 status=Adjusted start=54 end=58 reason=V2 local child inside active container 14 from HHHL pendingStart=57 brokenIfReached=none
-[APVA] bar=58 same-direction HHHL extended active Up container id=15; nested container suppressed
-[APVA] bar=58 join eligibility: newest=15 parent=14 level=4 candidates=15:Up:L4:Adjusted@54-58:p14
-[APVA] bar=58 lineage join candidate: lineage=9 triad=13,14,15 levels=2,3,4 parents=9,13,14 originFtt=9@34
-[APVA] bar=58 lineage triad geometry: triad=13,14,15 pattern=Up-Down-Up originFtt=9@34 leftP2=30665 middleP2=30601 rightP2=30665 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=56@30614.75 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=pass activeReject=none
-[APVA] bar=58 structural lineage join rejected: triad=13,14,15 reason=visual lineage join already eligible
+[APVA] bar=58 same-direction suppression diagnostic: active id=15 dir=Up level=4 status=Adjusted start=54 end=58 reason=V2 local child inside active container 14 from HHHL pendingStart=57 brokenIfReached=id=14 dir=Down level=3 status=Active start=52 end=58 reason=V2 local child inside active container 13 from LLLH parent=13
+[APVA] bar=58 lineage assigned: id=15 lineage=9 structuralParent=14 originFttContainer=9 originFttBar=34 role=Component reason=child promoted after parent break
+[APVA] bar=58 join eligibility: newest=15 parent=13 level=3 candidates=15:Up:L3:Adjusted@54-58:p13
 [APVA] bar=58 join rejected: same-direction joined child would be created under parent=9 direction=Up children=13,14,15
-[APVA] bar=59 V2 shadow decision: CreateChild id=16 parent=15 dir=Down level=5 start=58 end=59 reason=opposite tape inside local parent
+[APVA] bar=58 same-direction breakout promoted active child: child=15 sourceActive=15 inheritedParent=13 level=3 brokenParent=14
+[APVA] bar=59 V2 shadow decision: CreateChild id=16 parent=15 dir=Down level=4 start=58 end=59 reason=opposite tape inside local parent
 [APVA] bar=59 V2 child creation deferred: proposed parent id=15 is broken by current Down close
-[APVA] bar=59 same-direction suppression diagnostic: active id=14 dir=Down level=3 status=Adjusted start=52 end=59 reason=V2 local child inside active container 13 from LLLH pendingStart=58 brokenIfReached=id=15 dir=Up level=4 status=Adjusted start=54 end=59 reason=V2 local child inside active container 14 from HHHL parent=14
-[APVA] bar=59 same-direction suppression child diagnostic: parent=14 child=15 dir=Up level=4 status=Adjusted start=54 end=59 reason=V2 local child inside active container 14 from HHHL close=30627.75 rtl=30641.41666667 closeBreaks=True
-[APVA] bar=59 same-direction LLLH extended active Down container id=14; nested container suppressed
-[APVA] bar=59 join eligibility: newest=14 parent=13 level=3 candidates=14:Down:L3:Adjusted@52-59:p13
-[APVA] bar=59 lineage join candidate: lineage=9 triad=13,14,15 levels=2,3,4 parents=9,13,14 originFtt=9@34
-[APVA] bar=59 lineage triad geometry: triad=13,14,15 pattern=Up-Down-Up originFtt=9@34 leftP2=30665 middleP2=30601 rightP2=30665 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=59@30615.75 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=pass activeReject=none
-[APVA] bar=59 structural lineage join rejected: triad=13,14,15 reason=visual lineage join already eligible
-[APVA] bar=60 FTT confirmed: id=15 lineage=9 fttBar=58 price=30665 reason=RTL break side freeze
-[APVA] bar=60 container frozen: id=15 level=4 Up bar fully outside RTL break side
-[APVA] bar=60 V2 shadow decision: CreateChild id=16 parent=14 dir=Up level=4 start=59 end=60 reason=opposite tape inside local parent
-[APVA] bar=60 container created: id=16 Up L4 start=59 end=60 lineage=15 reason=V2 local child inside active container 14 from HighReversal
-[APVA] bar=60 lineage assigned: id=16 lineage=9 structuralParent=14 originFttContainer=9 originFttBar=34 role=Component reason=V2 local child
-[APVA] bar=60 V2 child container created: id=16 parent=14 level=4 reason=opposite tape inside local parent
-[APVA] bar=60 join eligibility: newest=16 parent=14 level=4 candidates=16:Up:L4:Active@59-60:p14
-[APVA] bar=60 lineage join candidate: lineage=9 triad=13,14,16 levels=2,3,4 parents=9,13,14 originFtt=9@34
-[APVA] bar=60 lineage triad geometry: triad=13,14,16 pattern=Up-Down-Up originFtt=9@34 leftP2=30665 middleP2=30601 rightP2=30647 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=60@30617.75 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=old-style same-direction extreme failed
-[APVA] bar=60 structural lineage join rejected: triad=13,14,16 reason=visual reject is not structural-only: old-style same-direction extreme failed
-[APVA] bar=60 join rejected: same-direction joined child would be created under parent=9 direction=Up children=11,14,16
+[APVA] bar=59 FTT confirmed: id=15 lineage=9 fttBar=58 price=30665 reason=container break
+[APVA] bar=59 container break: id=15 level=3 by LLLH
+[APVA] bar=59 initial VE anchor: down container id=16 second bar low exceeded parallel LTL
+[APVA] bar=59 container created: id=16 Down L3 start=58 end=59 lineage=15 reason=created from LLLH
+[APVA] bar=59 lineage assigned: id=16 lineage=9 structuralParent=13 originFttContainer=9 originFttBar=34 role=Component reason=created response inherited parent scope
+[APVA] bar=59 created response inherited parent scope: id=16 parent=13 broken=15 level=3
+[APVA] bar=59 join eligibility: newest=16 parent=13 level=3 candidates=16:Down:L3:Active@58-59:p13
+[APVA] bar=59 recent join rejected: 14,15,16 reason=right down container has not exceeded left down P2
+[APVA] bar=59 lineage triad geometry: triad=14,15,16 pattern=Down-Up-Down originFtt=9@34 leftP2=30601 middleP2=30665 rightP2=30615.75 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=58@30665 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
+[APVA] bar=60 RTL wick adjustment deferred: id=16 opposite child creation takes precedence
+[APVA] bar=60 V2 shadow decision: CreateChild id=17 parent=16 dir=Up level=4 start=59 end=60 reason=opposite tape inside local parent
+[APVA] bar=60 container created: id=17 Up L4 start=59 end=60 lineage=16 reason=V2 local child inside active container 16 from HighReversal
+[APVA] bar=60 lineage assigned: id=17 lineage=9 structuralParent=16 originFttContainer=9 originFttBar=34 role=Component reason=V2 local child
+[APVA] bar=60 V2 child container created: id=17 parent=16 level=4 reason=opposite tape inside local parent
+[APVA] bar=60 join eligibility: newest=17 parent=16 level=4 candidates=17:Up:L4:Active@59-60:p16
+[APVA] bar=60 lineage join candidate: lineage=9 triad=13,16,17 levels=2,3,4 parents=9,13,16 originFtt=9@34
+[APVA] bar=60 lineage triad geometry: triad=13,16,17 pattern=Up-Down-Up originFtt=9@34 leftP2=30665 middleP2=30615.75 rightP2=30647 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=60@30617.75 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=old-style same-direction extreme failed
+[APVA] bar=60 structural lineage join rejected: triad=13,16,17 reason=visual reject is not structural-only: old-style same-direction extreme failed
+[APVA] bar=60 join rejected: same-direction joined child would be created under parent=9 direction=Up children=11,16,17
 [APVA] bar=61 FTT confirmed: id=13 lineage=9 fttBar=58 price=30665 reason=RTL break side freeze
 [APVA] bar=61 container frozen: id=13 level=2 Up bar fully outside RTL break side
-[APVA] bar=60 demotion/style recalculation: id=15 level=3
-[APVA] bar=60 demotion/style recalculation: id=16 level=3
-[APVA] bar=61 lineage assigned: id=14 lineage=9 structuralParent=13 originFttContainer=9 originFttBar=34 role=Component reason=child promoted after parent break
-[APVA] bar=61 VE created: down container id=14 low pierced LTL/VE
-[APVA] bar=61 join eligibility: newest=14 parent=9 level=2 candidates=14:Down:L2:Adjusted@52-61:p9
-[APVA] bar=61 recent join rejected: 12,13,14 reason=right down container has not exceeded left down P2
-[APVA] bar=61 lineage triad geometry: triad=12,13,14 pattern=Down-Up-Down originFtt=9@34 leftP2=30532 middleP2=30665 rightP2=30601 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=58@30665 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
-[APVA] bar=61 recent join rejected: 11,13,14 reason=not an alternating triad
-[APVA] bar=61 recent join rejected: 11,12,14 reason=not an alternating triad
-[APVA] bar=61 recent join rejected: 10,13,14 reason=right down container has not exceeded left down P2
-[APVA] bar=61 lineage triad geometry: triad=10,13,14 pattern=Down-Up-Down originFtt=9@34 leftP2=30522 middleP2=30665 rightP2=30601 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=58@30665 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
-[APVA] bar=61 recent join rejected: 10,12,14 reason=not an alternating triad
-[APVA] bar=61 recent join rejected: 10,11,14 reason=right down container has not exceeded left down P2
-[APVA] bar=61 lineage triad geometry: triad=10,11,14 pattern=Down-Up-Down originFtt=9@34 leftP2=30522 middleP2=30604.25 rightP2=30601 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=58@30665 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
-[APVA] bar=61 child promoted after parent break: child=14 inheritedParent=9 level=2 brokenParent=13
-[APVA] bar=62 FTT candidate updated: id=14 lineage=9 candidateBar=62 price=30580.75
-[APVA] bar=62 VE created: down container id=14 low pierced LTL/VE
-[APVA] bar=62 FTT confirmed: id=16 lineage=9 fttBar=60 price=30647 reason=RTL break side freeze
-[APVA] bar=62 container frozen: id=16 level=3 Up bar fully outside RTL break side
-[APVA] bar=62 initial VE anchor: down container id=17 second bar low exceeded parallel LTL
-[APVA] bar=62 container created: id=17 Down L3 start=61 end=62 lineage=16 reason=same-direction response after child break 16 from LLLH
-[APVA] bar=62 lineage assigned: id=17 lineage=9 structuralParent=14 originFttContainer=9 originFttBar=34 role=Component reason=same-direction response after child break
-[APVA] bar=62 same-direction child response created: id=17 parent=14 level=3 after broken child=16
-[APVA] bar=62 join eligibility: newest=17 parent=14 level=3 candidates=17:Down:L3:Active@61-62:p14
-[APVA] bar=62 recent join rejected: 15,16,17 reason=not an alternating triad
-[APVA] bar=62 demotion/style recalculation: id=14 level=3
-[APVA] bar=60 demotion/style recalculation: id=15 level=4
-[APVA] bar=62 demotion/style recalculation: id=16 level=4
-[APVA] bar=62 demotion/style recalculation: id=17 level=4
+[APVA] bar=60 demotion/style recalculation: id=17 level=3
+[APVA] bar=61 FTT candidate updated: id=16 lineage=9 candidateBar=61 price=30611
+[APVA] bar=61 lineage assigned: id=16 lineage=9 structuralParent=13 originFttContainer=9 originFttBar=34 role=Component reason=child promoted after parent break
+[APVA] bar=61 join eligibility: newest=16 parent=9 level=2 candidates=16:Down:L2:Active@58-61:p9
+[APVA] bar=61 recent join rejected: 12,13,16 reason=right down container has not exceeded left down P2
+[APVA] bar=61 lineage triad geometry: triad=12,13,16 pattern=Down-Up-Down originFtt=9@34 leftP2=30532 middleP2=30665 rightP2=30611 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=58@30665 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
+[APVA] bar=61 recent join rejected: 11,13,16 reason=not an alternating triad
+[APVA] bar=61 recent join rejected: 11,12,16 reason=not an alternating triad
+[APVA] bar=61 recent join rejected: 10,13,16 reason=right down container has not exceeded left down P2
+[APVA] bar=61 lineage triad geometry: triad=10,13,16 pattern=Down-Up-Down originFtt=9@34 leftP2=30522 middleP2=30665 rightP2=30611 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=58@30665 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
+[APVA] bar=61 recent join rejected: 10,12,16 reason=not an alternating triad
+[APVA] bar=61 recent join rejected: 10,11,16 reason=right down container has not exceeded left down P2
+[APVA] bar=61 lineage triad geometry: triad=10,11,16 pattern=Down-Up-Down originFtt=9@34 leftP2=30522 middleP2=30604.25 rightP2=30611 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=58@30665 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
+[APVA] bar=61 child promoted after parent break: child=16 inheritedParent=9 level=2 brokenParent=13
+[APVA] bar=62 FTT candidate updated: id=16 lineage=9 candidateBar=62 price=30580.75
+[APVA] bar=59 VE rebuilt: down container id=16 price pierced recalculated LTL/VE
+[APVA] bar=62 RTL wick adjustment: id=16 close remained inside container
+[APVA] bar=62 FTT confirmed: id=17 lineage=9 fttBar=60 price=30647 reason=RTL break side freeze
+[APVA] bar=62 container frozen: id=17 level=3 Up bar fully outside RTL break side
+[APVA] bar=62 initial VE anchor: down container id=18 second bar low exceeded parallel LTL
+[APVA] bar=62 container created: id=18 Down L3 start=61 end=62 lineage=17 reason=same-direction response after child break 17 from LLLH
+[APVA] bar=62 lineage assigned: id=18 lineage=9 structuralParent=16 originFttContainer=9 originFttBar=34 role=Component reason=same-direction response after child break
+[APVA] bar=62 same-direction child response created: id=18 parent=16 level=3 after broken child=17
+[APVA] bar=62 join eligibility: newest=18 parent=16 level=3 candidates=18:Down:L3:Active@61-62:p16
 [APVA] bar=62 demotion/style recalculation: id=16 level=3
+[APVA] bar=62 demotion/style recalculation: id=17 level=4
+[APVA] bar=62 demotion/style recalculation: id=18 level=4
 [APVA] bar=62 demotion/style recalculation: id=17 level=3
-[APVA] bar=62 join accepted: parent=18 children=14,16,17 lineage=9
-[APVA] bar=62 lineage join accepted: parent=18 children=14,16,17 lineage=9 originFtt=9@34
-[APVA] bar=62 join eligibility: newest=18 parent=9 level=2 candidates=18:Down:L2:Active@52-62:p9
-[APVA] bar=62 recent join rejected: 12,13,18 reason=right down container has not exceeded left down P2
-[APVA] bar=62 lineage triad geometry: triad=12,13,18 pattern=Down-Up-Down originFtt=9@34 leftP2=30532 middleP2=30665 rightP2=30580.75 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=58@30665 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
-[APVA] bar=62 recent join rejected: 11,13,18 reason=not an alternating triad
-[APVA] bar=62 recent join rejected: 11,12,18 reason=not an alternating triad
-[APVA] bar=62 recent join rejected: 10,13,18 reason=right down container has not exceeded left down P2
-[APVA] bar=62 lineage triad geometry: triad=10,13,18 pattern=Down-Up-Down originFtt=9@34 leftP2=30522 middleP2=30665 rightP2=30580.75 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=58@30665 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
-[APVA] bar=62 recent join rejected: 10,12,18 reason=not an alternating triad
-[APVA] bar=62 recent join rejected: 10,11,18 reason=right down container has not exceeded left down P2
-[APVA] bar=62 lineage triad geometry: triad=10,11,18 pattern=Down-Up-Down originFtt=9@34 leftP2=30522 middleP2=30604.25 rightP2=30580.75 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=58@30665 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
+[APVA] bar=62 demotion/style recalculation: id=18 level=3
+[APVA] bar=62 join accepted: parent=19 children=16,17,18 lineage=9
+[APVA] bar=62 lineage join accepted: parent=19 children=16,17,18 lineage=9 originFtt=9@34
+[APVA] bar=62 join eligibility: newest=19 parent=9 level=2 candidates=19:Down:L2:Active@58-62:p9
+[APVA] bar=62 recent join rejected: 12,13,19 reason=right down container has not exceeded left down P2
+[APVA] bar=62 lineage triad geometry: triad=12,13,19 pattern=Down-Up-Down originFtt=9@34 leftP2=30532 middleP2=30665 rightP2=30580.75 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=58@30665 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
+[APVA] bar=62 recent join rejected: 11,13,19 reason=not an alternating triad
+[APVA] bar=62 recent join rejected: 11,12,19 reason=not an alternating triad
+[APVA] bar=62 recent join rejected: 10,13,19 reason=right down container has not exceeded left down P2
+[APVA] bar=62 lineage triad geometry: triad=10,13,19 pattern=Down-Up-Down originFtt=9@34 leftP2=30522 middleP2=30665 rightP2=30580.75 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=58@30665 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
+[APVA] bar=62 recent join rejected: 10,12,19 reason=not an alternating triad
+[APVA] bar=62 recent join rejected: 10,11,19 reason=right down container has not exceeded left down P2
+[APVA] bar=62 lineage triad geometry: triad=10,11,19 pattern=Down-Up-Down originFtt=9@34 leftP2=30522 middleP2=30604.25 rightP2=30580.75 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=58@30665 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
+[APVA] bar=63 FTT candidate updated: id=19 lineage=9 candidateBar=63 price=30574.5
 [APVA] bar=63 FTT candidate updated: id=18 lineage=9 candidateBar=63 price=30574.5
-[APVA] bar=63 VE created: down container id=18 low pierced LTL/VE
-[APVA] bar=63 FTT candidate updated: id=17 lineage=9 candidateBar=63 price=30574.5
-[APVA] bar=63 terminal joined child extended with parent: child=17 parent=18
-[APVA] bar=63 same-direction suppression diagnostic: active id=18 dir=Down level=2 status=Active start=52 end=63 reason=joined triad 14,16,17 pendingStart=62 brokenIfReached=none
-[APVA] bar=63 same-direction suppression child diagnostic: parent=18 child=16 dir=Up level=3 status=Joined start=59 end=62 reason=V2 local child inside active container 14 from HighReversal close=30601.25 rtl=30623.75 closeBreaks=False
-[APVA] bar=63 same-direction LowReversal extended active Down container id=18; nested container suppressed
-[APVA] bar=63 join eligibility: newest=18 parent=9 level=2 candidates=18:Down:L2:Active@52-63:p9
-[APVA] bar=63 recent join rejected: 12,13,18 reason=right down container has not exceeded left down P2
-[APVA] bar=63 lineage triad geometry: triad=12,13,18 pattern=Down-Up-Down originFtt=9@34 leftP2=30532 middleP2=30665 rightP2=30574.5 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=58@30665 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
-[APVA] bar=63 recent join rejected: 11,13,18 reason=not an alternating triad
-[APVA] bar=63 recent join rejected: 11,12,18 reason=not an alternating triad
-[APVA] bar=63 recent join rejected: 10,13,18 reason=right down container has not exceeded left down P2
-[APVA] bar=63 lineage triad geometry: triad=10,13,18 pattern=Down-Up-Down originFtt=9@34 leftP2=30522 middleP2=30665 rightP2=30574.5 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=58@30665 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
-[APVA] bar=63 recent join rejected: 10,12,18 reason=not an alternating triad
-[APVA] bar=63 recent join rejected: 10,11,18 reason=right down container has not exceeded left down P2
-[APVA] bar=63 lineage triad geometry: triad=10,11,18 pattern=Down-Up-Down originFtt=9@34 leftP2=30522 middleP2=30604.25 rightP2=30574.5 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=58@30665 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
+[APVA] bar=63 terminal joined child extended with parent: child=18 parent=19
+[APVA] bar=63 same-direction suppression diagnostic: active id=19 dir=Down level=2 status=Active start=58 end=63 reason=joined triad 16,17,18 pendingStart=62 brokenIfReached=none
+[APVA] bar=63 same-direction suppression child diagnostic: parent=19 child=17 dir=Up level=3 status=Joined start=59 end=62 reason=V2 local child inside active container 16 from HighReversal close=30601.25 rtl=30623.75 closeBreaks=False
+[APVA] bar=63 same-direction LowReversal extended active Down container id=19; nested container suppressed
+[APVA] bar=63 join eligibility: newest=19 parent=9 level=2 candidates=19:Down:L2:Active@58-63:p9
+[APVA] bar=63 recent join rejected: 12,13,19 reason=right down container has not exceeded left down P2
+[APVA] bar=63 lineage triad geometry: triad=12,13,19 pattern=Down-Up-Down originFtt=9@34 leftP2=30532 middleP2=30665 rightP2=30574.5 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=58@30665 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
+[APVA] bar=63 recent join rejected: 11,13,19 reason=not an alternating triad
+[APVA] bar=63 recent join rejected: 11,12,19 reason=not an alternating triad
+[APVA] bar=63 recent join rejected: 10,13,19 reason=right down container has not exceeded left down P2
+[APVA] bar=63 lineage triad geometry: triad=10,13,19 pattern=Down-Up-Down originFtt=9@34 leftP2=30522 middleP2=30665 rightP2=30574.5 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=58@30665 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
+[APVA] bar=63 recent join rejected: 10,12,19 reason=not an alternating triad
+[APVA] bar=63 recent join rejected: 10,11,19 reason=right down container has not exceeded left down P2
+[APVA] bar=63 lineage triad geometry: triad=10,11,19 pattern=Down-Up-Down originFtt=9@34 leftP2=30522 middleP2=30604.25 rightP2=30574.5 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=58@30665 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
 [APVA] bar=32 VE rebuilt: up container id=9 price pierced recalculated LTL/VE
 [APVA] bar=34 VE rebuilt: up container id=9 price pierced recalculated LTL/VE
 [APVA] bar=52 VE rebuilt: up container id=9 price pierced recalculated LTL/VE
 [APVA] bar=58 VE rebuilt: up container id=9 price pierced recalculated LTL/VE
 [APVA] bar=64 RTL wick adjustment: id=9 close remained inside container
+[APVA] bar=64 FTT candidate updated: id=19 lineage=9 candidateBar=64 price=30555.25
+[APVA] bar=64 VE created: down container id=19 low pierced LTL/VE
 [APVA] bar=64 FTT candidate updated: id=18 lineage=9 candidateBar=64 price=30555.25
-[APVA] bar=64 VE created: down container id=18 low pierced LTL/VE
-[APVA] bar=64 FTT candidate updated: id=17 lineage=9 candidateBar=64 price=30555.25
-[APVA] bar=62 VE rebuilt: down container id=17 price pierced recalculated LTL/VE
-[APVA] bar=64 VE rebuilt: down container id=17 price pierced recalculated LTL/VE
-[APVA] bar=64 RTL wick adjustment: id=17 close remained inside container
-[APVA] bar=64 terminal joined child extended with parent: child=17 parent=18
-[APVA] bar=64 same-direction suppression diagnostic: active id=17 dir=Down level=3 status=Adjusted start=61 end=64 reason=same-direction response after child break 16 from LLLH pendingStart=63 brokenIfReached=none
-[APVA] bar=64 same-direction OutsideBearish extended active Down container id=17; nested container suppressed
-[APVA] bar=64 join eligibility: newest=17 parent=18 level=3 candidates=17:Down:L3:Adjusted@61-64:p18
+[APVA] bar=62 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
+[APVA] bar=64 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
+[APVA] bar=64 RTL wick adjustment: id=18 close remained inside container
+[APVA] bar=64 terminal joined child extended with parent: child=18 parent=19
+[APVA] bar=64 same-direction suppression diagnostic: active id=18 dir=Down level=3 status=Adjusted start=61 end=64 reason=same-direction response after child break 17 from LLLH pendingStart=63 brokenIfReached=none
+[APVA] bar=64 same-direction OutsideBearish extended active Down container id=18; nested container suppressed
+[APVA] bar=64 join eligibility: newest=18 parent=19 level=3 candidates=18:Down:L3:Adjusted@61-64:p19
 [APVA] bar=32 VE rebuilt: up container id=9 price pierced recalculated LTL/VE
 [APVA] bar=34 VE rebuilt: up container id=9 price pierced recalculated LTL/VE
 [APVA] bar=52 VE rebuilt: up container id=9 price pierced recalculated LTL/VE
 [APVA] bar=58 VE rebuilt: up container id=9 price pierced recalculated LTL/VE
 [APVA] bar=65 RTL wick adjustment: id=9 close remained inside container
-[APVA] bar=65 FTT candidate updated: id=17 lineage=9 candidateBar=65 price=30550.5
 [APVA] bar=65 FTT candidate updated: id=18 lineage=9 candidateBar=65 price=30550.5
-[APVA] bar=65 VE created: down container id=18 low pierced LTL/VE
-[APVA] bar=65 FTT candidate updated: id=14 lineage=9 candidateBar=65 price=30550.5
-[APVA] bar=65 VE created: down container id=14 low pierced LTL/VE
-[APVA] bar=65 terminal joined child extended with parent: child=14 parent=18
-[APVA] bar=65 same-direction suppression diagnostic: active id=17 dir=Down level=3 status=Adjusted start=61 end=65 reason=same-direction response after child break 16 from LLLH pendingStart=64 brokenIfReached=none
-[APVA] bar=65 same-direction LLLH extended active Down container id=17; nested container suppressed
-[APVA] bar=65 join eligibility: newest=17 parent=18 level=3 candidates=17:Down:L3:Adjusted@61-65:p18
-[APVA] bar=66 RTL wick adjustment deferred: id=17 opposite child creation takes precedence
-[APVA] bar=66 terminal joined child extended with parent: child=14 parent=18
-[APVA] bar=66 V2 shadow decision: CreateChild id=19 parent=17 dir=Up level=4 start=65 end=66 reason=opposite tape inside local parent
-[APVA] bar=66 initial VE anchor: up container id=19 second bar high exceeded parallel LTL
-[APVA] bar=66 container created: id=19 Up L4 start=65 end=66 lineage=17 reason=V2 local child inside active container 17 from HHHL
-[APVA] bar=66 lineage assigned: id=19 lineage=9 structuralParent=17 originFttContainer=9 originFttBar=34 role=Component reason=V2 local child
-[APVA] bar=66 V2 child container created: id=19 parent=17 level=4 reason=opposite tape inside local parent
-[APVA] bar=66 join eligibility: newest=19 parent=17 level=4 candidates=19:Up:L4:Active@65-66:p17
-[APVA] bar=66 lineage join candidate: lineage=9 triad=16,17,19 levels=3,3,4 parents=18,18,17 originFtt=9@34
-[APVA] bar=66 lineage triad geometry: triad=16,17,19 pattern=Up-Down-Up originFtt=9@34 leftP2=30647 middleP2=30550.5 rightP2=30596.75 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=65@30550.5 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=middle FTT failed
-[APVA] bar=66 structural lineage join rejected: triad=16,17,19 reason=visual reject is not structural-only: middle FTT failed
+[APVA] bar=65 FTT candidate updated: id=19 lineage=9 candidateBar=65 price=30550.5
+[APVA] bar=65 FTT candidate updated: id=16 lineage=9 candidateBar=65 price=30550.5
+[APVA] bar=65 terminal joined child extended with parent: child=16 parent=19
+[APVA] bar=65 same-direction suppression diagnostic: active id=18 dir=Down level=3 status=Adjusted start=61 end=65 reason=same-direction response after child break 17 from LLLH pendingStart=64 brokenIfReached=none
+[APVA] bar=65 same-direction LLLH extended active Down container id=18; nested container suppressed
+[APVA] bar=65 join eligibility: newest=18 parent=19 level=3 candidates=18:Down:L3:Adjusted@61-65:p19
+[APVA] bar=66 RTL wick adjustment deferred: id=18 opposite child creation takes precedence
+[APVA] bar=64 VE rebuilt: down container id=19 price pierced recalculated LTL/VE
+[APVA] bar=66 RTL wick adjustment: id=19 close remained inside container
+[APVA] bar=66 terminal joined child extended with parent: child=16 parent=19
+[APVA] bar=66 V2 shadow decision: CreateChild id=20 parent=18 dir=Up level=4 start=65 end=66 reason=opposite tape inside local parent
+[APVA] bar=66 initial VE anchor: up container id=20 second bar high exceeded parallel LTL
+[APVA] bar=66 container created: id=20 Up L4 start=65 end=66 lineage=18 reason=V2 local child inside active container 18 from HHHL
+[APVA] bar=66 lineage assigned: id=20 lineage=9 structuralParent=18 originFttContainer=9 originFttBar=34 role=Component reason=V2 local child
+[APVA] bar=66 V2 child container created: id=20 parent=18 level=4 reason=opposite tape inside local parent
+[APVA] bar=66 join eligibility: newest=20 parent=18 level=4 candidates=20:Up:L4:Active@65-66:p18
+[APVA] bar=66 lineage join candidate: lineage=9 triad=17,18,20 levels=3,3,4 parents=19,19,18 originFtt=9@34
+[APVA] bar=66 lineage triad geometry: triad=17,18,20 pattern=Up-Down-Up originFtt=9@34 leftP2=30647 middleP2=30550.5 rightP2=30596.75 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=65@30550.5 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=middle FTT failed
+[APVA] bar=66 structural lineage join rejected: triad=17,18,20 reason=visual reject is not structural-only: middle FTT failed
 [APVA] bar=32 VE rebuilt: up container id=9 price pierced recalculated LTL/VE
 [APVA] bar=34 VE rebuilt: up container id=9 price pierced recalculated LTL/VE
 [APVA] bar=52 VE rebuilt: up container id=9 price pierced recalculated LTL/VE
 [APVA] bar=58 VE rebuilt: up container id=9 price pierced recalculated LTL/VE
 [APVA] bar=67 RTL wick adjustment: id=9 close remained inside container
-[APVA] bar=67 FTT candidate updated: id=17 lineage=9 candidateBar=67 price=30534.5
-[APVA] bar=62 VE rebuilt: down container id=17 price pierced recalculated LTL/VE
-[APVA] bar=64 VE rebuilt: down container id=17 price pierced recalculated LTL/VE
-[APVA] bar=67 RTL wick adjustment: id=17 close remained inside container
 [APVA] bar=67 FTT candidate updated: id=18 lineage=9 candidateBar=67 price=30534.5
-[APVA] bar=67 VE created: down container id=18 low pierced LTL/VE
-[APVA] bar=67 FTT candidate updated: id=14 lineage=9 candidateBar=67 price=30534.5
-[APVA] bar=67 VE created: down container id=14 low pierced LTL/VE
-[APVA] bar=67 terminal joined child extended with parent: child=14 parent=18
-[APVA] bar=67 RTL wick adjustment deferred: id=19 opposite child creation takes precedence
-[APVA] bar=67 V2 shadow decision: CreateChild id=20 parent=19 dir=Down level=5 start=66 end=67 reason=opposite tape inside local parent
-[APVA] bar=67 initial VE anchor: down container id=20 second bar low exceeded parallel LTL
-[APVA] bar=67 container created: id=20 Down L5 start=66 end=67 lineage=18 reason=V2 local child inside active container 19 from LLLH
-[APVA] bar=67 lineage assigned: id=20 lineage=9 structuralParent=19 originFttContainer=9 originFttBar=34 role=Component reason=V2 local child
-[APVA] bar=67 V2 child container created: id=20 parent=19 level=5 reason=opposite tape inside local parent
-[APVA] bar=67 join eligibility: newest=20 parent=19 level=5 candidates=20:Down:L5:Active@66-67:p19
-[APVA] bar=67 lineage join candidate: lineage=9 triad=17,19,20 levels=3,4,5 parents=18,17,19 originFtt=9@34
-[APVA] bar=67 lineage triad geometry: triad=17,19,20 pattern=Down-Up-Down originFtt=9@34 leftP2=30534.5 middleP2=30596.75 rightP2=30534.5 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=66@30596.75 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=pass activeReject=none
-[APVA] bar=67 structural lineage join rejected: triad=17,19,20 reason=visual lineage join already eligible
-[APVA] bar=67 join rejected: same-direction joined child would be created under parent=18 direction=Down children=17,19,20
+[APVA] bar=62 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
+[APVA] bar=64 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
+[APVA] bar=67 RTL wick adjustment: id=18 close remained inside container
+[APVA] bar=67 FTT candidate updated: id=19 lineage=9 candidateBar=67 price=30534.5
+[APVA] bar=64 VE rebuilt: down container id=19 price pierced recalculated LTL/VE
+[APVA] bar=67 RTL wick adjustment: id=19 close remained inside container
+[APVA] bar=67 FTT candidate updated: id=16 lineage=9 candidateBar=67 price=30534.5
+[APVA] bar=67 terminal joined child extended with parent: child=16 parent=19
+[APVA] bar=67 RTL wick adjustment deferred: id=20 opposite child creation takes precedence
+[APVA] bar=67 V2 shadow decision: CreateChild id=21 parent=20 dir=Down level=5 start=66 end=67 reason=opposite tape inside local parent
+[APVA] bar=67 initial VE anchor: down container id=21 second bar low exceeded parallel LTL
+[APVA] bar=67 container created: id=21 Down L5 start=66 end=67 lineage=19 reason=V2 local child inside active container 20 from LLLH
+[APVA] bar=67 lineage assigned: id=21 lineage=9 structuralParent=20 originFttContainer=9 originFttBar=34 role=Component reason=V2 local child
+[APVA] bar=67 V2 child container created: id=21 parent=20 level=5 reason=opposite tape inside local parent
+[APVA] bar=67 join eligibility: newest=21 parent=20 level=5 candidates=21:Down:L5:Active@66-67:p20
+[APVA] bar=67 lineage join candidate: lineage=9 triad=18,20,21 levels=3,4,5 parents=19,18,20 originFtt=9@34
+[APVA] bar=67 lineage triad geometry: triad=18,20,21 pattern=Down-Up-Down originFtt=9@34 leftP2=30534.5 middleP2=30596.75 rightP2=30534.5 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=66@30596.75 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=pass activeReject=none
+[APVA] bar=67 structural lineage join rejected: triad=18,20,21 reason=visual lineage join already eligible
+[APVA] bar=67 join rejected: same-direction joined child would be created under parent=19 direction=Down children=18,20,21
 [APVA] bar=68 lateral building: bar remains inside origin boundary 67
-[APVA] bar=62 VE rebuilt: down container id=17 price pierced recalculated LTL/VE
-[APVA] bar=64 VE rebuilt: down container id=17 price pierced recalculated LTL/VE
-[APVA] bar=67 VE rebuilt: down container id=17 price pierced recalculated LTL/VE
-[APVA] bar=68 RTL wick adjustment: id=17 close remained inside container
-[APVA] bar=68 terminal joined child extended with parent: child=14 parent=18
-[APVA] bar=66 VE rebuilt: up container id=19 price pierced recalculated LTL/VE
+[APVA] bar=62 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
+[APVA] bar=64 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
+[APVA] bar=67 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
+[APVA] bar=68 RTL wick adjustment: id=18 close remained inside container
+[APVA] bar=64 VE rebuilt: down container id=19 price pierced recalculated LTL/VE
 [APVA] bar=68 RTL wick adjustment: id=19 close remained inside container
-[APVA] bar=67 VE rebuilt: down container id=20 price pierced recalculated LTL/VE
-[APVA] bar=68 RTL wick adjustment: id=20 close remained inside container
+[APVA] bar=68 terminal joined child frozen: child=16 parent=19 bar fully outside RTL break side
+[APVA] bar=68 RTL wick adjustment rejected: id=20 would violate Up P1/P3 geometry p1=30550.5 candidateP3=30549
+[APVA] bar=67 VE rebuilt: down container id=21 price pierced recalculated LTL/VE
+[APVA] bar=68 RTL wick adjustment: id=21 close remained inside container
 [APVA] bar=68 skipped translational bar InsideBar; pending start remains 67
 [APVA] bar=69 lateral building: bar remains inside origin boundary 67
-[APVA] bar=69 terminal joined child extended with parent: child=14 parent=18
-[APVA] bar=69 V2 shadow decision: CreateChild id=21 parent=20 dir=Up level=6 start=67 end=69 reason=opposite tape inside local parent
-[APVA] bar=69 V2 child creation deferred: proposed parent id=20 is broken by current Up close
-[APVA] bar=69 same-direction suppression diagnostic: active id=19 dir=Up level=4 status=Adjusted start=65 end=69 reason=V2 local child inside active container 17 from HHHL pendingStart=67 brokenIfReached=id=20 dir=Down level=5 status=Adjusted start=66 end=69 reason=V2 local child inside active container 19 from LLLH parent=19
-[APVA] bar=69 same-direction suppression child diagnostic: parent=19 child=20 dir=Down level=5 status=Adjusted start=66 end=69 reason=V2 local child inside active container 19 from LLLH close=30582 rtl=30581.75 closeBreaks=True
-[APVA] bar=69 same-direction HHHL extended active Up container id=19; nested container suppressed
-[APVA] bar=69 join eligibility: newest=19 parent=17 level=4 candidates=19:Up:L4:Adjusted@65-69:p17
-[APVA] bar=69 lineage join candidate: lineage=9 triad=16,17,19 levels=3,3,4 parents=18,18,17 originFtt=9@34
-[APVA] bar=69 lineage triad geometry: triad=16,17,19 pattern=Up-Down-Up originFtt=9@34 leftP2=30647 middleP2=30534.5 rightP2=30596.75 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=67@30534.5 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=middle FTT failed
-[APVA] bar=69 structural lineage join rejected: triad=16,17,19 reason=visual reject is not structural-only: middle FTT failed
-[APVA] bar=69 lineage join candidate: lineage=9 triad=17,19,20 levels=3,4,5 parents=18,17,19 originFtt=9@34
-[APVA] bar=69 lineage triad geometry: triad=17,19,20 pattern=Down-Up-Down originFtt=9@34 leftP2=30534.5 middleP2=30596.75 rightP2=30534.5 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=69@30587.75 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=pass activeReject=none
-[APVA] bar=69 structural lineage join rejected: triad=17,19,20 reason=visual lineage join already eligible
+[APVA] bar=66 VE rebuilt: up container id=20 price pierced recalculated LTL/VE
+[APVA] bar=69 RTL wick adjustment: id=20 close remained inside container
+[APVA] bar=69 V2 shadow decision: CreateChild id=22 parent=21 dir=Up level=6 start=67 end=69 reason=opposite tape inside local parent
+[APVA] bar=69 V2 child creation deferred: proposed parent id=21 is broken by current Up close
+[APVA] bar=69 same-direction suppression diagnostic: active id=20 dir=Up level=4 status=Adjusted start=65 end=69 reason=V2 local child inside active container 18 from HHHL pendingStart=67 brokenIfReached=id=21 dir=Down level=5 status=Adjusted start=66 end=69 reason=V2 local child inside active container 20 from LLLH parent=20
+[APVA] bar=69 same-direction suppression child diagnostic: parent=20 child=21 dir=Down level=5 status=Adjusted start=66 end=69 reason=V2 local child inside active container 20 from LLLH close=30582 rtl=30581.75 closeBreaks=True
+[APVA] bar=69 same-direction HHHL extended active Up container id=20; nested container suppressed
+[APVA] bar=69 join eligibility: newest=20 parent=18 level=4 candidates=20:Up:L4:Adjusted@65-69:p18
+[APVA] bar=69 lineage join candidate: lineage=9 triad=17,18,20 levels=3,3,4 parents=19,19,18 originFtt=9@34
+[APVA] bar=69 lineage triad geometry: triad=17,18,20 pattern=Up-Down-Up originFtt=9@34 leftP2=30647 middleP2=30534.5 rightP2=30596.75 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=67@30534.5 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=middle FTT failed
+[APVA] bar=69 structural lineage join rejected: triad=17,18,20 reason=visual reject is not structural-only: middle FTT failed
+[APVA] bar=69 lineage join candidate: lineage=9 triad=18,20,21 levels=3,4,5 parents=19,18,20 originFtt=9@34
+[APVA] bar=69 lineage triad geometry: triad=18,20,21 pattern=Down-Up-Down originFtt=9@34 leftP2=30534.5 middleP2=30596.75 rightP2=30534.5 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=69@30587.75 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=pass activeReject=none
+[APVA] bar=69 structural lineage join rejected: triad=18,20,21 reason=visual lineage join already eligible
 [APVA] bar=70 lateral compressed as synthetic one-bar context from 67
-[APVA] bar=62 VE rebuilt: down container id=17 price pierced recalculated LTL/VE
-[APVA] bar=63 VE rebuilt: down container id=17 price pierced recalculated LTL/VE
-[APVA] bar=64 VE rebuilt: down container id=17 price pierced recalculated LTL/VE
-[APVA] bar=67 VE rebuilt: down container id=17 price pierced recalculated LTL/VE
-[APVA] bar=70 RTL wick adjustment: id=17 close remained inside container
-[APVA] bar=70 terminal joined child extended with parent: child=14 parent=18
-[APVA] bar=67 VE rebuilt: down container id=20 price pierced recalculated LTL/VE
-[APVA] bar=70 RTL wick adjustment: id=20 close remained inside container
-[APVA] bar=70 same-direction suppression diagnostic: active id=20 dir=Down level=5 status=Adjusted start=66 end=70 reason=V2 local child inside active container 19 from LLLH pendingStart=69 brokenIfReached=none
-[APVA] bar=70 same-direction LLLH extended active Down container id=20; nested container suppressed
-[APVA] bar=70 join eligibility: newest=20 parent=19 level=5 candidates=20:Down:L5:Adjusted@66-70:p19
-[APVA] bar=70 lineage join candidate: lineage=9 triad=17,19,20 levels=3,4,5 parents=18,17,19 originFtt=9@34
-[APVA] bar=70 lineage triad geometry: triad=17,19,20 pattern=Down-Up-Down originFtt=9@34 leftP2=30534.5 middleP2=30596.75 rightP2=30534.5 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=70@30587 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=pass activeReject=none
-[APVA] bar=70 structural lineage join rejected: triad=17,19,20 reason=visual lineage join already eligible
-[APVA] bar=70 join rejected: same-direction joined child would be created under parent=18 direction=Down children=17,19,20
+[APVA] bar=62 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
+[APVA] bar=63 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
+[APVA] bar=64 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
+[APVA] bar=67 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
+[APVA] bar=70 RTL wick adjustment: id=18 close remained inside container
+[APVA] bar=64 VE rebuilt: down container id=19 price pierced recalculated LTL/VE
+[APVA] bar=67 VE rebuilt: down container id=19 price pierced recalculated LTL/VE
+[APVA] bar=70 RTL wick adjustment: id=19 close remained inside container
+[APVA] bar=67 VE rebuilt: down container id=21 price pierced recalculated LTL/VE
+[APVA] bar=70 RTL wick adjustment: id=21 close remained inside container
+[APVA] bar=70 same-direction suppression diagnostic: active id=21 dir=Down level=5 status=Adjusted start=66 end=70 reason=V2 local child inside active container 20 from LLLH pendingStart=69 brokenIfReached=id=20 dir=Up level=4 status=Adjusted start=65 end=70 reason=V2 local child inside active container 18 from HHHL parent=18
+[APVA] bar=70 lineage assigned: id=21 lineage=9 structuralParent=20 originFttContainer=9 originFttBar=34 role=Component reason=child promoted after parent break
+[APVA] bar=70 join eligibility: newest=21 parent=18 level=4 candidates=21:Down:L4:Adjusted@66-70:p18
+[APVA] bar=70 join rejected: same-direction joined child would be created under parent=19 direction=Down children=18,20,21
+[APVA] bar=70 same-direction breakout promoted active child: child=21 sourceActive=21 inheritedParent=18 level=4 brokenParent=20
 [APVA] bar=71 lateral compressed as synthetic one-bar context from 67
-[APVA] bar=71 terminal joined child extended with parent: child=14 parent=18
-[APVA] bar=71 same-direction suppression diagnostic: active id=20 dir=Down level=5 status=Adjusted start=66 end=71 reason=V2 local child inside active container 19 from LLLH pendingStart=70 brokenIfReached=none
-[APVA] bar=71 same-direction LLLH extended active Down container id=20; nested container suppressed
-[APVA] bar=71 join eligibility: newest=20 parent=19 level=5 candidates=20:Down:L5:Adjusted@66-71:p19
-[APVA] bar=71 lineage join candidate: lineage=9 triad=17,19,20 levels=3,4,5 parents=18,17,19 originFtt=9@34
-[APVA] bar=71 lineage triad geometry: triad=17,19,20 pattern=Down-Up-Down originFtt=9@34 leftP2=30534.5 middleP2=30596.75 rightP2=30534.5 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=70@30587 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=pass activeReject=none
-[APVA] bar=71 structural lineage join rejected: triad=17,19,20 reason=visual lineage join already eligible
-[APVA] bar=71 join rejected: same-direction joined child would be created under parent=18 direction=Down children=17,19,20
+[APVA] bar=71 same-direction suppression diagnostic: active id=21 dir=Down level=4 status=Adjusted start=66 end=71 reason=V2 local child inside active container 20 from LLLH pendingStart=70 brokenIfReached=none
+[APVA] bar=71 same-direction LLLH extended active Down container id=21; nested container suppressed
+[APVA] bar=71 join eligibility: newest=21 parent=18 level=4 candidates=21:Down:L4:Adjusted@66-71:p18
+[APVA] bar=71 join rejected: same-direction joined child would be created under parent=19 direction=Down children=18,20,21
 [APVA] bar=72 lateral compressed as synthetic one-bar context from 67
-[APVA] bar=72 terminal joined child extended with parent: child=14 parent=18
-[APVA] bar=72 FTT candidate updated: id=19 lineage=9 candidateBar=72 price=30597.75
-[APVA] bar=72 VE created: up container id=19 high pierced LTL/VE
-[APVA] bar=72 V2 shadow decision: CreateChild id=21 parent=20 dir=Up level=6 start=71 end=72 reason=opposite tape inside local parent
+[APVA] bar=72 V2 shadow decision: CreateChild id=22 parent=21 dir=Up level=5 start=71 end=72 reason=opposite tape inside local parent
 [APVA] bar=72 lateral resolved into container from origin 67
-[APVA] bar=72 V2 child creation deferred: proposed parent id=20 is broken by current Up close
-[APVA] bar=72 same-direction suppression diagnostic: active id=19 dir=Up level=4 status=Adjusted start=65 end=72 reason=V2 local child inside active container 17 from HHHL pendingStart=71 brokenIfReached=id=20 dir=Down level=5 status=Adjusted start=66 end=72 reason=V2 local child inside active container 19 from LLLH parent=19
-[APVA] bar=72 same-direction suppression child diagnostic: parent=19 child=20 dir=Down level=5 status=Adjusted start=66 end=72 reason=V2 local child inside active container 19 from LLLH close=30585.25 rtl=30582.125 closeBreaks=True
-[APVA] bar=72 same-direction HHHL extended active Up container id=19; nested container suppressed
-[APVA] bar=72 join eligibility: newest=19 parent=17 level=4 candidates=19:Up:L4:Adjusted@65-72:p17
-[APVA] bar=72 lineage join candidate: lineage=9 triad=16,17,19 levels=3,3,4 parents=18,18,17 originFtt=9@34
-[APVA] bar=72 lineage triad geometry: triad=16,17,19 pattern=Up-Down-Up originFtt=9@34 leftP2=30647 middleP2=30534.5 rightP2=30597.75 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=67@30534.5 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=middle FTT failed
-[APVA] bar=72 structural lineage join rejected: triad=16,17,19 reason=visual reject is not structural-only: middle FTT failed
-[APVA] bar=72 lineage join candidate: lineage=9 triad=17,19,20 levels=3,4,5 parents=18,17,19 originFtt=9@34
-[APVA] bar=72 lineage triad geometry: triad=17,19,20 pattern=Down-Up-Down originFtt=9@34 leftP2=30534.5 middleP2=30597.75 rightP2=30534.5 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=72@30597.75 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=pass activeReject=none
-[APVA] bar=72 structural lineage join rejected: triad=17,19,20 reason=visual lineage join already eligible
+[APVA] bar=72 V2 child creation deferred: proposed parent id=21 is broken by current Up close
+[APVA] bar=72 same-direction suppression diagnostic: active id=9 dir=Up level=1 status=Adjusted start=30 end=72 reason=V2 local child inside active container 8 from HHHL pendingStart=71 brokenIfReached=id=21 dir=Down level=4 status=Adjusted start=66 end=72 reason=V2 local child inside active container 20 from LLLH parent=18
+[APVA] bar=72 same-direction suppression child diagnostic: parent=9 child=10 dir=Down level=2 status=Broken start=34 end=40 reason=V2 local child inside active container 9 from LowReversal close=30585.25 rtl=30140.25 closeBreaks=False
+[APVA] bar=72 same-direction suppression child diagnostic: parent=9 child=12 dir=Down level=2 status=Broken start=41 end=51 reason=V2 local child inside active container 9 from LLLH close=30585.25 rtl=30557.75 closeBreaks=False
+[APVA] bar=72 same-direction suppression child diagnostic: parent=9 child=19 dir=Down level=2 status=Adjusted start=58 end=72 reason=joined triad 16,17,18 close=30585.25 rtl=30574 closeBreaks=True
+[APVA] bar=72 same-direction HHHL extended active Up container id=9; nested container suppressed
 [APVA] bar=73 lateral building: bar remains inside origin boundary 72
-[APVA] bar=73 terminal joined child extended with parent: child=14 parent=18
+[APVA] bar=73 FTT confirmed: id=19 lineage=9 fttBar=67 price=30534.5 reason=RTL break side freeze
+[APVA] bar=73 container frozen: id=19 level=2 Down bar fully outside RTL break side
 [APVA] bar=73 skipped translational bar InsideBar; pending start remains 72
 [APVA] bar=74 lateral building: bar remains inside origin boundary 72
-[APVA] bar=62 VE rebuilt: down container id=17 price pierced recalculated LTL/VE
-[APVA] bar=63 VE rebuilt: down container id=17 price pierced recalculated LTL/VE
-[APVA] bar=64 VE rebuilt: down container id=17 price pierced recalculated LTL/VE
-[APVA] bar=65 VE rebuilt: down container id=17 price pierced recalculated LTL/VE
-[APVA] bar=67 VE rebuilt: down container id=17 price pierced recalculated LTL/VE
-[APVA] bar=74 RTL wick adjustment: id=17 close remained inside container
-[APVA] bar=74 terminal joined child extended with parent: child=14 parent=18
-[APVA] bar=67 VE rebuilt: down container id=20 price pierced recalculated LTL/VE
-[APVA] bar=74 RTL wick adjustment: id=20 close remained inside container
-[APVA] bar=74 same-direction suppression diagnostic: active id=20 dir=Down level=5 status=Adjusted start=66 end=74 reason=V2 local child inside active container 19 from LLLH pendingStart=72 brokenIfReached=none
-[APVA] bar=74 same-direction LLLH extended active Down container id=20; nested container suppressed
-[APVA] bar=74 join eligibility: newest=20 parent=19 level=5 candidates=20:Down:L5:Adjusted@66-74:p19
-[APVA] bar=74 lineage join candidate: lineage=9 triad=17,19,20 levels=3,4,5 parents=18,17,19 originFtt=9@34
-[APVA] bar=74 lineage triad geometry: triad=17,19,20 pattern=Down-Up-Down originFtt=9@34 leftP2=30534.5 middleP2=30597.75 rightP2=30534.5 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=72@30597.75 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=pass activeReject=none
-[APVA] bar=74 structural lineage join rejected: triad=17,19,20 reason=visual lineage join already eligible
-[APVA] bar=74 join rejected: same-direction joined child would be created under parent=18 direction=Down children=17,19,20
+[APVA] bar=74 V2 shadow decision: CreateChild id=22 parent=9 dir=Down level=2 start=72 end=74 reason=opposite tape inside local parent
+[APVA] bar=74 container created: id=22 Down L2 start=72 end=74 lineage=20 reason=V2 local child inside active container 9 from LLLH
+[APVA] bar=74 lineage assigned: id=22 lineage=21 structuralParent=9 originFttContainer=9 originFttBar=58 role=Component reason=V2 local child
+[APVA] bar=74 V2 child container created: id=22 parent=9 level=2 reason=opposite tape inside local parent
+[APVA] bar=74 join eligibility: newest=22 parent=9 level=2 candidates=22:Down:L2:Active@72-74:p9
+[APVA] bar=74 recent join rejected: 13,19,22 reason=not an alternating triad
+[APVA] bar=74 recent join rejected: 12,19,22 reason=not an alternating triad
+[APVA] bar=74 recent join rejected: 12,13,22 reason=right down container has not exceeded left down P2
+[APVA] bar=74 recent join rejected: 11,19,22 reason=not an alternating triad
+[APVA] bar=74 recent join rejected: 11,13,22 reason=not an alternating triad
+[APVA] bar=74 recent join rejected: 11,12,22 reason=not an alternating triad
+[APVA] bar=74 recent join rejected: 10,19,22 reason=not an alternating triad
+[APVA] bar=74 recent join rejected: 10,13,22 reason=right down container has not exceeded left down P2
+[APVA] bar=74 recent join rejected: 10,12,22 reason=not an alternating triad
+[APVA] bar=74 recent join rejected: 10,11,22 reason=right down container has not exceeded left down P2
 [APVA] bar=75 lateral compressed as synthetic one-bar context from 72
-[APVA] bar=75 terminal joined child extended with parent: child=14 parent=18
-[APVA] bar=75 FTT candidate updated: id=19 lineage=9 candidateBar=75 price=30599.5
-[APVA] bar=75 VE created: up container id=19 high pierced LTL/VE
-[APVA] bar=75 V2 shadow decision: CreateChild id=21 parent=20 dir=Up level=6 start=74 end=75 reason=opposite tape inside local parent
+[APVA] bar=75 V2 shadow decision: CreateChild id=23 parent=22 dir=Up level=3 start=74 end=75 reason=opposite tape inside local parent
 [APVA] bar=75 lateral resolved into container from origin 72
-[APVA] bar=75 V2 child creation deferred: proposed parent id=20 is broken by current Up close
-[APVA] bar=75 same-direction suppression diagnostic: active id=19 dir=Up level=4 status=Adjusted start=65 end=75 reason=V2 local child inside active container 17 from HHHL pendingStart=74 brokenIfReached=id=20 dir=Down level=5 status=Adjusted start=66 end=75 reason=V2 local child inside active container 19 from LLLH parent=19
-[APVA] bar=75 same-direction suppression child diagnostic: parent=19 child=20 dir=Down level=5 status=Adjusted start=66 end=75 reason=V2 local child inside active container 19 from LLLH close=30588.25 rtl=30588.03125 closeBreaks=True
-[APVA] bar=75 same-direction HHHL extended active Up container id=19; nested container suppressed
-[APVA] bar=75 join eligibility: newest=19 parent=17 level=4 candidates=19:Up:L4:Adjusted@65-75:p17
-[APVA] bar=75 lineage join candidate: lineage=9 triad=16,17,19 levels=3,3,4 parents=18,18,17 originFtt=9@34
-[APVA] bar=75 lineage triad geometry: triad=16,17,19 pattern=Up-Down-Up originFtt=9@34 leftP2=30647 middleP2=30534.5 rightP2=30599.5 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=fail joinedP3=67@30534.5 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=middle FTT failed
-[APVA] bar=75 structural lineage join rejected: triad=16,17,19 reason=visual reject is not structural-only: middle FTT failed
-[APVA] bar=75 lineage join candidate: lineage=9 triad=17,19,20 levels=3,4,5 parents=18,17,19 originFtt=9@34
-[APVA] bar=75 lineage triad geometry: triad=17,19,20 pattern=Down-Up-Down originFtt=9@34 leftP2=30534.5 middleP2=30599.5 rightP2=30534.5 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=pass joinedP3=75@30599.5 joinedP1P3=pass oldStyleWouldAccept=True activeLineageEligible=pass activeReject=none
-[APVA] bar=75 structural lineage join rejected: triad=17,19,20 reason=visual lineage join already eligible
-[APVA] bar=63 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
-[APVA] bar=64 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
-[APVA] bar=65 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
-[APVA] bar=67 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
-[APVA] bar=76 RTL wick adjustment: id=18 close remained inside container
-[APVA] bar=76 terminal joined child extended with parent: child=14 parent=18
-[APVA] bar=76 FTT candidate updated: id=19 lineage=9 candidateBar=76 price=30648.75
-[APVA] bar=76 VE created: up container id=19 high pierced LTL/VE
-[APVA] bar=76 V2 shadow decision: CreateChild id=21 parent=20 dir=Up level=6 start=75 end=76 reason=opposite tape inside local parent
-[APVA] bar=76 V2 child creation deferred: proposed parent id=20 is broken by current Up close
-[APVA] bar=76 same-direction suppression diagnostic: active id=19 dir=Up level=4 status=Adjusted start=65 end=76 reason=V2 local child inside active container 17 from HHHL pendingStart=75 brokenIfReached=id=20 dir=Down level=5 status=Adjusted start=66 end=76 reason=V2 local child inside active container 19 from LLLH parent=19
-[APVA] bar=76 same-direction suppression child diagnostic: parent=19 child=20 dir=Down level=5 status=Adjusted start=66 end=76 reason=V2 local child inside active container 19 from LLLH close=30626 rtl=30587.0625 closeBreaks=True
-[APVA] bar=76 same-direction HHHL extended active Up container id=19; nested container suppressed
-[APVA] bar=76 join eligibility: newest=19 parent=17 level=4 candidates=19:Up:L4:Adjusted@65-76:p17
-[APVA] bar=76 lineage join candidate: lineage=9 triad=16,17,19 levels=3,3,4 parents=18,18,17 originFtt=9@34
-[APVA] bar=76 lineage triad geometry: triad=16,17,19 pattern=Up-Down-Up originFtt=9@34 leftP2=30647 middleP2=30534.5 rightP2=30648.75 currentResume=pass currentReject=none p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=pass joinedP3=67@30534.5 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=middle FTT failed
-[APVA] bar=76 structural lineage join rejected: triad=16,17,19 reason=visual reject is not structural-only: middle FTT failed
-[APVA] bar=76 lineage join candidate: lineage=9 triad=17,19,20 levels=3,4,5 parents=18,17,19 originFtt=9@34
-[APVA] bar=76 lineage triad geometry: triad=17,19,20 pattern=Down-Up-Down originFtt=9@34 leftP2=30534.5 middleP2=30648.75 rightP2=30534.5 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=fail oldExtreme=pass joinedP3=76@30648.75 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=middle FTT failed
-[APVA] bar=76 structural lineage join rejected: triad=17,19,20 reason=visual reject is not structural-only: middle FTT failed
-[APVA] bar=76 join rejected: same-direction joined child would be created under parent=9 direction=Up children=11,17,19
+[APVA] bar=75 V2 child creation deferred: proposed parent id=22 is broken by current Up close
+[APVA] bar=75 same-direction suppression diagnostic: active id=9 dir=Up level=1 status=Adjusted start=30 end=75 reason=V2 local child inside active container 8 from HHHL pendingStart=74 brokenIfReached=id=22 dir=Down level=2 status=Active start=72 end=75 reason=V2 local child inside active container 9 from LLLH parent=9
+[APVA] bar=75 same-direction suppression child diagnostic: parent=9 child=10 dir=Down level=2 status=Broken start=34 end=40 reason=V2 local child inside active container 9 from LowReversal close=30588.25 rtl=30102.75 closeBreaks=False
+[APVA] bar=75 same-direction suppression child diagnostic: parent=9 child=12 dir=Down level=2 status=Broken start=41 end=51 reason=V2 local child inside active container 9 from LLLH close=30588.25 rtl=30553.25 closeBreaks=False
+[APVA] bar=75 same-direction suppression child diagnostic: parent=9 child=19 dir=Down level=2 status=Broken start=58 end=73 reason=joined triad 16,17,18 close=30588.25 rtl=30554.5 closeBreaks=False
+[APVA] bar=75 same-direction suppression child diagnostic: parent=9 child=22 dir=Down level=2 status=Active start=72 end=75 reason=V2 local child inside active container 9 from LLLH close=30588.25 rtl=30584.625 closeBreaks=True
+[APVA] bar=75 same-direction HHHL extended active Up container id=9; nested container suppressed
+[APVA] bar=76 V2 shadow decision: CreateChild id=23 parent=22 dir=Up level=3 start=75 end=76 reason=opposite tape inside local parent
+[APVA] bar=76 V2 child creation deferred: proposed parent id=22 is broken by current Up close
+[APVA] bar=76 same-direction suppression diagnostic: active id=9 dir=Up level=1 status=Adjusted start=30 end=76 reason=V2 local child inside active container 8 from HHHL pendingStart=75 brokenIfReached=id=22 dir=Down level=2 status=Active start=72 end=76 reason=V2 local child inside active container 9 from LLLH parent=9
+[APVA] bar=76 same-direction suppression child diagnostic: parent=9 child=10 dir=Down level=2 status=Broken start=34 end=40 reason=V2 local child inside active container 9 from LowReversal close=30626 rtl=30090.25 closeBreaks=False
+[APVA] bar=76 same-direction suppression child diagnostic: parent=9 child=12 dir=Down level=2 status=Broken start=41 end=51 reason=V2 local child inside active container 9 from LLLH close=30626 rtl=30551.75 closeBreaks=False
+[APVA] bar=76 same-direction suppression child diagnostic: parent=9 child=19 dir=Down level=2 status=Broken start=58 end=73 reason=joined triad 16,17,18 close=30626 rtl=30548 closeBreaks=False
+[APVA] bar=76 same-direction suppression child diagnostic: parent=9 child=22 dir=Down level=2 status=Active start=72 end=76 reason=V2 local child inside active container 9 from LLLH close=30626 rtl=30580.25 closeBreaks=True
+[APVA] bar=76 same-direction HHHL extended active Up container id=9; nested container suppressed
 [APVA] bar=77 FTT candidate updated: id=9 lineage=7 candidateBar=77 price=30673.5
-[APVA] bar=77 FTT confirmed: id=17 lineage=9 fttBar=67 price=30534.5 reason=RTL break side freeze
-[APVA] bar=77 container frozen: id=17 level=3 Down bar fully outside RTL break side
-[APVA] bar=77 terminal joined child extended with parent: child=14 parent=18
-[APVA] bar=76 demotion/style recalculation: id=20 level=4
-[APVA] bar=77 FTT candidate updated: id=19 lineage=9 candidateBar=77 price=30673.5
-[APVA] bar=77 lineage assigned: id=19 lineage=9 structuralParent=17 originFttContainer=9 originFttBar=34 role=Component reason=child promoted after parent break
-[APVA] bar=77 VE created: up container id=19 high pierced LTL/VE
-[APVA] bar=77 join eligibility: newest=19 parent=18 level=3 candidates=19:Up:L3:Adjusted@65-77:p18
-[APVA] bar=77 join rejected: same-direction joined child would be created under parent=9 direction=Up children=11,17,19
-[APVA] bar=77 child promoted after parent break: child=19 inheritedParent=18 level=3 brokenParent=17
+[APVA] bar=77 FTT confirmed: id=22 lineage=21 fttBar=72 price=30552.25 reason=RTL break side freeze
+[APVA] bar=77 container frozen: id=22 level=2 Down bar fully outside RTL break side
+[APVA] bar=77 container created: id=23 Up L2 start=76 end=77 lineage=22 reason=same-direction response after child break 22 from HHHL
+[APVA] bar=77 lineage assigned: id=23 lineage=21 structuralParent=9 originFttContainer=9 originFttBar=58 role=Component reason=same-direction response after child break
+[APVA] bar=77 same-direction child response created: id=23 parent=9 level=2 after broken child=22
+[APVA] bar=77 join eligibility: newest=23 parent=9 level=2 candidates=23:Up:L2:Active@76-77:p9
+[APVA] bar=77 recent join rejected: 19,22,23 reason=not an alternating triad
+[APVA] bar=77 join rejected: same-direction joined child would be created under parent=9 direction=Up children=13,22,23
 [APVA] bar=78 FTT candidate updated: id=9 lineage=7 candidateBar=78 price=30677.75
-[APVA] bar=78 terminal joined child extended with parent: child=14 parent=18
-[APVA] bar=78 FTT candidate updated: id=19 lineage=9 candidateBar=78 price=30677.75
-[APVA] bar=78 VE created: up container id=19 high pierced LTL/VE
-[APVA] bar=78 FTT confirmed: id=20 lineage=9 fttBar=67 price=30534.5 reason=RTL break side freeze
-[APVA] bar=78 container frozen: id=20 level=4 Down bar fully outside RTL break side
-[APVA] bar=78 container created: id=21 Up L4 start=77 end=78 lineage=19 reason=same-direction response after child break 20 from HHHL
-[APVA] bar=78 lineage assigned: id=21 lineage=9 structuralParent=19 originFttContainer=9 originFttBar=34 role=Component reason=same-direction response after child break
-[APVA] bar=78 same-direction child response created: id=21 parent=19 level=4 after broken child=20
-[APVA] bar=78 join eligibility: newest=21 parent=19 level=4 candidates=21:Up:L4:Active@77-78:p19
-[APVA] bar=78 join rejected: same-direction joined child would be created under parent=9 direction=Up children=11,17,21
-[APVA] bar=63 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
-[APVA] bar=64 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
-[APVA] bar=65 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
-[APVA] bar=67 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
-[APVA] bar=79 RTL wick adjustment: id=18 close remained inside container
-[APVA] bar=79 terminal joined child extended with parent: child=14 parent=18
-[APVA] bar=79 FTT confirmed: id=21 lineage=9 fttBar=78 price=30677.75 reason=RTL break side freeze
-[APVA] bar=79 container frozen: id=21 level=4 Up bar fully outside RTL break side
-[APVA] bar=79 V2 shadow decision: CreateChild id=22 parent=19 dir=Down level=4 start=78 end=79 reason=opposite tape inside local parent
-[APVA] bar=79 V2 child creation suppressed: nested response child just broke id=21 parent=19 dir=Down
-[APVA] bar=80 terminal joined child extended with parent: child=14 parent=18
-[APVA] bar=80 V2 shadow decision: CreateChild id=22 parent=19 dir=Down level=4 start=79 end=80 reason=opposite tape inside local parent
-[APVA] bar=80 container created: id=22 Down L4 start=79 end=80 lineage=20 reason=V2 local child inside active container 19 from LowReversal
-[APVA] bar=80 lineage assigned: id=22 lineage=9 structuralParent=19 originFttContainer=9 originFttBar=34 role=Component reason=V2 local child
-[APVA] bar=80 V2 child container created: id=22 parent=19 level=4 reason=opposite tape inside local parent
-[APVA] bar=80 join eligibility: newest=22 parent=19 level=4 candidates=22:Down:L4:Active@79-80:p19
-[APVA] bar=80 recent join rejected: 20,21,22 reason=down-up-down P1 geometry failed
-[APVA] bar=80 lineage triad geometry: triad=20,21,22 pattern=Down-Up-Down originFtt=9@34 leftP2=30534.5 middleP2=30677.75 rightP2=30639 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=fail p1Reject=down-up-down P1 geometry failed middleFTT=fail oldExtreme=fail joinedP3=78@30677.75 joinedP1P3=fail oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
-[APVA] bar=81 terminal joined child extended with parent: child=14 parent=18
-[APVA] bar=81 FTT confirmed: id=22 lineage=9 fttBar=80 price=30639 reason=RTL break side freeze
-[APVA] bar=81 container frozen: id=22 level=4 Down bar fully outside RTL break side
-[APVA] bar=81 initial VE anchor: up container id=23 second bar high exceeded parallel LTL
-[APVA] bar=81 container created: id=23 Up L4 start=80 end=81 lineage=21 reason=same-direction response after child break 22 from HHHL
-[APVA] bar=81 lineage assigned: id=23 lineage=9 structuralParent=19 originFttContainer=9 originFttBar=34 role=Component reason=same-direction response after child break
-[APVA] bar=81 same-direction child response created: id=23 parent=19 level=4 after broken child=22
-[APVA] bar=81 join eligibility: newest=23 parent=19 level=4 candidates=23:Up:L4:Active@80-81:p19
-[APVA] bar=81 recent join rejected: 21,22,23 reason=right up container has not exceeded left up P2
-[APVA] bar=81 lineage triad geometry: triad=21,22,23 pattern=Up-Down-Up originFtt=9@34 leftP2=30677.75 middleP2=30639 rightP2=30673.75 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=80@30639 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
-[APVA] bar=81 recent join rejected: 20,22,23 reason=not an alternating triad
-[APVA] bar=81 recent join rejected: 20,21,23 reason=not an alternating triad
-[APVA] bar=60 demotion/style recalculation: id=15 level=5
-[APVA] bar=81 demotion/style recalculation: id=22 level=5
-[APVA] bar=81 demotion/style recalculation: id=23 level=5
-[APVA] bar=81 join accepted: parent=24 children=15,22,23 lineage=9
-[APVA] bar=81 lineage join accepted: parent=24 children=15,22,23 lineage=9 originFtt=9@34
-[APVA] bar=81 join eligibility: newest=24 parent=14 level=4 candidates=24:Up:L4:Active@54-81:p14
-[APVA] bar=81 join rejected: same-direction joined child would be created under parent=9 direction=Up children=11,18,24
+[APVA] bar=78 FTT candidate updated: id=23 lineage=21 candidateBar=78 price=30677.75
+[APVA] bar=78 RTL wick adjustment: id=23 close remained inside container
+[APVA] bar=78 same-direction suppression diagnostic: active id=23 dir=Up level=2 status=Adjusted start=76 end=78 reason=same-direction response after child break 22 from HHHL pendingStart=77 brokenIfReached=none
+[APVA] bar=78 same-direction HHHL extended active Up container id=23; nested container suppressed
+[APVA] bar=78 join eligibility: newest=23 parent=9 level=2 candidates=23:Up:L2:Adjusted@76-78:p9
+[APVA] bar=78 recent join rejected: 19,22,23 reason=not an alternating triad
+[APVA] bar=78 join rejected: same-direction joined child would be created under parent=9 direction=Up children=13,22,23
+[APVA] bar=79 FTT confirmed: id=23 lineage=21 fttBar=78 price=30677.75 reason=RTL break side freeze
+[APVA] bar=79 container frozen: id=23 level=2 Up bar fully outside RTL break side
+[APVA] bar=79 V2 shadow decision: CreateChild id=24 parent=9 dir=Down level=2 start=78 end=79 reason=opposite tape inside local parent
+[APVA] bar=79 container created: id=24 Down L2 start=78 end=79 lineage=23 reason=V2 local child inside active container 9 from LLLH
+[APVA] bar=79 lineage assigned: id=24 lineage=24 structuralParent=9 originFttContainer=9 originFttBar=78 role=Component reason=V2 local child
+[APVA] bar=79 V2 child container created: id=24 parent=9 level=2 reason=opposite tape inside local parent
+[APVA] bar=79 join eligibility: newest=24 parent=9 level=2 candidates=24:Down:L2:Active@78-79:p9
+[APVA] bar=79 recent join rejected: 22,23,24 reason=right down container has not exceeded left down P2
+[APVA] bar=79 recent join rejected: 19,23,24 reason=right down container has not exceeded left down P2
+[APVA] bar=79 recent join rejected: 19,22,24 reason=not an alternating triad
+[APVA] bar=79 recent join rejected: 13,23,24 reason=not an alternating triad
+[APVA] bar=79 recent join rejected: 13,22,24 reason=not an alternating triad
+[APVA] bar=79 recent join rejected: 13,19,24 reason=not an alternating triad
+[APVA] bar=79 recent join rejected: 12,23,24 reason=right down container has not exceeded left down P2
+[APVA] bar=79 recent join rejected: 12,22,24 reason=not an alternating triad
+[APVA] bar=79 recent join rejected: 12,19,24 reason=not an alternating triad
+[APVA] bar=79 recent join rejected: 12,13,24 reason=right down container has not exceeded left down P2
+[APVA] bar=79 recent join rejected: 11,23,24 reason=not an alternating triad
+[APVA] bar=79 recent join rejected: 11,22,24 reason=not an alternating triad
+[APVA] bar=79 recent join rejected: 11,19,24 reason=not an alternating triad
+[APVA] bar=79 recent join rejected: 11,13,24 reason=not an alternating triad
+[APVA] bar=79 recent join rejected: 11,12,24 reason=not an alternating triad
+[APVA] bar=79 recent join rejected: 10,23,24 reason=right down container has not exceeded left down P2
+[APVA] bar=79 recent join rejected: 10,22,24 reason=not an alternating triad
+[APVA] bar=79 recent join rejected: 10,19,24 reason=not an alternating triad
+[APVA] bar=79 recent join rejected: 10,13,24 reason=right down container has not exceeded left down P2
+[APVA] bar=79 recent join rejected: 10,12,24 reason=not an alternating triad
+[APVA] bar=79 recent join rejected: 10,11,24 reason=right down container has not exceeded left down P2
+[APVA] bar=80 FTT candidate updated: id=24 lineage=24 candidateBar=80 price=30639
+[APVA] bar=80 same-direction suppression diagnostic: active id=24 dir=Down level=2 status=Active start=78 end=80 reason=V2 local child inside active container 9 from LLLH pendingStart=79 brokenIfReached=none
+[APVA] bar=80 same-direction LowReversal extended active Down container id=24; nested container suppressed
+[APVA] bar=80 join eligibility: newest=24 parent=9 level=2 candidates=24:Down:L2:Active@78-80:p9
+[APVA] bar=80 recent join rejected: 22,23,24 reason=right down container has not exceeded left down P2
+[APVA] bar=80 recent join rejected: 19,23,24 reason=right down container has not exceeded left down P2
+[APVA] bar=80 recent join rejected: 19,22,24 reason=not an alternating triad
+[APVA] bar=80 recent join rejected: 13,23,24 reason=not an alternating triad
+[APVA] bar=80 recent join rejected: 13,22,24 reason=not an alternating triad
+[APVA] bar=80 recent join rejected: 13,19,24 reason=not an alternating triad
+[APVA] bar=80 recent join rejected: 12,23,24 reason=right down container has not exceeded left down P2
+[APVA] bar=80 recent join rejected: 12,22,24 reason=not an alternating triad
+[APVA] bar=80 recent join rejected: 12,19,24 reason=not an alternating triad
+[APVA] bar=80 recent join rejected: 12,13,24 reason=right down container has not exceeded left down P2
+[APVA] bar=80 recent join rejected: 11,23,24 reason=not an alternating triad
+[APVA] bar=80 recent join rejected: 11,22,24 reason=not an alternating triad
+[APVA] bar=80 recent join rejected: 11,19,24 reason=not an alternating triad
+[APVA] bar=80 recent join rejected: 11,13,24 reason=not an alternating triad
+[APVA] bar=80 recent join rejected: 11,12,24 reason=not an alternating triad
+[APVA] bar=80 recent join rejected: 10,23,24 reason=right down container has not exceeded left down P2
+[APVA] bar=80 recent join rejected: 10,22,24 reason=not an alternating triad
+[APVA] bar=80 recent join rejected: 10,19,24 reason=not an alternating triad
+[APVA] bar=80 recent join rejected: 10,13,24 reason=right down container has not exceeded left down P2
+[APVA] bar=80 recent join rejected: 10,12,24 reason=not an alternating triad
+[APVA] bar=80 recent join rejected: 10,11,24 reason=right down container has not exceeded left down P2
+[APVA] bar=81 FTT confirmed: id=24 lineage=24 fttBar=80 price=30639 reason=RTL break side freeze
+[APVA] bar=81 container frozen: id=24 level=2 Down bar fully outside RTL break side
+[APVA] bar=81 initial VE anchor: up container id=25 second bar high exceeded parallel LTL
+[APVA] bar=81 container created: id=25 Up L2 start=80 end=81 lineage=25 reason=same-direction response after child break 24 from HHHL
+[APVA] bar=81 lineage assigned: id=25 lineage=24 structuralParent=9 originFttContainer=9 originFttBar=78 role=Component reason=same-direction response after child break
+[APVA] bar=81 same-direction child response created: id=25 parent=9 level=2 after broken child=24
+[APVA] bar=81 join eligibility: newest=25 parent=9 level=2 candidates=25:Up:L2:Active@80-81:p9
+[APVA] bar=81 recent join rejected: 23,24,25 reason=right up container has not exceeded left up P2
+[APVA] bar=81 recent join rejected: 22,24,25 reason=not an alternating triad
+[APVA] bar=81 recent join rejected: 22,23,25 reason=not an alternating triad
+[APVA] bar=81 recent join rejected: 19,24,25 reason=not an alternating triad
+[APVA] bar=81 recent join rejected: 19,23,25 reason=not an alternating triad
+[APVA] bar=81 recent join rejected: 19,22,25 reason=not an alternating triad
+[APVA] bar=81 join rejected: same-direction joined child would be created under parent=9 direction=Up children=13,24,25
 [APVA] bar=82 lateral building: bar remains inside origin boundary 81
-[APVA] bar=63 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
-[APVA] bar=64 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
-[APVA] bar=65 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
-[APVA] bar=67 VE rebuilt: down container id=18 price pierced recalculated LTL/VE
-[APVA] bar=82 RTL wick adjustment: id=18 close remained inside container
-[APVA] bar=82 terminal joined child extended with parent: child=14 parent=18
-[APVA] bar=82 FTT candidate updated: id=24 lineage=9 candidateBar=82 price=30671.75
-[APVA] bar=81 VE rebuilt: up container id=23 price pierced recalculated LTL/VE
-[APVA] bar=82 RTL wick adjustment: id=23 close remained inside container
-[APVA] bar=82 terminal joined child extended with parent: child=23 parent=24
+[APVA] bar=81 VE rebuilt: up container id=25 price pierced recalculated LTL/VE
+[APVA] bar=82 RTL wick adjustment: id=25 close remained inside container
 [APVA] bar=82 skipped translational bar InsideBar; pending start remains 81
-[APVA] bar=83 terminal joined child extended with parent: child=14 parent=18
-[APVA] bar=83 FTT confirmed: id=23 lineage=9 fttBar=81 price=30673.75 reason=RTL break side freeze
-[APVA] bar=83 container frozen: id=23 level=5 Up bar fully outside RTL break side
-[APVA] bar=83 terminal joined child frozen: child=15 parent=24 bar fully outside RTL break side
-[APVA] bar=83 V2 shadow decision: CreateChild id=25 parent=24 dir=Down level=5 start=81 end=83 reason=opposite tape inside local parent
-[APVA] bar=83 V2 child creation suppressed: nested response child just broke id=23 parent=24 dir=Down
+[APVA] bar=83 FTT confirmed: id=25 lineage=24 fttBar=81 price=30673.75 reason=RTL break side freeze
+[APVA] bar=83 container frozen: id=25 level=2 Up bar fully outside RTL break side
+[APVA] bar=83 V2 shadow decision: CreateChild id=26 parent=9 dir=Down level=2 start=81 end=83 reason=opposite tape inside local parent
+[APVA] bar=83 initial RTL fitted to intervening bar 82 for Down container start=81 end=83
+[APVA] bar=83 initial VE anchor: down container id=26 second bar low exceeded parallel LTL
+[APVA] bar=83 container created: id=26 Down L2 start=81 end=83 lineage=26 reason=V2 local child inside active container 9 from LLLH
+[APVA] bar=83 lineage assigned: id=26 lineage=24 structuralParent=9 originFttContainer=9 originFttBar=78 role=Component reason=V2 local child
+[APVA] bar=83 V2 child container created: id=26 parent=9 level=2 reason=opposite tape inside local parent
+[APVA] bar=83 join eligibility: newest=26 parent=9 level=2 candidates=26:Down:L2:Active@81-83:p9
+[APVA] bar=83 recent join rejected: 24,25,26 reason=right down container has not exceeded left down P2
+[APVA] bar=83 lineage triad geometry: triad=24,25,26 pattern=Down-Up-Down originFtt=9@78 leftP2=30639 middleP2=30673.75 rightP2=30644.25 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=81@30673.75 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
+[APVA] bar=83 recent join rejected: 23,25,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 23,24,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 22,25,26 reason=down-up-down P1 geometry failed
+[APVA] bar=83 recent join rejected: 22,24,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 22,23,26 reason=right down container has not exceeded left down P2
+[APVA] bar=83 recent join rejected: 19,25,26 reason=right down container has not exceeded left down P2
+[APVA] bar=83 recent join rejected: 19,24,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 19,23,26 reason=right down container has not exceeded left down P2
+[APVA] bar=83 recent join rejected: 19,22,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 13,25,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 13,24,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 13,23,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 13,22,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 13,19,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 12,25,26 reason=down-up-down P1 geometry failed
+[APVA] bar=83 recent join rejected: 12,24,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 12,23,26 reason=right down container has not exceeded left down P2
+[APVA] bar=83 recent join rejected: 12,22,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 12,19,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 12,13,26 reason=right down container has not exceeded left down P2
+[APVA] bar=83 recent join rejected: 11,25,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 11,24,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 11,23,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 11,22,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 11,19,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 11,13,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 11,12,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 10,25,26 reason=down-up-down P1 geometry failed
+[APVA] bar=83 recent join rejected: 10,24,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 10,23,26 reason=right down container has not exceeded left down P2
+[APVA] bar=83 recent join rejected: 10,22,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 10,19,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 10,13,26 reason=right down container has not exceeded left down P2
+[APVA] bar=83 recent join rejected: 10,12,26 reason=not an alternating triad
+[APVA] bar=83 recent join rejected: 10,11,26 reason=right down container has not exceeded left down P2
 [APVA] bar=84 lateral building: bar remains inside origin boundary 83
-[APVA] bar=84 terminal joined child extended with parent: child=14 parent=18
 [APVA] bar=84 skipped translational bar InsideBar; pending start remains 83
 [APVA] bar=85 lateral building: bar remains inside origin boundary 83
-[APVA] bar=85 terminal joined child extended with parent: child=14 parent=18
 [APVA] bar=85 skipped translational bar FTP; pending start remains 83
 [APVA] bar=86 lateral compressed as synthetic one-bar context from 83
-[APVA] bar=86 terminal joined child extended with parent: child=14 parent=18
-[APVA] bar=86 same-direction suppression diagnostic: active id=24 dir=Up level=4 status=Active start=54 end=86 reason=joined triad 15,22,23 pendingStart=83 brokenIfReached=none
-[APVA] bar=86 same-direction suppression child diagnostic: parent=24 child=22 dir=Down level=5 status=Joined start=79 end=81 reason=V2 local child inside active container 19 from LowReversal close=30657 rtl=30605 closeBreaks=False
-[APVA] bar=86 same-direction HHHL extended active Up container id=24; nested container suppressed
-[APVA] bar=86 join eligibility: newest=24 parent=14 level=4 candidates=24:Up:L4:Active@54-86:p14
-[APVA] bar=86 join rejected: same-direction joined child would be created under parent=9 direction=Up children=11,18,24
+[APVA] bar=86 V2 shadow decision: CreateChild id=27 parent=26 dir=Up level=3 start=83 end=86 reason=opposite tape inside local parent
+[APVA] bar=86 initial RTL fitted to intervening bar 85 for Up container start=83 end=86
+[APVA] bar=86 container created: id=27 Up L3 start=83 end=86 lineage=27 reason=V2 local child inside active container 26 from HHHL
+[APVA] bar=86 lineage assigned: id=27 lineage=24 structuralParent=26 originFttContainer=9 originFttBar=78 role=Component reason=V2 local child
+[APVA] bar=86 V2 child container created: id=27 parent=26 level=3 reason=opposite tape inside local parent
+[APVA] bar=86 join eligibility: newest=27 parent=26 level=3 candidates=27:Up:L3:Active@83-86:p26
 [APVA] bar=87 lateral compressed as synthetic one-bar context from 83
-[APVA] bar=87 terminal joined child extended with parent: child=14 parent=18
+[APVA] bar=87 FTT candidate updated: id=27 lineage=24 candidateBar=87 price=30659
+[APVA] bar=87 RTL wick adjustment: id=27 close remained inside container
 [APVA] bar=87 lateral resolved into container from origin 83
-[APVA] bar=87 same-direction suppression diagnostic: active id=24 dir=Up level=4 status=Active start=54 end=87 reason=joined triad 15,22,23 pendingStart=86 brokenIfReached=none
-[APVA] bar=87 same-direction suppression child diagnostic: parent=24 child=22 dir=Down level=5 status=Joined start=79 end=81 reason=V2 local child inside active container 19 from LowReversal close=30657.75 rtl=30596.5 closeBreaks=False
-[APVA] bar=87 same-direction OutsideBullish extended active Up container id=24; nested container suppressed
-[APVA] bar=87 join eligibility: newest=24 parent=14 level=4 candidates=24:Up:L4:Active@54-87:p14
-[APVA] bar=87 join rejected: same-direction joined child would be created under parent=9 direction=Up children=11,18,24
-[APVA] bar=88 terminal joined child extended with parent: child=14 parent=18
-[APVA] bar=88 RTL wick adjustment deferred: id=24 opposite child creation takes precedence
-[APVA] bar=88 V2 shadow decision: CreateChild id=25 parent=24 dir=Down level=5 start=87 end=88 reason=opposite tape inside local parent
-[APVA] bar=88 initial VE anchor: down container id=25 second bar low exceeded parallel LTL
-[APVA] bar=88 container created: id=25 Down L5 start=87 end=88 lineage=22 reason=V2 local child inside active container 24 from LLLH
-[APVA] bar=88 lineage assigned: id=25 lineage=9 structuralParent=24 originFttContainer=9 originFttBar=34 role=Component reason=V2 local child
-[APVA] bar=88 V2 child container created: id=25 parent=24 level=5 reason=opposite tape inside local parent
-[APVA] bar=88 join eligibility: newest=25 parent=24 level=5 candidates=25:Down:L5:Active@87-88:p24
-[APVA] bar=88 recent join rejected: 15,23,25 reason=not an alternating triad
-[APVA] bar=89 terminal joined child extended with parent: child=14 parent=18
-[APVA] bar=89 VE created: up container id=19 high pierced LTL/VE
-[APVA] bar=89 FTT candidate updated: id=24 lineage=9 candidateBar=89 price=30672.75
-[APVA] bar=89 RTL wick adjustment: id=24 close remained inside container
-[APVA] bar=89 V2 shadow decision: CreateChild id=26 parent=25 dir=Up level=6 start=88 end=89 reason=opposite tape inside local parent
-[APVA] bar=89 V2 child creation deferred: proposed parent id=25 is broken by current Up close
-[APVA] bar=89 same-direction suppression diagnostic: active id=24 dir=Up level=4 status=Adjusted start=54 end=89 reason=joined triad 15,22,23 pendingStart=88 brokenIfReached=id=25 dir=Down level=5 status=Active start=87 end=89 reason=V2 local child inside active container 24 from LLLH parent=24
-[APVA] bar=89 same-direction suppression child diagnostic: parent=24 child=22 dir=Down level=5 status=Joined start=79 end=81 reason=V2 local child inside active container 19 from LowReversal close=30662.5 rtl=30579.5 closeBreaks=False
-[APVA] bar=89 same-direction suppression child diagnostic: parent=24 child=25 dir=Down level=5 status=Active start=87 end=89 reason=V2 local child inside active container 24 from LLLH close=30662.5 rtl=30657 closeBreaks=True
-[APVA] bar=89 same-direction suppression deferred: joined parent id=24 direct opposite child break id=25
-[APVA] bar=89 FTT confirmed: id=25 lineage=9 fttBar=88 price=30648.75 reason=container break
-[APVA] bar=89 container break: id=25 level=5 by HHHL
-[APVA] bar=89 initial VE anchor: up container id=26 second bar high exceeded parallel LTL
-[APVA] bar=89 container created: id=26 Up L5 start=88 end=89 lineage=23 reason=created from HHHL
-[APVA] bar=89 lineage assigned: id=26 lineage=9 structuralParent=24 originFttContainer=9 originFttBar=34 role=Component reason=created response inherited parent scope
-[APVA] bar=89 created response inherited parent scope: id=26 parent=24 broken=25 level=5
-[APVA] bar=89 join eligibility: newest=26 parent=24 level=5 candidates=26:Up:L5:Active@88-89:p24
-[APVA] bar=89 lineage join candidate: lineage=9 triad=19,22,26 levels=3,5,5 parents=18,24,24 originFtt=9@34
-[APVA] bar=89 lineage triad geometry: triad=19,22,26 pattern=Up-Down-Up originFtt=9@34 leftP2=30677.75 middleP2=30639 rightP2=30672.75 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=89@30651.25 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=old-style same-direction extreme failed
-[APVA] bar=89 structural lineage join rejected: triad=19,22,26 reason=visual reject is not structural-only: old-style same-direction extreme failed
-[APVA] bar=89 recent join rejected: 23,25,26 reason=right up container has not exceeded left up P2
-[APVA] bar=89 lineage triad geometry: triad=23,25,26 pattern=Up-Down-Up originFtt=9@34 leftP2=30673.75 middleP2=30648.75 rightP2=30672.75 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=88@30648.75 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
-[APVA] bar=89 join rejected: same-direction joined child would be created under parent=24 direction=Up children=15,25,26
-[APVA] bar=89 demotion/style recalculation: id=24 level=5
-[APVA] bar=83 demotion/style recalculation: id=15 level=6
-[APVA] bar=81 demotion/style recalculation: id=22 level=6
-[APVA] bar=83 demotion/style recalculation: id=23 level=6
-[APVA] bar=89 demotion/style recalculation: id=25 level=6
-[APVA] bar=89 demotion/style recalculation: id=26 level=6
-[APVA] bar=89 demotion/style recalculation: id=25 level=5
-[APVA] bar=89 demotion/style recalculation: id=26 level=5
-[APVA] bar=89 join accepted: parent=27 children=24,25,26 lineage=9
-[APVA] bar=89 lineage join accepted: parent=27 children=24,25,26 lineage=9 originFtt=9@34
-[APVA] bar=89 join eligibility: newest=27 parent=14 level=4 candidates=27:Up:L4:Active@54-89:p14
-[APVA] bar=89 join rejected: same-direction joined child would be created under parent=9 direction=Up children=11,18,27
+[APVA] bar=87 same-direction suppression diagnostic: active id=27 dir=Up level=3 status=Adjusted start=83 end=87 reason=V2 local child inside active container 26 from HHHL pendingStart=86 brokenIfReached=none
+[APVA] bar=87 same-direction OutsideBullish extended active Up container id=27; nested container suppressed
+[APVA] bar=87 join eligibility: newest=27 parent=26 level=3 candidates=27:Up:L3:Adjusted@83-87:p26
+[APVA] bar=88 V2 shadow decision: CreateChild id=28 parent=27 dir=Down level=4 start=87 end=88 reason=opposite tape inside local parent
+[APVA] bar=88 V2 child creation deferred: proposed parent id=27 is broken by current Down close
+[APVA] bar=88 same-direction suppression diagnostic: active id=26 dir=Down level=2 status=Active start=81 end=88 reason=V2 local child inside active container 9 from LLLH pendingStart=87 brokenIfReached=id=27 dir=Up level=3 status=Adjusted start=83 end=88 reason=V2 local child inside active container 26 from HHHL parent=26
+[APVA] bar=88 same-direction suppression child diagnostic: parent=26 child=27 dir=Up level=3 status=Adjusted start=83 end=88 reason=V2 local child inside active container 26 from HHHL close=30652 rtl=30654.25 closeBreaks=True
+[APVA] bar=88 same-direction LLLH extended active Down container id=26; nested container suppressed
+[APVA] bar=88 join eligibility: newest=26 parent=9 level=2 candidates=26:Down:L2:Active@81-88:p9
+[APVA] bar=88 recent join rejected: 24,25,26 reason=right down container has not exceeded left down P2
+[APVA] bar=88 lineage triad geometry: triad=24,25,26 pattern=Down-Up-Down originFtt=9@78 leftP2=30639 middleP2=30673.75 rightP2=30644.25 currentResume=fail currentReject=right down container has not exceeded left down P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=81@30673.75 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
+[APVA] bar=88 recent join rejected: 23,25,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 23,24,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 22,25,26 reason=down-up-down P1 geometry failed
+[APVA] bar=88 recent join rejected: 22,24,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 22,23,26 reason=right down container has not exceeded left down P2
+[APVA] bar=88 recent join rejected: 19,25,26 reason=right down container has not exceeded left down P2
+[APVA] bar=88 recent join rejected: 19,24,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 19,23,26 reason=right down container has not exceeded left down P2
+[APVA] bar=88 recent join rejected: 19,22,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 13,25,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 13,24,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 13,23,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 13,22,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 13,19,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 12,25,26 reason=down-up-down P1 geometry failed
+[APVA] bar=88 recent join rejected: 12,24,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 12,23,26 reason=right down container has not exceeded left down P2
+[APVA] bar=88 recent join rejected: 12,22,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 12,19,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 12,13,26 reason=right down container has not exceeded left down P2
+[APVA] bar=88 recent join rejected: 11,25,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 11,24,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 11,23,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 11,22,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 11,19,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 11,13,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 11,12,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 10,25,26 reason=down-up-down P1 geometry failed
+[APVA] bar=88 recent join rejected: 10,24,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 10,23,26 reason=right down container has not exceeded left down P2
+[APVA] bar=88 recent join rejected: 10,22,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 10,19,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 10,13,26 reason=right down container has not exceeded left down P2
+[APVA] bar=88 recent join rejected: 10,12,26 reason=not an alternating triad
+[APVA] bar=88 recent join rejected: 10,11,26 reason=right down container has not exceeded left down P2
+[APVA] bar=89 FTT candidate updated: id=27 lineage=24 candidateBar=89 price=30672.75
+[APVA] bar=89 VE rebuilt: up container id=27 price pierced recalculated LTL/VE
+[APVA] bar=89 RTL wick adjustment: id=27 close remained inside container
+[APVA] bar=89 same-direction suppression diagnostic: active id=27 dir=Up level=3 status=Adjusted start=83 end=89 reason=V2 local child inside active container 26 from HHHL pendingStart=88 brokenIfReached=id=26 dir=Down level=2 status=Active start=81 end=89 reason=V2 local child inside active container 9 from LLLH parent=9
+[APVA] bar=89 lineage assigned: id=27 lineage=24 structuralParent=26 originFttContainer=9 originFttBar=78 role=Component reason=child promoted after parent break
+[APVA] bar=89 join eligibility: newest=27 parent=9 level=2 candidates=27:Up:L2:Adjusted@83-89:p9
+[APVA] bar=89 recent join rejected: 25,26,27 reason=right up container has not exceeded left up P2
+[APVA] bar=89 lineage triad geometry: triad=25,26,27 pattern=Up-Down-Up originFtt=9@78 leftP2=30673.75 middleP2=30644.25 rightP2=30672.75 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=88@30648.75 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=ordinary same-level parent-scope join
+[APVA] bar=89 recent join rejected: 24,26,27 reason=not an alternating triad
+[APVA] bar=89 recent join rejected: 24,25,27 reason=not an alternating triad
+[APVA] bar=89 recent join rejected: 23,26,27 reason=right up container has not exceeded left up P2
+[APVA] bar=89 recent join rejected: 23,25,27 reason=not an alternating triad
+[APVA] bar=89 recent join rejected: 23,24,27 reason=right up container has not exceeded left up P2
+[APVA] bar=89 recent join rejected: 22,26,27 reason=not an alternating triad
+[APVA] bar=89 recent join rejected: 22,25,27 reason=not an alternating triad
+[APVA] bar=89 recent join rejected: 22,24,27 reason=not an alternating triad
+[APVA] bar=89 recent join rejected: 22,23,27 reason=not an alternating triad
+[APVA] bar=89 recent join rejected: 19,26,27 reason=not an alternating triad
+[APVA] bar=89 recent join rejected: 19,25,27 reason=not an alternating triad
+[APVA] bar=89 recent join rejected: 19,24,27 reason=not an alternating triad
+[APVA] bar=89 recent join rejected: 19,23,27 reason=not an alternating triad
+[APVA] bar=89 recent join rejected: 19,22,27 reason=not an alternating triad
+[APVA] bar=89 join rejected: same-direction joined child would be created under parent=9 direction=Up children=13,26,27
+[APVA] bar=89 same-direction breakout promoted active child: child=27 sourceActive=27 inheritedParent=9 level=2 brokenParent=26
 [APVA] bar=90 FTT confirmed: id=9 lineage=7 fttBar=78 price=30677.75 reason=RTL break side freeze
 [APVA] bar=90 container frozen: id=9 level=1 Up bar fully outside RTL break side
-[APVA] bar=89 demotion/style recalculation: id=14 level=2
-[APVA] bar=89 demotion/style recalculation: id=27 level=3
-[APVA] bar=89 demotion/style recalculation: id=24 level=4
-[APVA] bar=83 demotion/style recalculation: id=15 level=5
-[APVA] bar=81 demotion/style recalculation: id=22 level=5
-[APVA] bar=83 demotion/style recalculation: id=23 level=5
-[APVA] bar=89 demotion/style recalculation: id=25 level=4
-[APVA] bar=89 demotion/style recalculation: id=26 level=4
-[APVA] bar=62 demotion/style recalculation: id=16 level=2
-[APVA] bar=77 demotion/style recalculation: id=17 level=2
-[APVA] bar=89 demotion/style recalculation: id=19 level=2
-[APVA] bar=78 demotion/style recalculation: id=20 level=3
-[APVA] bar=79 demotion/style recalculation: id=21 level=3
+[APVA] bar=90 broken parent descendants deactivated: parent=9 count=2
+[APVA] bar=70 demotion/style recalculation: id=20 level=2
+[APVA] bar=72 demotion/style recalculation: id=21 level=2
 [APVA] bar=90 FTT candidate updated: id=18 lineage=9 candidateBar=90 price=29616.5
-[APVA] bar=90 lineage assigned: id=18 lineage=9 structuralParent=13 originFttContainer=9 originFttBar=34 role=Component reason=child promoted after parent break
+[APVA] bar=90 lineage assigned: id=18 lineage=9 structuralParent=16 originFttContainer=9 originFttBar=34 role=Component reason=child promoted after parent break
 [APVA] bar=90 VE created: down container id=18 low pierced LTL/VE
 [APVA] bar=90 VE rebuilt: down container id=28 price pierced recalculated LTL/VE
 [APVA] bar=34 demotion/style recalculation: id=8 level=2
@@ -750,180 +780,189 @@
 [APVA] bar=41 demotion/style recalculation: id=11 level=3
 [APVA] bar=51 demotion/style recalculation: id=12 level=3
 [APVA] bar=61 demotion/style recalculation: id=13 level=3
+[APVA] bar=58 demotion/style recalculation: id=14 level=4
+[APVA] bar=59 demotion/style recalculation: id=15 level=4
+[APVA] bar=73 demotion/style recalculation: id=19 level=3
+[APVA] bar=68 demotion/style recalculation: id=16 level=4
+[APVA] bar=62 demotion/style recalculation: id=17 level=4
+[APVA] bar=77 demotion/style recalculation: id=22 level=3
+[APVA] bar=79 demotion/style recalculation: id=23 level=3
+[APVA] bar=81 demotion/style recalculation: id=24 level=3
+[APVA] bar=83 demotion/style recalculation: id=25 level=3
+[APVA] bar=89 demotion/style recalculation: id=26 level=3
+[APVA] bar=89 demotion/style recalculation: id=27 level=3
 [APVA] bar=90 demotion/style recalculation: id=18 level=2
-[APVA] bar=89 demotion/style recalculation: id=14 level=3
-[APVA] bar=89 demotion/style recalculation: id=27 level=4
-[APVA] bar=89 demotion/style recalculation: id=24 level=5
-[APVA] bar=83 demotion/style recalculation: id=15 level=6
-[APVA] bar=81 demotion/style recalculation: id=22 level=6
-[APVA] bar=83 demotion/style recalculation: id=23 level=6
-[APVA] bar=89 demotion/style recalculation: id=25 level=5
-[APVA] bar=89 demotion/style recalculation: id=26 level=5
-[APVA] bar=62 demotion/style recalculation: id=16 level=3
-[APVA] bar=77 demotion/style recalculation: id=17 level=3
-[APVA] bar=89 demotion/style recalculation: id=19 level=3
-[APVA] bar=78 demotion/style recalculation: id=20 level=4
-[APVA] bar=79 demotion/style recalculation: id=21 level=4
+[APVA] bar=70 demotion/style recalculation: id=20 level=3
+[APVA] bar=72 demotion/style recalculation: id=21 level=3
 [APVA] bar=90 join accepted: parent=28 children=8,9,18 lineage=7
 [APVA] bar=90 child promoted after parent break: child=18 inheritedParent=28 level=2 brokenParent=9
-[APVA] bar=91 FTT confirmed: id=19 lineage=9 fttBar=78 price=30677.75 reason=RTL break side freeze
-[APVA] bar=91 container frozen: id=19 level=3 Up bar fully outside RTL break side
-[APVA] bar=91 terminal joined child frozen: child=26 parent=27 bar fully outside RTL break side
-[APVA] bar=91 FTT confirmed: id=27 lineage=9 fttBar=89 price=30672.75 reason=RTL break side freeze
-[APVA] bar=91 container frozen: id=27 level=4 Up bar fully outside RTL break side
+[APVA] bar=91 FTT candidate updated: id=21 lineage=9 candidateBar=91 price=29671
+[APVA] bar=91 VE created: down container id=21 low pierced LTL/VE
 [APVA] bar=91 FTT candidate updated: id=28 lineage=7 candidateBar=91 price=29671
 [APVA] bar=91 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=91 V2 shadow decision: PromoteChild id=25 parent=14 dir=Down level=4 start=87 end=91 reason=promoted active opposite child after parent break
-[APVA] bar=91 container created: id=29 Up L2 start=90 end=91 lineage=24 reason=opposite child inside active container 28 from HHHL
-[APVA] bar=91 lineage assigned: id=29 lineage=25 structuralParent=28 originFttContainer=28 originFttBar=91 role=Component reason=opposite child inside active container
-[APVA] bar=91 opposite child container created: id=29 parent=28 level=2
-[APVA] bar=91 join eligibility: newest=29 parent=28 level=2 candidates=29:Up:L2:Active@90-91:p28
+[APVA] bar=91 V2 shadow decision: CreateChild id=29 parent=21 dir=Up level=4 start=90 end=91 reason=opposite tape inside local parent
+[APVA] bar=91 container created: id=29 Up L4 start=90 end=91 lineage=28 reason=V2 local child inside active container 21 from HHHL
+[APVA] bar=91 lineage assigned: id=29 lineage=9 structuralParent=21 originFttContainer=9 originFttBar=34 role=Component reason=V2 local child
+[APVA] bar=91 V2 child container created: id=29 parent=21 level=4 reason=opposite tape inside local parent
+[APVA] bar=91 join eligibility: newest=29 parent=21 level=4 candidates=29:Up:L4:Active@90-91:p21
 [APVA] bar=92 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=92 FTT candidate updated: id=29 lineage=25 candidateBar=92 price=29806
-[APVA] bar=92 same-direction suppression diagnostic: active id=29 dir=Up level=2 status=Active start=90 end=92 reason=opposite child inside active container 28 from HHHL pendingStart=91 brokenIfReached=none
+[APVA] bar=92 FTT candidate updated: id=29 lineage=9 candidateBar=92 price=29806
+[APVA] bar=92 same-direction suppression diagnostic: active id=29 dir=Up level=4 status=Active start=90 end=92 reason=V2 local child inside active container 21 from HHHL pendingStart=91 brokenIfReached=none
 [APVA] bar=92 same-direction HighReversal extended active Up container id=29; nested container suppressed
-[APVA] bar=92 join eligibility: newest=29 parent=28 level=2 candidates=29:Up:L2:Active@90-92:p28
+[APVA] bar=92 join eligibility: newest=29 parent=21 level=4 candidates=29:Up:L4:Active@90-92:p21
 [APVA] bar=93 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=93 FTT candidate updated: id=29 lineage=25 candidateBar=93 price=29857
+[APVA] bar=93 FTT candidate updated: id=29 lineage=9 candidateBar=93 price=29857
 [APVA] bar=93 RTL wick adjustment: id=29 close remained inside container
-[APVA] bar=93 same-direction suppression diagnostic: active id=29 dir=Up level=2 status=Adjusted start=90 end=93 reason=opposite child inside active container 28 from HHHL pendingStart=92 brokenIfReached=none
+[APVA] bar=93 same-direction suppression diagnostic: active id=29 dir=Up level=4 status=Adjusted start=90 end=93 reason=V2 local child inside active container 21 from HHHL pendingStart=92 brokenIfReached=none
 [APVA] bar=93 same-direction OutsideBullish extended active Up container id=29; nested container suppressed
-[APVA] bar=93 join eligibility: newest=29 parent=28 level=2 candidates=29:Up:L2:Adjusted@90-93:p28
+[APVA] bar=93 join eligibility: newest=29 parent=21 level=4 candidates=29:Up:L4:Adjusted@90-93:p21
 [APVA] bar=94 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=94 FTT candidate updated: id=29 lineage=25 candidateBar=94 price=29915
-[APVA] bar=94 same-direction suppression diagnostic: active id=29 dir=Up level=2 status=Adjusted start=90 end=94 reason=opposite child inside active container 28 from HHHL pendingStart=93 brokenIfReached=none
+[APVA] bar=94 FTT candidate updated: id=29 lineage=9 candidateBar=94 price=29915
+[APVA] bar=94 same-direction suppression diagnostic: active id=29 dir=Up level=4 status=Adjusted start=90 end=94 reason=V2 local child inside active container 21 from HHHL pendingStart=93 brokenIfReached=none
 [APVA] bar=94 same-direction HHHL extended active Up container id=29; nested container suppressed
-[APVA] bar=94 join eligibility: newest=29 parent=28 level=2 candidates=29:Up:L2:Adjusted@90-94:p28
+[APVA] bar=94 join eligibility: newest=29 parent=21 level=4 candidates=29:Up:L4:Adjusted@90-94:p21
 [APVA] bar=95 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=95 FTT candidate updated: id=29 lineage=25 candidateBar=95 price=29934.75
-[APVA] bar=95 same-direction suppression diagnostic: active id=29 dir=Up level=2 status=Adjusted start=90 end=95 reason=opposite child inside active container 28 from HHHL pendingStart=94 brokenIfReached=none
+[APVA] bar=95 FTT candidate updated: id=29 lineage=9 candidateBar=95 price=29934.75
+[APVA] bar=95 same-direction suppression diagnostic: active id=29 dir=Up level=4 status=Adjusted start=90 end=95 reason=V2 local child inside active container 21 from HHHL pendingStart=94 brokenIfReached=none
 [APVA] bar=95 same-direction HHHL extended active Up container id=29; nested container suppressed
-[APVA] bar=95 join eligibility: newest=29 parent=28 level=2 candidates=29:Up:L2:Adjusted@90-95:p28
+[APVA] bar=95 join eligibility: newest=29 parent=21 level=4 candidates=29:Up:L4:Adjusted@90-95:p21
 [APVA] bar=96 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=96 FTT candidate updated: id=29 lineage=25 candidateBar=96 price=30004.25
+[APVA] bar=96 FTT candidate updated: id=29 lineage=9 candidateBar=96 price=30004.25
 [APVA] bar=96 VE created: up container id=29 high pierced LTL/VE
-[APVA] bar=96 same-direction suppression diagnostic: active id=29 dir=Up level=2 status=Adjusted start=90 end=96 reason=opposite child inside active container 28 from HHHL pendingStart=95 brokenIfReached=none
+[APVA] bar=96 same-direction suppression diagnostic: active id=29 dir=Up level=4 status=Adjusted start=90 end=96 reason=V2 local child inside active container 21 from HHHL pendingStart=95 brokenIfReached=none
 [APVA] bar=96 same-direction HHHL extended active Up container id=29; nested container suppressed
-[APVA] bar=96 join eligibility: newest=29 parent=28 level=2 candidates=29:Up:L2:Adjusted@90-96:p28
+[APVA] bar=96 join eligibility: newest=29 parent=21 level=4 candidates=29:Up:L4:Adjusted@90-96:p21
 [APVA] bar=97 lateral building: bar remains inside origin boundary 96
 [APVA] bar=97 terminal joined child extended with parent: child=18 parent=28
 [APVA] bar=97 skipped translational bar InsideBar; pending start remains 96
 [APVA] bar=98 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=98 FTT candidate updated: id=29 lineage=25 candidateBar=98 price=30015.5
-[APVA] bar=98 same-direction suppression diagnostic: active id=29 dir=Up level=2 status=Adjusted start=90 end=98 reason=opposite child inside active container 28 from HHHL pendingStart=96 brokenIfReached=none
+[APVA] bar=98 FTT candidate updated: id=29 lineage=9 candidateBar=98 price=30015.5
+[APVA] bar=98 same-direction suppression diagnostic: active id=29 dir=Up level=4 status=Adjusted start=90 end=98 reason=V2 local child inside active container 21 from HHHL pendingStart=96 brokenIfReached=none
 [APVA] bar=98 same-direction HHHL extended active Up container id=29; nested container suppressed
-[APVA] bar=98 join eligibility: newest=29 parent=28 level=2 candidates=29:Up:L2:Adjusted@90-98:p28
+[APVA] bar=98 join eligibility: newest=29 parent=21 level=4 candidates=29:Up:L4:Adjusted@90-98:p21
 [APVA] bar=99 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=99 FTT candidate updated: id=29 lineage=25 candidateBar=99 price=30023
-[APVA] bar=99 same-direction suppression diagnostic: active id=29 dir=Up level=2 status=Adjusted start=90 end=99 reason=opposite child inside active container 28 from HHHL pendingStart=98 brokenIfReached=none
+[APVA] bar=99 FTT candidate updated: id=29 lineage=9 candidateBar=99 price=30023
+[APVA] bar=99 same-direction suppression diagnostic: active id=29 dir=Up level=4 status=Adjusted start=90 end=99 reason=V2 local child inside active container 21 from HHHL pendingStart=98 brokenIfReached=none
 [APVA] bar=99 same-direction HHHL extended active Up container id=29; nested container suppressed
-[APVA] bar=99 join eligibility: newest=29 parent=28 level=2 candidates=29:Up:L2:Adjusted@90-99:p28
+[APVA] bar=99 join eligibility: newest=29 parent=21 level=4 candidates=29:Up:L4:Adjusted@90-99:p21
 [APVA] bar=100 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=100 FTT candidate updated: id=29 lineage=25 candidateBar=100 price=30047
-[APVA] bar=100 V2 shadow decision: CreateChild id=30 parent=29 dir=Down level=3 start=99 end=100 reason=opposite tape inside local parent
+[APVA] bar=100 FTT candidate updated: id=29 lineage=9 candidateBar=100 price=30047
+[APVA] bar=100 V2 shadow decision: CreateChild id=30 parent=29 dir=Down level=5 start=99 end=100 reason=opposite tape inside local parent
 [APVA] bar=100 container construction suppressed: second bar is outside relation OutsideBearish start=99 end=100
-[APVA] bar=100 same-direction suppression diagnostic: active id=28 dir=Down level=1 status=Active start=8 end=100 reason=joined triad 8,9,18 pendingStart=99 brokenIfReached=none
-[APVA] bar=100 same-direction suppression child diagnostic: parent=28 child=9 dir=Up level=2 status=Joined start=30 end=90 reason=V2 local child inside active container 8 from HHHL close=29991.5 rtl=30562.59459459 closeBreaks=False
-[APVA] bar=100 same-direction suppression child diagnostic: parent=28 child=29 dir=Up level=2 status=Adjusted start=90 end=100 reason=opposite child inside active container 28 from HHHL close=29991.5 rtl=29974.83333333 closeBreaks=False
-[APVA] bar=100 same-direction OutsideBearish extended active Down container id=28; nested container suppressed
+[APVA] bar=100 same-direction suppression diagnostic: active id=21 dir=Down level=3 status=Adjusted start=66 end=100 reason=V2 local child inside active container 20 from LLLH pendingStart=99 brokenIfReached=none
+[APVA] bar=100 same-direction suppression child diagnostic: parent=21 child=29 dir=Up level=4 status=Adjusted start=90 end=100 reason=V2 local child inside active container 21 from HHHL close=29991.5 rtl=29974.83333333 closeBreaks=False
+[APVA] bar=100 same-direction OutsideBearish extended active Down container id=21; nested container suppressed
+[APVA] bar=100 join eligibility: newest=21 parent=18 level=3 candidates=21:Down:L3:Adjusted@66-100:p18
 [APVA] bar=101 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=101 FTT confirmed: id=29 lineage=25 fttBar=100 price=30047 reason=RTL break side freeze
-[APVA] bar=101 container frozen: id=29 level=2 Up bar fully outside RTL break side
-[APVA] bar=101 container created: id=30 Down L2 start=100 end=101 lineage=26 reason=same-direction response after child break 29 from LLLH
-[APVA] bar=101 lineage assigned: id=30 lineage=25 structuralParent=28 originFttContainer=28 originFttBar=91 role=Component reason=same-direction response after child break
-[APVA] bar=101 same-direction child response created: id=30 parent=28 level=2 after broken child=29
-[APVA] bar=101 join eligibility: newest=30 parent=28 level=2 candidates=30:Down:L2:Active@100-101:p28
+[APVA] bar=101 FTT confirmed: id=29 lineage=9 fttBar=100 price=30047 reason=RTL break side freeze
+[APVA] bar=101 container frozen: id=29 level=4 Up bar fully outside RTL break side
+[APVA] bar=101 container created: id=30 Down L4 start=100 end=101 lineage=29 reason=same-direction response after child break 29 from LLLH
+[APVA] bar=101 lineage assigned: id=30 lineage=9 structuralParent=21 originFttContainer=9 originFttBar=34 role=Component reason=same-direction response after child break
+[APVA] bar=101 same-direction child response created: id=30 parent=21 level=4 after broken child=29
+[APVA] bar=101 join eligibility: newest=30 parent=21 level=4 candidates=30:Down:L4:Active@100-101:p21
+[APVA] bar=101 join rejected: invalid Down P1/P3 geometry children=19,29,30 p1=30665 p3=30677.75
 [APVA] bar=102 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=102 FTT candidate updated: id=30 lineage=25 candidateBar=102 price=29903
+[APVA] bar=102 FTT candidate updated: id=30 lineage=9 candidateBar=102 price=29903
 [APVA] bar=101 VE rebuilt: down container id=30 price pierced recalculated LTL/VE
 [APVA] bar=102 VE rebuilt: down container id=30 price pierced recalculated LTL/VE
 [APVA] bar=102 RTL wick adjustment: id=30 close remained inside container
-[APVA] bar=102 same-direction suppression diagnostic: active id=30 dir=Down level=2 status=Adjusted start=100 end=102 reason=same-direction response after child break 29 from LLLH pendingStart=101 brokenIfReached=none
+[APVA] bar=102 same-direction suppression diagnostic: active id=30 dir=Down level=4 status=Adjusted start=100 end=102 reason=same-direction response after child break 29 from LLLH pendingStart=101 brokenIfReached=none
 [APVA] bar=102 same-direction LLLH extended active Down container id=30; nested container suppressed
-[APVA] bar=102 join eligibility: newest=30 parent=28 level=2 candidates=30:Down:L2:Adjusted@100-102:p28
+[APVA] bar=102 join eligibility: newest=30 parent=21 level=4 candidates=30:Down:L4:Adjusted@100-102:p21
+[APVA] bar=102 join rejected: invalid Down P1/P3 geometry children=19,29,30 p1=30665 p3=30677.75
 [APVA] bar=103 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=103 FTT candidate updated: id=30 lineage=25 candidateBar=103 price=29893
+[APVA] bar=103 FTT candidate updated: id=30 lineage=9 candidateBar=103 price=29893
 [APVA] bar=101 VE rebuilt: down container id=30 price pierced recalculated LTL/VE
 [APVA] bar=102 VE rebuilt: down container id=30 price pierced recalculated LTL/VE
 [APVA] bar=103 RTL wick adjustment: id=30 close remained inside container
-[APVA] bar=103 same-direction suppression diagnostic: active id=30 dir=Down level=2 status=Adjusted start=100 end=103 reason=same-direction response after child break 29 from LLLH pendingStart=102 brokenIfReached=none
+[APVA] bar=103 same-direction suppression diagnostic: active id=30 dir=Down level=4 status=Adjusted start=100 end=103 reason=same-direction response after child break 29 from LLLH pendingStart=102 brokenIfReached=none
 [APVA] bar=103 same-direction OutsideBearish extended active Down container id=30; nested container suppressed
-[APVA] bar=103 join eligibility: newest=30 parent=28 level=2 candidates=30:Down:L2:Adjusted@100-103:p28
+[APVA] bar=103 join eligibility: newest=30 parent=21 level=4 candidates=30:Down:L4:Adjusted@100-103:p21
+[APVA] bar=103 join rejected: invalid Down P1/P3 geometry children=19,29,30 p1=30665 p3=30677.75
 [APVA] bar=104 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=104 FTT candidate updated: id=30 lineage=25 candidateBar=104 price=29872.5
-[APVA] bar=104 same-direction suppression diagnostic: active id=30 dir=Down level=2 status=Adjusted start=100 end=104 reason=same-direction response after child break 29 from LLLH pendingStart=103 brokenIfReached=none
+[APVA] bar=104 FTT candidate updated: id=30 lineage=9 candidateBar=104 price=29872.5
+[APVA] bar=104 same-direction suppression diagnostic: active id=30 dir=Down level=4 status=Adjusted start=100 end=104 reason=same-direction response after child break 29 from LLLH pendingStart=103 brokenIfReached=none
 [APVA] bar=104 same-direction LLLH extended active Down container id=30; nested container suppressed
-[APVA] bar=104 join eligibility: newest=30 parent=28 level=2 candidates=30:Down:L2:Adjusted@100-104:p28
+[APVA] bar=104 join eligibility: newest=30 parent=21 level=4 candidates=30:Down:L4:Adjusted@100-104:p21
+[APVA] bar=104 join rejected: invalid Down P1/P3 geometry children=19,29,30 p1=30665 p3=30677.75
 [APVA] bar=105 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=105 FTT candidate updated: id=30 lineage=25 candidateBar=105 price=29832.75
+[APVA] bar=105 FTT candidate updated: id=30 lineage=9 candidateBar=105 price=29832.75
 [APVA] bar=105 VE created: down container id=30 low pierced LTL/VE
-[APVA] bar=105 same-direction suppression diagnostic: active id=30 dir=Down level=2 status=Adjusted start=100 end=105 reason=same-direction response after child break 29 from LLLH pendingStart=104 brokenIfReached=none
+[APVA] bar=105 same-direction suppression diagnostic: active id=30 dir=Down level=4 status=Adjusted start=100 end=105 reason=same-direction response after child break 29 from LLLH pendingStart=104 brokenIfReached=none
 [APVA] bar=105 same-direction LLLH extended active Down container id=30; nested container suppressed
-[APVA] bar=105 join eligibility: newest=30 parent=28 level=2 candidates=30:Down:L2:Adjusted@100-105:p28
+[APVA] bar=105 join eligibility: newest=30 parent=21 level=4 candidates=30:Down:L4:Adjusted@100-105:p21
+[APVA] bar=105 join rejected: invalid Down P1/P3 geometry children=19,29,30 p1=30665 p3=30677.75
 [APVA] bar=106 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=106 FTT candidate updated: id=30 lineage=25 candidateBar=106 price=29828.5
-[APVA] bar=106 same-direction suppression diagnostic: active id=30 dir=Down level=2 status=Adjusted start=100 end=106 reason=same-direction response after child break 29 from LLLH pendingStart=105 brokenIfReached=none
+[APVA] bar=106 FTT candidate updated: id=30 lineage=9 candidateBar=106 price=29828.5
+[APVA] bar=106 same-direction suppression diagnostic: active id=30 dir=Down level=4 status=Adjusted start=100 end=106 reason=same-direction response after child break 29 from LLLH pendingStart=105 brokenIfReached=none
 [APVA] bar=106 same-direction OutsideBearish extended active Down container id=30; nested container suppressed
-[APVA] bar=106 join eligibility: newest=30 parent=28 level=2 candidates=30:Down:L2:Adjusted@100-106:p28
+[APVA] bar=106 join eligibility: newest=30 parent=21 level=4 candidates=30:Down:L4:Adjusted@100-106:p21
+[APVA] bar=106 join rejected: invalid Down P1/P3 geometry children=19,29,30 p1=30665 p3=30677.75
 [APVA] bar=107 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=107 FTT candidate updated: id=30 lineage=25 candidateBar=107 price=29812.5
-[APVA] bar=107 same-direction suppression diagnostic: active id=30 dir=Down level=2 status=Adjusted start=100 end=107 reason=same-direction response after child break 29 from LLLH pendingStart=106 brokenIfReached=none
+[APVA] bar=107 FTT candidate updated: id=30 lineage=9 candidateBar=107 price=29812.5
+[APVA] bar=107 same-direction suppression diagnostic: active id=30 dir=Down level=4 status=Adjusted start=100 end=107 reason=same-direction response after child break 29 from LLLH pendingStart=106 brokenIfReached=none
 [APVA] bar=107 same-direction LowReversal extended active Down container id=30; nested container suppressed
-[APVA] bar=107 join eligibility: newest=30 parent=28 level=2 candidates=30:Down:L2:Adjusted@100-107:p28
+[APVA] bar=107 join eligibility: newest=30 parent=21 level=4 candidates=30:Down:L4:Adjusted@100-107:p21
+[APVA] bar=107 join rejected: invalid Down P1/P3 geometry children=19,29,30 p1=30665 p3=30677.75
 [APVA] bar=108 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=108 V2 shadow decision: CreateChild id=31 parent=30 dir=Up level=3 start=107 end=108 reason=opposite tape inside local parent
+[APVA] bar=108 V2 shadow decision: CreateChild id=31 parent=30 dir=Up level=5 start=107 end=108 reason=opposite tape inside local parent
 [APVA] bar=108 initial VE anchor: up container id=31 second bar high exceeded parallel LTL
-[APVA] bar=108 container created: id=31 Up L3 start=107 end=108 lineage=27 reason=V2 local child inside active container 30 from HighReversal
-[APVA] bar=108 lineage assigned: id=31 lineage=25 structuralParent=30 originFttContainer=28 originFttBar=91 role=Component reason=V2 local child
-[APVA] bar=108 V2 child container created: id=31 parent=30 level=3 reason=opposite tape inside local parent
-[APVA] bar=108 join eligibility: newest=31 parent=30 level=3 candidates=31:Up:L3:Active@107-108:p30
+[APVA] bar=108 container created: id=31 Up L5 start=107 end=108 lineage=30 reason=V2 local child inside active container 30 from HighReversal
+[APVA] bar=108 lineage assigned: id=31 lineage=9 structuralParent=30 originFttContainer=9 originFttBar=34 role=Component reason=V2 local child
+[APVA] bar=108 V2 child container created: id=31 parent=30 level=5 reason=opposite tape inside local parent
+[APVA] bar=108 join eligibility: newest=31 parent=30 level=5 candidates=31:Up:L5:Active@107-108:p30
 [APVA] bar=109 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=109 FTT candidate updated: id=30 lineage=25 candidateBar=109 price=29765
+[APVA] bar=109 FTT candidate updated: id=30 lineage=9 candidateBar=109 price=29765
 [APVA] bar=109 VE created: down container id=30 low pierced LTL/VE
-[APVA] bar=109 V2 shadow decision: CreateChild id=32 parent=31 dir=Down level=4 start=108 end=109 reason=opposite tape inside local parent
+[APVA] bar=109 V2 shadow decision: CreateChild id=32 parent=31 dir=Down level=6 start=108 end=109 reason=opposite tape inside local parent
 [APVA] bar=109 V2 child creation deferred: proposed parent id=31 is broken by current Down close
-[APVA] bar=109 same-direction suppression diagnostic: active id=30 dir=Down level=2 status=Adjusted start=100 end=109 reason=same-direction response after child break 29 from LLLH pendingStart=108 brokenIfReached=id=31 dir=Up level=3 status=Active start=107 end=109 reason=V2 local child inside active container 30 from HighReversal parent=30
-[APVA] bar=109 same-direction suppression child diagnostic: parent=30 child=31 dir=Up level=3 status=Active start=107 end=109 reason=V2 local child inside active container 30 from HighReversal close=29796.5 rtl=29818.5 closeBreaks=True
+[APVA] bar=109 same-direction suppression diagnostic: active id=30 dir=Down level=4 status=Adjusted start=100 end=109 reason=same-direction response after child break 29 from LLLH pendingStart=108 brokenIfReached=id=31 dir=Up level=5 status=Active start=107 end=109 reason=V2 local child inside active container 30 from HighReversal parent=30
+[APVA] bar=109 same-direction suppression child diagnostic: parent=30 child=31 dir=Up level=5 status=Active start=107 end=109 reason=V2 local child inside active container 30 from HighReversal close=29796.5 rtl=29818.5 closeBreaks=True
 [APVA] bar=109 same-direction LLLH extended active Down container id=30; nested container suppressed
-[APVA] bar=109 join eligibility: newest=30 parent=28 level=2 candidates=30:Down:L2:Adjusted@100-109:p28
+[APVA] bar=109 join eligibility: newest=30 parent=21 level=4 candidates=30:Down:L4:Adjusted@100-109:p21
+[APVA] bar=109 join rejected: invalid Down P1/P3 geometry children=19,29,30 p1=30665 p3=30677.75
 [APVA] bar=110 lateral building: bar remains inside origin boundary 109
 [APVA] bar=110 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=110 FTT confirmed: id=31 lineage=25 fttBar=108 price=29886.25 reason=RTL break side freeze
-[APVA] bar=110 container frozen: id=31 level=3 Up bar fully outside RTL break side
+[APVA] bar=110 FTT confirmed: id=31 lineage=9 fttBar=108 price=29886.25 reason=RTL break side freeze
+[APVA] bar=110 container frozen: id=31 level=5 Up bar fully outside RTL break side
 [APVA] bar=110 skipped translational bar InsideBar; pending start remains 109
 [APVA] bar=111 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=111 FTT candidate updated: id=30 lineage=25 candidateBar=111 price=29745.25
-[APVA] bar=111 same-direction suppression diagnostic: active id=30 dir=Down level=2 status=Adjusted start=100 end=111 reason=same-direction response after child break 29 from LLLH pendingStart=109 brokenIfReached=none
-[APVA] bar=111 same-direction suppression child diagnostic: parent=30 child=31 dir=Up level=3 status=Broken start=107 end=110 reason=V2 local child inside active container 30 from HighReversal close=29746.5 rtl=29824.5 closeBreaks=False
+[APVA] bar=111 FTT candidate updated: id=30 lineage=9 candidateBar=111 price=29745.25
+[APVA] bar=111 same-direction suppression diagnostic: active id=30 dir=Down level=4 status=Adjusted start=100 end=111 reason=same-direction response after child break 29 from LLLH pendingStart=109 brokenIfReached=none
+[APVA] bar=111 same-direction suppression child diagnostic: parent=30 child=31 dir=Up level=5 status=Broken start=107 end=110 reason=V2 local child inside active container 30 from HighReversal close=29746.5 rtl=29824.5 closeBreaks=False
 [APVA] bar=111 same-direction LLLH extended active Down container id=30; nested container suppressed
-[APVA] bar=111 join eligibility: newest=30 parent=28 level=2 candidates=30:Down:L2:Adjusted@100-111:p28
+[APVA] bar=111 join eligibility: newest=30 parent=21 level=4 candidates=30:Down:L4:Adjusted@100-111:p21
+[APVA] bar=111 join rejected: invalid Down P1/P3 geometry children=19,29,30 p1=30665 p3=30677.75
 [APVA] bar=112 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=112 FTT candidate updated: id=30 lineage=25 candidateBar=112 price=29722
-[APVA] bar=112 same-direction suppression diagnostic: active id=30 dir=Down level=2 status=Adjusted start=100 end=112 reason=same-direction response after child break 29 from LLLH pendingStart=111 brokenIfReached=none
-[APVA] bar=112 same-direction suppression child diagnostic: parent=30 child=31 dir=Up level=3 status=Broken start=107 end=110 reason=V2 local child inside active container 30 from HighReversal close=29729.25 rtl=29827.5 closeBreaks=False
+[APVA] bar=112 FTT candidate updated: id=30 lineage=9 candidateBar=112 price=29722
+[APVA] bar=112 same-direction suppression diagnostic: active id=30 dir=Down level=4 status=Adjusted start=100 end=112 reason=same-direction response after child break 29 from LLLH pendingStart=111 brokenIfReached=none
+[APVA] bar=112 same-direction suppression child diagnostic: parent=30 child=31 dir=Up level=5 status=Broken start=107 end=110 reason=V2 local child inside active container 30 from HighReversal close=29729.25 rtl=29827.5 closeBreaks=False
 [APVA] bar=112 same-direction LLLH extended active Down container id=30; nested container suppressed
-[APVA] bar=112 join eligibility: newest=30 parent=28 level=2 candidates=30:Down:L2:Adjusted@100-112:p28
+[APVA] bar=112 join eligibility: newest=30 parent=21 level=4 candidates=30:Down:L4:Adjusted@100-112:p21
+[APVA] bar=112 join rejected: invalid Down P1/P3 geometry children=19,29,30 p1=30665 p3=30677.75
 [APVA] bar=113 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=113 FTT candidate updated: id=30 lineage=25 candidateBar=113 price=29710.5
-[APVA] bar=113 same-direction suppression diagnostic: active id=30 dir=Down level=2 status=Adjusted start=100 end=113 reason=same-direction response after child break 29 from LLLH pendingStart=112 brokenIfReached=none
-[APVA] bar=113 same-direction suppression child diagnostic: parent=30 child=31 dir=Up level=3 status=Broken start=107 end=110 reason=V2 local child inside active container 30 from HighReversal close=29727.25 rtl=29830.5 closeBreaks=False
+[APVA] bar=113 FTT candidate updated: id=30 lineage=9 candidateBar=113 price=29710.5
+[APVA] bar=113 same-direction suppression diagnostic: active id=30 dir=Down level=4 status=Adjusted start=100 end=113 reason=same-direction response after child break 29 from LLLH pendingStart=112 brokenIfReached=none
+[APVA] bar=113 same-direction suppression child diagnostic: parent=30 child=31 dir=Up level=5 status=Broken start=107 end=110 reason=V2 local child inside active container 30 from HighReversal close=29727.25 rtl=29830.5 closeBreaks=False
 [APVA] bar=113 same-direction LLLH extended active Down container id=30; nested container suppressed
-[APVA] bar=113 join eligibility: newest=30 parent=28 level=2 candidates=30:Down:L2:Adjusted@100-113:p28
+[APVA] bar=113 join eligibility: newest=30 parent=21 level=4 candidates=30:Down:L4:Adjusted@100-113:p21
+[APVA] bar=113 join rejected: invalid Down P1/P3 geometry children=19,29,30 p1=30665 p3=30677.75
 [APVA] bar=114 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=114 V2 shadow decision: CreateChild id=32 parent=30 dir=Up level=3 start=113 end=114 reason=opposite tape inside local parent
+[APVA] bar=114 V2 shadow decision: CreateChild id=32 parent=30 dir=Up level=5 start=113 end=114 reason=opposite tape inside local parent
 [APVA] bar=114 initial VE anchor: up container id=32 second bar high exceeded parallel LTL
-[APVA] bar=114 container created: id=32 Up L3 start=113 end=114 lineage=28 reason=V2 local child inside active container 30 from HHHL
-[APVA] bar=114 lineage assigned: id=32 lineage=25 structuralParent=30 originFttContainer=28 originFttBar=91 role=Component reason=V2 local child
-[APVA] bar=114 V2 child container created: id=32 parent=30 level=3 reason=opposite tape inside local parent
-[APVA] bar=114 join eligibility: newest=32 parent=30 level=3 candidates=32:Up:L3:Active@113-114:p30
+[APVA] bar=114 container created: id=32 Up L5 start=113 end=114 lineage=31 reason=V2 local child inside active container 30 from HHHL
+[APVA] bar=114 lineage assigned: id=32 lineage=9 structuralParent=30 originFttContainer=9 originFttBar=34 role=Component reason=V2 local child
+[APVA] bar=114 V2 child container created: id=32 parent=30 level=5 reason=opposite tape inside local parent
+[APVA] bar=114 join eligibility: newest=32 parent=30 level=5 candidates=32:Up:L5:Active@113-114:p30
 [APVA] bar=115 terminal joined child extended with parent: child=18 parent=28
-[APVA] bar=115 FTT candidate updated: id=30 lineage=25 candidateBar=115 price=29698.5
-[APVA] bar=115 FTT candidate updated: id=32 lineage=25 candidateBar=115 price=29788
+[APVA] bar=115 FTT candidate updated: id=30 lineage=9 candidateBar=115 price=29698.5
+[APVA] bar=115 FTT candidate updated: id=32 lineage=9 candidateBar=115 price=29788
 [APVA] bar=115 VE created: up container id=32 high pierced LTL/VE
-[APVA] bar=115 V2 shadow decision: CreateChild id=33 parent=32 dir=Down level=4 start=114 end=115 reason=opposite tape inside local parent
+[APVA] bar=115 V2 shadow decision: CreateChild id=33 parent=32 dir=Down level=6 start=114 end=115 reason=opposite tape inside local parent
 [APVA] bar=115 V2 child creation deferred: proposed parent id=32 is broken by current Down close
-[APVA] bar=115 same-direction suppression diagnostic: active id=30 dir=Down level=2 status=Adjusted start=100 end=115 reason=same-direction response after child break 29 from LLLH pendingStart=114 brokenIfReached=id=32 dir=Up level=3 status=Active start=113 end=115 reason=V2 local child inside active container 30 from HHHL parent=30
-[APVA] bar=115 same-direction suppression child diagnostic: parent=30 child=31 dir=Up level=3 status=Broken start=107 end=110 reason=V2 local child inside active container 30 from HighReversal close=29712.5 rtl=29836.5 closeBreaks=False
-[APVA] bar=115 same-direction suppression child diagnostic: parent=30 child=32 dir=Up level=3 status=Active start=113 end=115 reason=V2 local child inside active container 30 from HHHL close=29712.5 rtl=29717.5 closeBreaks=True
+[APVA] bar=115 same-direction suppression diagnostic: active id=30 dir=Down level=4 status=Adjusted start=100 end=115 reason=same-direction response after child break 29 from LLLH pendingStart=114 brokenIfReached=id=32 dir=Up level=5 status=Active start=113 end=115 reason=V2 local child inside active container 30 from HHHL parent=30
+[APVA] bar=115 same-direction suppression child diagnostic: parent=30 child=31 dir=Up level=5 status=Broken start=107 end=110 reason=V2 local child inside active container 30 from HighReversal close=29712.5 rtl=29836.5 closeBreaks=False
+[APVA] bar=115 same-direction suppression child diagnostic: parent=30 child=32 dir=Up level=5 status=Active start=113 end=115 reason=V2 local child inside active container 30 from HHHL close=29712.5 rtl=29717.5 closeBreaks=True
 [APVA] bar=115 same-direction OutsideBearish extended active Down container id=30; nested container suppressed
-[APVA] bar=115 join eligibility: newest=30 parent=28 level=2 candidates=30:Down:L2:Adjusted@100-115:p28
+[APVA] bar=115 join eligibility: newest=30 parent=21 level=4 candidates=30:Down:L4:Adjusted@100-115:p21
+[APVA] bar=115 join rejected: invalid Down P1/P3 geometry children=19,29,30 p1=30665 p3=30677.75
