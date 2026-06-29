@@ -1,0 +1,77 @@
+[APVA] bar=7 replay seeded from Start Bar; prior bars are not used as container origin
+[APVA] bar=8 container construction suppressed: second bar is outside relation OutsideBearish start=7 end=8
+[APVA] bar=9 container created: id=1 Down L1 start=8 end=9 lineage=1 reason=created from LLLH
+[APVA] bar=10 FTT candidate updated: id=1 lineage=1 candidateBar=10 price=30786.75
+[APVA] bar=10 RTL wick adjustment: id=1 close remained inside container
+[APVA] bar=10 same-direction suppression diagnostic: active id=1 dir=Down level=1 status=Adjusted start=8 end=10 reason=created from LLLH pendingStart=9 brokenIfReached=none
+[APVA] bar=10 same-direction LLLH extended active Down container id=1; nested container suppressed
+[APVA] bar=11 FTT candidate updated: id=1 lineage=1 candidateBar=11 price=30744
+[APVA] bar=11 same-direction suppression diagnostic: active id=1 dir=Down level=1 status=Adjusted start=8 end=11 reason=created from LLLH pendingStart=10 brokenIfReached=none
+[APVA] bar=11 same-direction LLLH extended active Down container id=1; nested container suppressed
+[APVA] bar=12 FTT candidate updated: id=1 lineage=1 candidateBar=12 price=30649.5
+[APVA] bar=12 VE created: down container id=1 low pierced LTL/VE
+[APVA] bar=12 same-direction suppression diagnostic: active id=1 dir=Down level=1 status=Adjusted start=8 end=12 reason=created from LLLH pendingStart=11 brokenIfReached=none
+[APVA] bar=12 same-direction LLLH extended active Down container id=1; nested container suppressed
+[APVA] bar=13 lateral building: bar remains inside origin boundary 12
+[APVA] bar=13 skipped translational bar InsideBar; pending start remains 12
+[APVA] bar=14 FTT candidate updated: id=1 lineage=1 candidateBar=14 price=30612.5
+[APVA] bar=14 RTL wick adjustment: id=1 close remained inside container
+[APVA] bar=14 same-direction suppression diagnostic: active id=1 dir=Down level=1 status=Adjusted start=8 end=14 reason=created from LLLH pendingStart=12 brokenIfReached=none
+[APVA] bar=14 same-direction LLLH extended active Down container id=1; nested container suppressed
+[APVA] bar=15 lateral building: bar remains inside origin boundary 14
+[APVA] bar=15 RTL wick adjustment: id=1 close remained inside container
+[APVA] bar=15 skipped translational bar InsideBar; pending start remains 14
+[APVA] bar=16 FTT candidate updated: id=1 lineage=1 candidateBar=16 price=30558
+[APVA] bar=16 RTL wick adjustment: id=1 close remained inside container
+[APVA] bar=16 same-direction suppression diagnostic: active id=1 dir=Down level=1 status=Adjusted start=8 end=16 reason=created from LLLH pendingStart=14 brokenIfReached=none
+[APVA] bar=16 same-direction LLLH extended active Down container id=1; nested container suppressed
+[APVA] bar=17 FTT candidate updated: id=1 lineage=1 candidateBar=17 price=30545
+[APVA] bar=17 same-direction suppression diagnostic: active id=1 dir=Down level=1 status=Adjusted start=8 end=17 reason=created from LLLH pendingStart=16 brokenIfReached=none
+[APVA] bar=17 same-direction LowReversal extended active Down container id=1; nested container suppressed
+[APVA] bar=18 FTT confirmed: id=1 lineage=1 fttBar=17 price=30545 reason=RTL break side freeze
+[APVA] bar=18 container frozen: id=1 level=1 Down bar fully outside RTL break side
+[APVA] bar=18 container created: id=2 Up L1 start=17 end=18 lineage=2 reason=created from HHHL
+[APVA] bar=19 FTT confirmed: id=2 lineage=2 fttBar=18 price=30680 reason=RTL break side freeze
+[APVA] bar=19 container frozen: id=2 level=1 Up bar fully outside RTL break side
+[APVA] bar=19 initial VE anchor: down container id=3 second bar low exceeded parallel LTL
+[APVA] bar=19 container created: id=3 Down L1 start=18 end=19 lineage=3 reason=created from LLLH
+[APVA] bar=18 demotion/style recalculation: id=1 level=2
+[APVA] bar=19 demotion/style recalculation: id=2 level=2
+[APVA] bar=19 demotion/style recalculation: id=3 level=2
+[APVA] bar=19 join accepted: parent=4 children=1,2,3 lineage=2
+[APVA] bar=20 lateral building: bar remains inside origin boundary 19
+[APVA] bar=20 RTL wick adjustment: id=4 close remained inside container
+[APVA] bar=20 RTL wick adjustment: id=3 close remained inside container
+[APVA] bar=20 terminal joined child extended with parent: child=3 parent=4
+[APVA] bar=20 skipped translational bar InsideBar; pending start remains 19
+[APVA] bar=21 FTT candidate updated: id=3 lineage=3 candidateBar=21 price=30591
+[APVA] bar=21 RTL wick adjustment: id=3 close remained inside container
+[APVA] bar=21 RTL wick adjustment: id=4 close remained inside container
+[APVA] bar=21 terminal joined child frozen: child=1 parent=4 bar fully outside RTL break side
+[APVA] bar=21 same-direction suppression diagnostic: active id=3 dir=Down level=2 status=Adjusted start=18 end=21 reason=created from LLLH pendingStart=19 brokenIfReached=none
+[APVA] bar=21 same-direction LLLH extended active Down container id=3; nested container suppressed
+[APVA] bar=21 join eligibility: newest=3 parent=4 level=2 candidates=3:Down:L2:Adjusted@18-21:p4
+[APVA] bar=22 FTT candidate updated: id=3 lineage=3 candidateBar=22 price=30586.75
+[APVA] bar=22 RTL wick adjustment: id=4 close remained inside container
+[APVA] bar=22 same-direction suppression diagnostic: active id=3 dir=Down level=2 status=Adjusted start=18 end=22 reason=created from LLLH pendingStart=21 brokenIfReached=none
+[APVA] bar=22 same-direction LowReversal extended active Down container id=3; nested container suppressed
+[APVA] bar=22 join eligibility: newest=3 parent=4 level=2 candidates=3:Down:L2:Adjusted@18-22:p4
+[APVA] bar=23 FTT candidate updated: id=3 lineage=3 candidateBar=23 price=30583.25
+[APVA] bar=23 RTL wick adjustment: id=3 close remained inside container
+[APVA] bar=23 RTL wick adjustment: id=4 close remained inside container
+[APVA] bar=23 same-direction suppression diagnostic: active id=3 dir=Down level=2 status=Adjusted start=18 end=23 reason=created from LLLH pendingStart=22 brokenIfReached=none
+[APVA] bar=23 same-direction OutsideBearish extended active Down container id=3; nested container suppressed
+[APVA] bar=23 join eligibility: newest=3 parent=4 level=2 candidates=3:Down:L2:Adjusted@18-23:p4
+[APVA] bar=24 lateral building: bar remains inside origin boundary 23
+[APVA] bar=24 RTL wick adjustment: id=4 close remained inside container
+[APVA] bar=24 skipped translational bar InsideBar; pending start remains 23
+[APVA] bar=25 FTT candidate updated: id=3 lineage=3 candidateBar=25 price=30575.75
+[APVA] bar=25 RTL wick adjustment: id=4 close remained inside container
+[APVA] bar=25 same-direction suppression diagnostic: active id=3 dir=Down level=2 status=Adjusted start=18 end=25 reason=created from LLLH pendingStart=23 brokenIfReached=none
+[APVA] bar=25 same-direction LowReversal extended active Down container id=3; nested container suppressed
+[APVA] bar=25 join eligibility: newest=3 parent=4 level=2 candidates=3:Down:L2:Adjusted@18-25:p4
+[APVA] bar=26 FTT confirmed: id=4 lineage=2 fttBar=17 price=30545 reason=RTL break side freeze
+[APVA] bar=26 container frozen: id=4 level=1 Down bar fully outside RTL break side
+[APVA] bar=26 V2 shadow decision: PromoteChild id=2 parent=0 dir=Up level=1 start=17 end=26 reason=promoted active opposite child after parent break
+[APVA] bar=26 initial VE anchor: up container id=5 second bar high exceeded parallel LTL
+[APVA] bar=26 container created: id=5 Up L1 start=25 end=26 lineage=4 reason=created from HHHL
