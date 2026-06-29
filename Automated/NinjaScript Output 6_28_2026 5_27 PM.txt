@@ -31,10 +31,12 @@
 [APVA] bar=18 FTT confirmed: id=1 lineage=1 fttBar=17 price=30545 reason=RTL break side freeze
 [APVA] bar=18 container frozen: id=1 level=1 Down bar fully outside RTL break side
 [APVA] bar=18 container created: id=2 Up L1 start=17 end=18 lineage=2 reason=created from HHHL
+[APVA] bar=18 frozen-parent terminal join not applied: new=2 reason=no terminal joined pair
 [APVA] bar=19 FTT confirmed: id=2 lineage=2 fttBar=18 price=30680 reason=RTL break side freeze
 [APVA] bar=19 container frozen: id=2 level=1 Up bar fully outside RTL break side
 [APVA] bar=19 initial VE anchor: down container id=3 second bar low exceeded parallel LTL
 [APVA] bar=19 container created: id=3 Down L1 start=18 end=19 lineage=3 reason=created from LLLH
+[APVA] bar=19 frozen-parent terminal join not applied: new=3 reason=no terminal joined pair
 [APVA] bar=18 demotion/style recalculation: id=1 level=2
 [APVA] bar=19 demotion/style recalculation: id=2 level=2
 [APVA] bar=19 demotion/style recalculation: id=3 level=2
@@ -75,3 +77,4 @@
 [APVA] bar=26 V2 shadow decision: PromoteChild id=2 parent=0 dir=Up level=1 start=17 end=26 reason=promoted active opposite child after parent break
 [APVA] bar=26 initial VE anchor: up container id=5 second bar high exceeded parallel LTL
 [APVA] bar=26 container created: id=5 Up L1 start=25 end=26 lineage=4 reason=created from HHHL
+[APVA] bar=26 frozen-parent terminal join not applied: new=5 reason=no terminal joined pair
