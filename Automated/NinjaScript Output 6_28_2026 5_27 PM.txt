@@ -741,3 +741,62 @@
 [APVA] bar=89 lineage triad geometry: triad=33,38,39 pattern=Up-Down-Up originFtt=9@34 leftP2=30673.5 middleP2=30648.75 rightP2=30672.75 currentResume=fail currentReject=right up container has not exceeded left up P2 p1Geometry=pass p1Reject=none middleFTT=pass oldExtreme=fail joinedP3=89@30651.25 joinedP1P3=pass oldStyleWouldAccept=False activeLineageEligible=fail activeReject=old-style same-direction extreme failed
 [APVA] bar=89 structural lineage join rejected: triad=33,38,39 reason=visual reject is not structural-only: old-style same-direction extreme failed
 [APVA] bar=89 join rejected: invalid Up P1/P3 geometry children=22,38,39 p1=30615.75 p3=30534.5
+[APVA] bar=90 FTT confirmed: id=9 lineage=7 fttBar=78 price=30677.75 reason=RTL break side freeze
+[APVA] bar=90 container frozen: id=9 level=1 Up bar fully outside RTL break side
+[APVA] bar=90 broken parent descendants deactivated: parent=9 count=10
+[APVA] bar=89 demotion/style recalculation: id=39 level=2
+[APVA] bar=90 FTT candidate updated: id=38 lineage=9 candidateBar=90 price=29616.5
+[APVA] bar=90 lineage assigned: id=38 lineage=9 structuralParent=35 originFttContainer=9 originFttBar=34 role=Component reason=child promoted after parent break
+[APVA] bar=90 VE created: down container id=38 low pierced LTL/VE
+[APVA] bar=90 VE rebuilt: down container id=40 price pierced recalculated LTL/VE
+[APVA] bar=34 demotion/style recalculation: id=8 level=2
+[APVA] bar=31 demotion/style recalculation: id=4 level=3
+[APVA] bar=21 demotion/style recalculation: id=1 level=4
+[APVA] bar=27 demotion/style recalculation: id=6 level=3
+[APVA] bar=19 demotion/style recalculation: id=2 level=4
+[APVA] bar=26 demotion/style recalculation: id=3 level=4
+[APVA] bar=27 demotion/style recalculation: id=5 level=4
+[APVA] bar=32 demotion/style recalculation: id=7 level=3
+[APVA] bar=90 demotion/style recalculation: id=9 level=2
+[APVA] bar=40 demotion/style recalculation: id=10 level=3
+[APVA] bar=89 demotion/style recalculation: id=35 level=3
+[APVA] bar=61 demotion/style recalculation: id=20 level=4
+[APVA] bar=61 demotion/style recalculation: id=17 level=5
+[APVA] bar=51 demotion/style recalculation: id=14 level=6
+[APVA] bar=41 demotion/style recalculation: id=11 level=7
+[APVA] bar=46 demotion/style recalculation: id=12 level=7
+[APVA] bar=51 demotion/style recalculation: id=13 level=7
+[APVA] bar=51 demotion/style recalculation: id=15 level=6
+[APVA] bar=57 demotion/style recalculation: id=16 level=6
+[APVA] bar=57 demotion/style recalculation: id=18 level=5
+[APVA] bar=60 demotion/style recalculation: id=19 level=5
+[APVA] bar=73 demotion/style recalculation: id=24 level=4
+[APVA] bar=68 demotion/style recalculation: id=21 level=5
+[APVA] bar=62 demotion/style recalculation: id=22 level=5
+[APVA] bar=72 demotion/style recalculation: id=27 level=5
+[APVA] bar=73 demotion/style recalculation: id=23 level=6
+[APVA] bar=67 demotion/style recalculation: id=25 level=6
+[APVA] bar=72 demotion/style recalculation: id=26 level=6
+[APVA] bar=89 demotion/style recalculation: id=34 level=4
+[APVA] bar=75 demotion/style recalculation: id=31 level=5
+[APVA] bar=71 demotion/style recalculation: id=28 level=6
+[APVA] bar=72 demotion/style recalculation: id=29 level=6
+[APVA] bar=75 demotion/style recalculation: id=30 level=6
+[APVA] bar=75 demotion/style recalculation: id=32 level=5
+[APVA] bar=77 demotion/style recalculation: id=33 level=5
+[APVA] bar=81 demotion/style recalculation: id=36 level=4
+[APVA] bar=83 demotion/style recalculation: id=37 level=4
+[APVA] bar=90 demotion/style recalculation: id=38 level=2
+[APVA] bar=89 demotion/style recalculation: id=39 level=3
+[APVA] bar=90 join accepted: parent=40 children=8,9,38 lineage=7
+[APVA] bar=90 structural promotion context: promoted=38 brokenParent=9 structuralJoin=none action=observed
+[APVA] bar=90 child promoted after parent break: child=38 inheritedParent=40 level=2 brokenParent=9
+[APVA] bar=91 FTT confirmed: id=39 lineage=9 fttBar=89 price=30672.75 reason=RTL break side freeze
+[APVA] bar=91 container frozen: id=39 level=3 Up bar fully outside RTL break side
+[APVA] bar=91 FTT candidate updated: id=40 lineage=7 candidateBar=91 price=29671
+[APVA] bar=91 terminal joined child extended with parent: child=38 parent=40
+[APVA] bar=91 V2 shadow decision: CreateChild id=41 parent=40 dir=Up level=2 start=90 end=91 reason=opposite tape inside local parent
+[APVA] bar=91 container created: id=41 Up L2 start=90 end=91 lineage=31 reason=V2 local child inside active container 40 from HHHL
+[APVA] bar=91 lineage assigned: id=41 lineage=32 structuralParent=40 originFttContainer=40 originFttBar=91 role=Component reason=V2 local child
+[APVA] bar=91 V2 child container created: id=41 parent=40 level=2 reason=opposite tape inside local parent
+[APVA] bar=91 join eligibility: newest=41 parent=40 level=2 candidates=41:Up:L2:Active@90-91:p40
